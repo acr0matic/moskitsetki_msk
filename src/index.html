@@ -9,22 +9,83 @@
     <title>Заголовок</title>
 
     <!-- Иконки для страницы -->
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="img/favicons/apple-touch-icon-precomposed.png"
+    />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="img/favicons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
 
     <!-- Метатаги которые выводят информацию о странице в поисковой запрос -->
     <meta name="description" content="описание не длиннее 155 символов" />
@@ -41,20 +102,54 @@
 
     <!-- Для iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
     <!-- И для Яндекс.Браузера -->
     <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade" />
 
     <!-- Стили -->
     <!-- build:css -->
-    <link rel="stylesheet" href="styles/compiled/style.css"/>
+    <link rel="stylesheet" href="styles/compiled/style.css" />
     <!-- endbuild -->
   </head>
 
   <body>
     <!-- Шапка -->
-    <header></header>
+    <header id="header">
+      <div class="container">
+        <div class="wrapper">
+          <a href="#">
+            <img src="img/logo.svg" alt="" class="logo" />
+          </a>
+          <nav>
+            <ul class="nav">
+              <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
+            </ul>
+          </nav>
+          <div class="phone-block">
+            <a href="tel:89653171030" class="phone">+7 965 317 10 30</a>
+            <span class="worktime">Ежедневно с 9 до 22</span>
+          </div>
+          <!-- /.phone-block -->
+          <div class="button-wrapper">
+            <button class="button">Заказать звонок</button>
+            <div class="button-layer"></div>
+            <!-- /.button-layer -->
+          </div>
+          <!-- /.button-wrapper -->
+
+        </div>
+        <!-- /.wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
 
     <!-- Основной контент -->
     <main></main>
@@ -67,8 +162,9 @@
     <script src="scripts/script.js"></script>
     <!-- endbuild -->
 
-    <!-- Yandex.Metrika counter -->   <!-- /Yandex.Metrika counter -->
-    <!-- Google Analytics -->   <!-- /Google Analytics -->
-
+    <!-- Yandex.Metrika counter -->
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics -->
+    <!-- /Google Analytics -->
   </body>
 </html>

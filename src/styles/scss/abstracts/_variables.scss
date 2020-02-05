@@ -2,8 +2,22 @@
 // В этом файле находятся все основные SASS - Переменные
 // -----------------------------------------------------------------------------
 
-// Основной цвет
+// Основные цвета
 $palette-primary: #ffffff !default;
 
+
+// Цвета шрифтов
+$text-primary: #000000;
+$text-secondary: #969696;
+
+$text-button: #ffffff;
+$text-info: #d2d2d2;
+$text-important: #ff8315;
+
+// Цвета компонентов
+$component-button: #ffc827;
+$component-button-gradient: linear-gradient(180deg, rgba(255, 227, 69, 1) 0%, rgba(255, 194, 34, 1) 100%);
+$component-button-shadow: #f9a123;
+
 // Максимальная ширина контейнера
-$container-max-width: 1180px !default;
+$container-max-width: 1260px !default;
