@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// В этом файле подключаются все шрифты через font-face, если таковые есть
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/dist/fonts/Rubik/Rubik-Regular.woff2") format("woff2"),
+    url("/dist/fonts/Rubik/Rubik-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/dist/fonts/Rubik/Rubik-Bold.woff2") format("woff2"),
+    url("/dist/fonts/Rubik/Rubik-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
