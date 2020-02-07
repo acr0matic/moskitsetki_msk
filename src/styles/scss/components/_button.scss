@@ -2,7 +2,6 @@
 // В этом файле стили для компонента "кнопка"
 // -----------------------------------------------------------------------------
 
-
 .button {
   width: 180px;
   height: 50px;
@@ -16,8 +15,7 @@
   box-shadow: 0 5px 0 0 $component-button-shadow;
 
   cursor: pointer;
-  transition: all .3s ease;
-
+  transition: all 0.3s ease;
 
   &:hover {
     box-shadow: 0 5px 0 0 $component-button-shadow, 0 5px 15px 0 #ffde4e;
@@ -27,4 +25,3 @@
     transform: translateY(3px);
   }
 }
-
