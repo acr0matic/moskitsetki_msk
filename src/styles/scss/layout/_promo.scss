@@ -1,0 +1,25 @@
+#promo {
+  .content {
+    margin-top: 80px;
+    max-width: 505px;
+  }
+}
+
+.advantages {
+  margin-top: 64px;
+
+  &-item {
+    margin-bottom: 28px;
+
+    &::before {
+      content: url("/src/img/icons/check.svg");
+      margin-right: 7px;
+    }
+  }
+}
+
+.action-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

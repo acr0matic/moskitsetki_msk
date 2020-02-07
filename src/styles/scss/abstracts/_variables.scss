@@ -5,7 +5,6 @@
 // Основные цвета
 $palette-primary: #ffffff !default;
 
-
 // Цвета шрифтов
 $text-primary: #000000;
 $text-secondary: #969696;
@@ -18,6 +17,13 @@ $text-important: #ff8315;
 $component-button: #ffc827;
 $component-button-gradient: linear-gradient(180deg, rgba(255, 227, 69, 1) 0%, rgba(255, 194, 34, 1) 100%);
 $component-button-shadow: #f9a123;
+
+// Размеры шрифтов
+$font-1: 34px;
+$font-2: 24px;
+$font-3: 18px;
+$font-4: 14px;
+$font-5: 12px;
 
 // Максимальная ширина контейнера
 $container-max-width: 1260px !default;

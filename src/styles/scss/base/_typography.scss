@@ -6,25 +6,51 @@ body {
   font-family: "Rubik", "Verdana", sans-serif;
 }
 
+small {
+  font-size: $font-5;
+}
+
+.button,
+span {
+  font-size: $font-4;
+}
+
+.button-large,
+li {
+  font-size: $font-3;
+}
+
+h2 {
+  font-size: $font-2;
+}
+
+h1 {
+  font-size: $font-1;
+}
+
+p,
+h1,
+h2 {
+  line-height: 45px;
+}
+
+
 .nav-link {
-  font-size: 18px;
   color: $text-primary;
 }
 
-.phone-block {
+.callback {
   .phone {
     font-size: 24px;
     color: $text-primary;
   }
 
   .worktime {
-    font-size: 12px;
     color: $text-info;
   }
 }
 
 .button {
   font-weight: 700;
-  font-size: 14px;
   color: $text-button;
 }

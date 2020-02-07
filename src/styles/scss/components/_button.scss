@@ -24,4 +24,9 @@
   &:focus {
     transform: translateY(3px);
   }
+
+  &-large {
+    width: 240px;
+    height: 70px;
+  }
 }

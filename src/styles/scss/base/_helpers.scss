@@ -14,3 +14,18 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.social {
+  display: flex;
+  align-items: center;
+
+  &-link {
+    width: 30px;
+    height: 30px;
+
+    margin-left: 14px;
+
+    border: 1px solid #505050;
+    border-radius: 50%;
+  }
+}
