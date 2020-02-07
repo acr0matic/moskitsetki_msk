@@ -1,6 +1,8 @@
 #promo {
+  padding-top: 65px;
+
   .content {
-    margin-top: 80px;
+    padding-top: 35px;
     max-width: 505px;
   }
 }
@@ -16,10 +18,4 @@
       margin-right: 7px;
     }
   }
-}
-
-.action-block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
