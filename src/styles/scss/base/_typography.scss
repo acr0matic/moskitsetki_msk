@@ -16,12 +16,14 @@ span {
 }
 
 .button-large,
+h3,
 li {
   font-size: $font-3;
 }
 
 h2 {
   font-size: $font-2;
+  font-weight: 500;
 }
 
 h1 {
@@ -34,9 +36,28 @@ h2 {
   line-height: 45px;
 }
 
+p {
+  font-size: $font-3;
+}
 
 .nav-link {
   color: $text-primary;
+}
+
+.button {
+  font-weight: 700;
+  color: $text-invert;
+}
+
+.product-description {
+  color: $text-invert;
+}
+
+.product-text,
+.product-heading {
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden;
 }
 
 .callback {
@@ -50,7 +71,13 @@ h2 {
   }
 }
 
-.button {
-  font-weight: 700;
-  color: $text-button;
+.section-title {
+  .primary-heading {
+    font-size: $font-1;
+  }
+
+  .secondary-heading {
+    font-size: $font-2;
+    color: $text-secondary;
+  }
 }

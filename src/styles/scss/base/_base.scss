@@ -20,6 +20,13 @@ html {
   box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -30,4 +37,8 @@ ul {
 
 li {
   list-style: none;
+}
+
+section {
+  padding-top: 65px;
 }
