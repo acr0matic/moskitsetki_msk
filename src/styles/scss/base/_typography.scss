@@ -15,6 +15,10 @@ span {
   font-size: $font-4;
 }
 
+span {
+  color: $text-secondary;
+}
+
 .button-large,
 h3,
 li {
@@ -34,6 +38,11 @@ p,
 h1,
 h2 {
   line-height: 45px;
+}
+
+h3,
+.kit-item {
+  line-height: 30px;
 }
 
 p {

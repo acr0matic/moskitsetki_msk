@@ -1,0 +1,48 @@
+.kits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.kit {
+  width: 32%;
+  min-height: 810px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
+}
+
+.kit-image {
+  width: 100%;
+}
+
+.kit-title {
+  margin-bottom: 20px;
+}
+
+.kit-subtitle {
+  display: block;
+  margin-bottom: 45px;
+}
+
+.kit-wrapper {
+  padding: 45px;
+}
+
+.kit-items {
+  text-align: left;
+}
+
+.kit-item {
+  margin-bottom: 5px;
+  &::before {
+    content: "+";
+    margin-right: 5px;
+    font-weight: 500;
+    color: $text-important;
+  }
+}
+
+.kit-button {
+  margin-top: 30px;
+}
