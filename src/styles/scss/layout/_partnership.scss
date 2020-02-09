@@ -1,0 +1,14 @@
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partner-logo {
+  width: 25%;
+  max-width: 295px;
+
+  @include between(1, 4) {
+    margin-bottom: 20px;
+  }
+}
