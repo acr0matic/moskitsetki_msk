@@ -1,8 +1,6 @@
 .kits {
   display: flex;
   justify-content: space-between;
-
-  margin-top: 20px;
 }
 
 .kit {
@@ -10,7 +8,7 @@
   min-height: 810px;
 
   text-align: center;
-  
+
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
