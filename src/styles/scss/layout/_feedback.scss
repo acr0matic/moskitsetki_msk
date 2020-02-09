@@ -1,0 +1,27 @@
+.feedback {
+
+  &-card {
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+
+    time {
+      margin-left: auto;
+    }
+  }
+}

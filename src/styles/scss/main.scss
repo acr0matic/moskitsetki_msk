@@ -4,6 +4,7 @@
 @import "vendors/normalize";
 @import "vendors/family";
 @import "vendors/breakpoint";
+@import "vendors/swiper";
 
 // 2. Подключение базовых функций и переменных
 @import
@@ -28,11 +29,13 @@
   'layout/callback',
   'layout/partnership',
   'layout/map',
+  'layout/feedback',
   'layout/footer';
 
 // 5. Подключение стилей компонентов
 @import
   'components/button',
   'components/form',
-  'components/input';
+  'components/input',
+  'components/slider';
 

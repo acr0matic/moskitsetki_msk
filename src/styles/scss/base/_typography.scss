@@ -15,11 +15,13 @@ span {
   font-size: $font-4;
 }
 
+time,
 span {
   color: $text-secondary;
 }
 
 .button-large,
+.feedback-info .name,
 h3,
 li {
   font-size: $font-3;
@@ -41,7 +43,8 @@ h2 {
 }
 
 h3,
-.kit-item {
+.kit-item,
+.feedback-description {
   line-height: 30px;
 }
 
@@ -60,6 +63,10 @@ p {
 
 .product-description {
   color: $text-invert;
+}
+
+.feedback-info .name {
+  color: $text-important-lighter;
 }
 
 .product-text,
@@ -90,3 +97,4 @@ p {
     color: $text-secondary;
   }
 }
+

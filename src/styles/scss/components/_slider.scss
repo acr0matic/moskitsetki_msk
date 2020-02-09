@@ -1,0 +1,25 @@
+.slider {
+  position: relative;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: $text-info;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 45%;
+}
+
+.swiper-slide {
+  margin-bottom: 80px;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
+}
+
+// .swiper-button-prev {
+//   left: 21%;
+// }
+// .swiper-button-next {
+//   right: 21%;
+// }
