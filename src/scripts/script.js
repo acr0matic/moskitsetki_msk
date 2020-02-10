@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
     loop: true,
     slidesPerView: 2,
     spaceBetween: 30,
-    
+
     // If we need pagination
     pagination: {
       el: ".swiper-pagination"
