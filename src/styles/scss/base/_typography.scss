@@ -9,12 +9,18 @@ body {
 small {
   font-size: $font-5;
 }
-
+.company-info,
+.politics,
 .button,
 span {
   font-size: $font-4;
 }
 
+.nav-link {
+  color: $text-primary;
+}
+
+.footer-nav-link,
 time,
 span {
   color: $text-secondary;
@@ -52,9 +58,6 @@ p {
   font-size: $font-3;
 }
 
-.nav-link {
-  color: $text-primary;
-}
 
 .button {
   font-weight: 700;
@@ -63,6 +66,10 @@ p {
 
 .product-description {
   color: $text-invert;
+}
+
+.politics {
+  color: $text-important;
 }
 
 .feedback-info .name {
