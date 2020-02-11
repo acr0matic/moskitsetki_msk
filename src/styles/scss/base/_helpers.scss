@@ -9,11 +9,19 @@
   margin-right: auto;
 }
 
-.wrapper {
+.wrapper,
+.wrap {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.wrapper {
+  align-items: flex-start;
+}
+
+.wrap {
+  align-items: center;
 }
 
 .section-title {

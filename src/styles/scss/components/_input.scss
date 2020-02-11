@@ -18,10 +18,6 @@
       margin-right: 30px;
     }
   }
-
-  &-text {
-    margin-bottom: 30px;
-  }
 }
 
 .form-callback {
@@ -35,5 +31,9 @@
   .input {
     background: #f7f7f7;
     box-shadow: inset 0 3px 7px 0 rgba(0, 0, 0, 0.04);
+
+    &-text {
+      margin-bottom: 30px;
+    }
   }
 }

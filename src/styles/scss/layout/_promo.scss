@@ -2,6 +2,7 @@
   padding-top: 65px;
 
   .content {
+
     padding-top: 65px;
     max-width: 40%;
   }
@@ -12,6 +13,7 @@
 
   &-item {
     margin-bottom: 28px;
+    overflow-wrap: break-word;
 
     &::before {
       content: url("/src/img/icons/check.svg");

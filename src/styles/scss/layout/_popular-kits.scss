@@ -18,7 +18,7 @@
 }
 
 .kit-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .kit-subtitle {
@@ -27,16 +27,18 @@
 }
 
 .kit-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 550px;
   padding: 45px;
 }
 
 .kit-items {
   text-align: left;
-  min-height: 310px;
 }
 
 .kit-item {
-  margin-bottom: 5px;
 
   &::before {
     content: "+";
@@ -44,8 +46,4 @@
     font-weight: 500;
     color: $text-important;
   }
-}
-
-.kit-button {
-  margin-top: 30px;
 }
