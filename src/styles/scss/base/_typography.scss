@@ -78,9 +78,14 @@ p {
 
 .button {
   font-weight: 700;
-  color: $text-invert;
 }
 
+.item-wrapper {
+  letter-spacing: 0.06rem;
+}
+
+.button,
+.item-wrapper,
 .product-description {
   color: $text-invert;
 }
@@ -93,8 +98,8 @@ p {
   color: $text-important-lighter;
 }
 
-.product-text,
-.product-heading {
+.catalog-text,
+.catalog-heading {
   text-overflow: ellipsis;
   white-space: nowrap; /* Запрещаем перенос строк */
   overflow: hidden;

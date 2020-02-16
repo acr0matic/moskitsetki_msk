@@ -45,12 +45,7 @@
 
 .page-head-image {
   padding-top: 65px;
-}
-
-.width-full {
   width: 100%;
-}
-
-.width-half {
-  width: 50%;
+  object-fit: cover;
+  min-height: 520px;
 }
