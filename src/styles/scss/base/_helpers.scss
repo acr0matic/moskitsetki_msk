@@ -13,13 +13,13 @@
 .wrap {
   display: flex;
   justify-content: space-between;
+  position: relative;
   width: 100%;
 }
 
 .wrapper {
   align-items: flex-start;
 }
-
 .wrap {
   align-items: center;
 }
@@ -42,6 +42,10 @@
     border: 1px solid #505050;
     border-radius: 50%;
   }
+}
+
+.page-head-image {
+  padding-top: 65px;
 }
 
 .width-full {

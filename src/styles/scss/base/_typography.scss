@@ -38,6 +38,7 @@ h2 {
   font-weight: 500;
 }
 
+.block-title,
 h1 {
   font-size: $font-1;
 }
@@ -54,8 +55,25 @@ h3,
   line-height: 30px;
 }
 
+h4 {
+  line-height: 24px;
+}
+
 p {
   font-size: $font-3;
+}
+
+.product-title {
+  font-weight: 400;
+  font-size: $font-3;
+}
+
+.product-title a {
+  color: $text-primary;
+}
+
+.block-title {
+  font-weight: 400;
 }
 
 
