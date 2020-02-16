@@ -76,7 +76,6 @@ p {
   font-weight: 400;
 }
 
-
 .button {
   font-weight: 700;
   color: $text-invert;
@@ -113,8 +112,18 @@ p {
 }
 
 .section-title {
-  .primary-heading {
+  .primary-heading,
+  .sub-heading {
     font-size: $font-1;
+  }
+
+  .primary-heading,
+  .secondary-heading {
+    text-align: center;
+  }
+
+  .sub-heading {
+    font-weight: 400;
   }
 
   .secondary-heading {
@@ -122,4 +131,3 @@ p {
     color: $text-secondary;
   }
 }
-
