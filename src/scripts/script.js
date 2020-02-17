@@ -23,26 +23,11 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-  const anchors = document.querySelectorAll('a[href*="#"]');
 
-  for (let anchor of anchors) {
-    anchor.addEventListener("click", function(e) {
-      e.preventDefault();
-
-      const blockID = anchor.getAttribute("href").substr(1);
-
-      document.getElementById(blockID).scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    });
-  }
-
-  var callbackButtons = document.querySelectorAll('[data-modal-callback]')
-
+  const callbackButtons = document.querySelectorAll("[data-modal-callback]");
   for (const button of callbackButtons) {
     button.addEventListener("click", () => {
-      MicroModal.show('modal-1')// [1]
-    })
+      MicroModal.show("modal-callback"); // [1]
+    });
   }
 });

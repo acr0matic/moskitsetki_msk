@@ -96,7 +96,7 @@
               <li class="advantages-item">Выезд специалиста бесплатно в день обращения</li>
             </ul>
             <div class="wrap">
-              <button class="button button-large">Подробнее</button>
+              <button data-anchor-button="#catalog" class="button button-large">Подробнее</button>
               <div class="social">
                 <span>Мы в соц. сетях:</span>
                 <a href="" class="social-link"><img src="" alt=""></a>
@@ -219,7 +219,7 @@
                 </ul>
               </div>
               <!-- /.kit-content -->
-              <button class="button button-kit button-center">Подробнее</button>
+              <button data-modal-callback class="button button-kit button-center">Подробнее</button>
             </div>
             <!-- /.kit-wrapper -->
           </div>
@@ -240,7 +240,7 @@
                 </ul>
               </div>
               <!-- /.kit-content -->
-              <button class="button button-kit button-center">Подробнее</button>
+              <button data-modal-callback class="button button-kit button-center">Подробнее</button>
             </div>
             <!-- /.kit-wrapper -->
           </div>
@@ -261,7 +261,7 @@
                 </ul>
               </div>
               <!-- /.kit-text -->
-              <button class="button button-kit button-center">Подробнее</button>
+              <button data-modal-callback class="button button-kit button-center">Подробнее</button>
             </div>
             <!-- /.kit-wrapper -->
           </div>
@@ -479,7 +479,7 @@
     </div>
   </footer>
 
-  <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <header class="modal__header">
@@ -505,6 +505,7 @@
   <!-- build:js -->
   <script src="scripts/swiper.js"></script>
   <script src="scripts/mircomodal.js"></script>
+  <script src="scripts/smoothscroll.js"></script>
   <script src="scripts/script.js"></script>
   <!-- endbuild -->
 

@@ -28,3 +28,9 @@ $font-5: 12px;
 
 // Максимальная ширина контейнера
 $container-max-width: 1240px !default;
+
+// Z-index для элементов страницы
+$first-layer: 1;
+$second-layer: 2;
+$third-layer: 3;
+$higher-layer: 10001;
