@@ -37,4 +37,12 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  var callbackButtons = document.querySelectorAll('[data-modal-callback]')
+
+  for (const button of callbackButtons) {
+    button.addEventListener("click", () => {
+      MicroModal.show('modal-1')// [1]
+    })
+  }
 });

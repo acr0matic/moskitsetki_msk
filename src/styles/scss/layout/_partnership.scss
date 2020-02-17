@@ -4,12 +4,21 @@
   justify-content: space-between;
 }
 
-.partner-logo {
-  width: 25%;
-  max-width: 295px;
+.partner-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23.5%;
+  padding: 15px;
+  box-shadow: 0 5px 15px 0 rgba(97, 51, 7, .2);
+  border-radius: 10px;
 
   @include between(1, 4) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
+}
+
+.partner-logo {
+  max-width: 100%;
 }
 
