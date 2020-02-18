@@ -50,6 +50,7 @@ h2 {
 }
 
 h3,
+.product-description,
 .kit-item,
 .feedback-description {
   line-height: 30px;
@@ -85,8 +86,7 @@ p {
 }
 
 .button,
-.item-wrapper,
-.product-description {
+.item-wrapper {
   color: $text-invert;
 }
 

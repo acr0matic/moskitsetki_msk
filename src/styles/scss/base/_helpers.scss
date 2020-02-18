@@ -28,6 +28,11 @@
   margin-bottom: 20px;
 }
 
+.product-heading {
+  padding-top: 140px;
+  padding-bottom: 15px;
+}
+
 .social {
   display: flex;
   align-items: center;
@@ -42,10 +47,22 @@
     border-radius: 50%;
   }
 }
-
+.product-page-image,
 .page-head-image {
-  padding-top: 65px;
   width: 100%;
   object-fit: cover;
-  min-height: 520px;
+  margin-bottom: 90px;
 }
+
+.page-head-image {
+  min-height: 520px;
+  padding-top: 65px;
+}
+
+.product-page-image {
+  min-height: 300px;
+}
+
+
+
+
