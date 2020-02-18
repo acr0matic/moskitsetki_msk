@@ -63,11 +63,10 @@
         </a>
         <nav class="menu">
           <ul class="nav">
-            <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Вкладка</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="production.html" class="nav-link">Продукция</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Наборы</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Отзывы</a></li>
           </ul>
         </nav>
         <div class="callback">
@@ -104,8 +103,8 @@
           commodi beatae laborum! Sunt minus repellat aspernatur laboriosam voluptate nihil dicta magni ex sequi aliquam quo ipsam eveniet minima voluptatibus adipisci at, autem maiores eaque. Ipsum recusandae deleniti eos soluta sit impedit voluptatum.
           Incidunt, veniam.</p>
 
-          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quo nulla eius nesciunt iusto recusandae earum magnam enim saepe voluptates! Culpa libero esse, in ratione nostrum error atque dolore perferendis beatae fuga amet a reprehenderit
-            maxime fugiat repellendus exercitationem.</p>
+        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quo nulla eius nesciunt iusto recusandae earum magnam enim saepe voluptates! Culpa libero esse, in ratione nostrum error atque dolore perferendis beatae fuga amet a reprehenderit
+          maxime fugiat repellendus exercitationem.</p>
       </div>
       <!-- /.container -->
     </section>
@@ -116,6 +115,14 @@
           <h2 class="sub-heading">Галерея</h2>
         </div>
         <!-- /.section-title -->
+        <div id="lightgallery" class="gallery">
+          <img src="img/gallery-item.jpg" alt="" class="gallery-item">
+          <img src="img/gallery-item.jpg" alt="" class="gallery-item">
+          <img src="img/gallery-item.jpg" alt="" class="gallery-item">
+          <img src="img/gallery-item.jpg" alt="" class="gallery-item">
+          <img src="img/gallery-item.jpg" alt="" class="gallery-item">
+        </div>
+        <!-- /.gallery -->
       </div>
       <!-- /.container -->
     </section>
@@ -126,28 +133,28 @@
           <h2 class="sub-heading">Другие товары</h2>
         </div>
         <div class="product-list-other">
-          <div class="product-item">
+          <div class="product-item-other">
             <a href=""><img class="product-image-other" src="img/product-photo.jpg" alt=""></a>
             <p class="product-price">от <strong>699р</strong></p>
             <h4 class="product-title"><a href="">Рулонные шторы М116 красный бархат</a></h4>
           </div>
           <!-- /.product-item -->
 
-          <div class="product-item">
+          <div class="product-item-other">
             <a href=""><img class="product-image-other" src="img/product-photo.jpg" alt=""></a>
             <p class="product-price">от <strong>699р</strong></p>
             <h4 class="product-title"><a href="">Рулонные шторы М116 красный бархат</a></h4>
           </div>
           <!-- /.product-item -->
 
-          <div class="product-item">
+          <div class="product-item-other">
             <a href=""><img class="product-image-other" src="img/product-photo.jpg" alt=""></a>
             <p class="product-price">от <strong>699р</strong></p>
             <h4 class="product-title"><a href="">Рулонные шторы М116 красный бархат</a></h4>
           </div>
           <!-- /.product-item -->
 
-          <div class="product-item">
+          <div class="product-item-other">
             <a href=""><img class="product-image-other" src="img/product-photo.jpg" alt=""></a>
             <p class="product-price">от <strong>699р</strong></p>
             <h4 class="product-title"><a href="">Рулонные шторы М116 красный бархат</a></h4>
@@ -198,7 +205,7 @@
     </div>
   </footer>
 
-  <div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
+  <div class="micromodal-slide" id="modal-callback" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <header class="modal__header">
@@ -219,6 +226,12 @@
       </div>
     </div>
   </div>
+
+  <div id="gallery-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="gallery-modal-content" id="gallery-modal-image" />
+  </div>
+  <!-- /.myModal -->
 
   <!-- Скрипты -->
   <!-- build:js -->

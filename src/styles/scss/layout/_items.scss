@@ -61,7 +61,13 @@
     max-width: 275px;
     min-height: 360px;
     margin-bottom: 50px;
+
+    &-other {
+      width: 24%;
+      max-width: unset;
+    }
   }
+
   &-image-other,
   &-image {
     border-radius: 10px;
