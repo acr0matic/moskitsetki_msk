@@ -9,6 +9,8 @@ body {
 small {
   font-size: $font-5;
 }
+
+label,
 .company-info,
 .politics,
 .button,
@@ -38,9 +40,14 @@ h2 {
   font-weight: 500;
 }
 
+.modal-title,
 .block-title,
 h1 {
   font-size: $font-1;
+}
+
+.title {
+  text-transform: uppercase;
 }
 
 p,
@@ -50,6 +57,7 @@ h2 {
 }
 
 h3,
+.modal-text,
 .product-description,
 .kit-item,
 .feedback-description {
@@ -79,10 +87,6 @@ p {
 
 .button {
   font-weight: 700;
-}
-
-.item-wrapper {
-  letter-spacing: 0.06rem;
 }
 
 .button,

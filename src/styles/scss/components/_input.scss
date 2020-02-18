@@ -37,3 +37,72 @@
     }
   }
 }
+
+.form-modal {
+  .input {
+    background: #f7f7f7;
+    box-shadow: inset 0 3px 7px 0 rgba(0, 0, 0, 0.04);
+
+    &-text {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+
+.checkbox label::before {
+  top: 3px;
+  left: -20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #dcdcdc;
+}
+
+.checkbox label::after {
+  content: url("../../img/icons/check.svg");
+  top: 3px;
+  left: -19px;
+}
+
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: url("../../img/icons/check.svg");
+
+  .checkbox input[type="checkbox"] + label::after {
+    content: none;
+  }
+  .checkbox input[type="checkbox"]:checked + label::after {
+    content: url("../../img/icons/check.svg");
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 20px 0;
+
+  input {
+    margin-right: 10px;
+  }
+}
