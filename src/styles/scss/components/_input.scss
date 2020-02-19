@@ -18,6 +18,17 @@
       margin-right: 30px;
     }
   }
+
+  &-info {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  &-color-info {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 
 .form-callback {
@@ -105,4 +116,50 @@
   input {
     margin-right: 10px;
   }
+}
+
+.radio {
+  display: none;
+
+  &-box {
+    max-width: 75px;
+  }
+
+  &-color-icon {
+    position: relative;
+
+    &:hover {
+      &::after {
+        transform: scale(0.9);
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      cursor: pointer;
+      width: 75px;
+      height: 75px;
+      border-radius: 10px;
+      margin-top: 3px;
+      border: 1px solid #dcdcdc;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+label[for="color-white"] {
+  &::after {
+    background-color: #ffffff;
+  }
+}
+
+label[for="color-brown"] {
+  &::after {
+    background-color: brown;
+  }
+}
+
+input[type="radio"]:checked + label::after {
+  transform: scale(0.7) rotate(45deg);
 }
