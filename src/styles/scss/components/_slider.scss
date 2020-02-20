@@ -9,6 +9,7 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+  z-index: $first-layer;
   top: 45%;
 }
 

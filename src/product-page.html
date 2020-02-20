@@ -133,19 +133,19 @@
           <h2 class="sub-heading">Рассчитать стоимость</h2>
         </div>
         <!-- /.section-title -->
-        <div class="calculator">
+        <form class="calculator">
           <h3 class="calculator-title">Москитная сетка</h3>
           <div class="calculator-wrapper">
             <div class="calculator-column">
               <h3 class="calculator-title">Размеры</h3>
               <div class="calculator-block input-wrapper">
                 <label class="input-label">
-                  <span class="input-info">высота</span>
-                  <input class="input input-text" type="text"  placeholder="Например, 200см">
+                  <span class="input-info">высота (макс. 300см)</span>
+                  <input class="input input-text input-shadow" type="number" max="300" placeholder="Например, 200см">
                 </label>
                 <label class="input-label">
-                  <span class="input-info">ширина</span>
-                  <input class="input input-text" type="text"  placeholder="Например, 200см">
+                  <span class="input-info">ширина (макс. 200см)</span>
+                  <input class="input input-text input-shadow" max="200" type="number"  placeholder="Например, 100см">
                 </label>
               </div>
               <!-- /.input-wrapper -->
@@ -160,40 +160,63 @@
             <div class="calculator-column">
               <h3 class="calculator-title">Цвет</h3>
               <div class="calculator-block calculator-color">
-                <div class="radio-box">
+                <div class="radio-box radio-box-color">
                   <input class="radio radio-color" type="radio" id="color-white" name="color" value="white">
                   <label class="calculator-heading radio-color-icon" for="color-white" class="radio-wrapper">белый</label>
                 </div>
                 <!-- /.radio-box -->
-                <div class="radio-box">
+                <div class="radio-box radio-box-color">
                   <input class="radio radio-color" type="radio" id="color-brown" name="color" value="brown">
                   <label class="calculator-heading radio-color-icon" for="color-brown" class="radio-wrapper">коричневый</label>
                 </div>
                 <!-- /.radio-box -->
-
               </div>
               <!-- /.calculator-color -->
 
               <h3 class="calculator-title">Крепежи</h3>
-              <div class="calculator-fasteners">
-                <label class="input-label">
-                  <span>Черный</span>
-                  <input class="radio radio-fasteners" type="radio" name="color" value="white">
-                </label>
-                <label class="input-label">
-                  <span>Черный</span>
-                  <input class="radio radio-fasteners" type="radio" name="color" value="brown">
-                </label>
+              <div class="calculator-block calculator-fasteners">
+                <div class="radio-box radio-box-fasteners">
+                  <input class="radio" type="radio" id="fasteners-plastic" name="fasteners" value="plastic">
+                  <label class="calculator-heading radio-fasteners" for="fasteners-plastic" class="radio-wrapper">пластик</label>
+                </div>
+                <!-- /.radio-box -->
+                <div class="radio-box radio-box-fasteners">
+                  <input class="radio" type="radio" id="fasteners-metal" name="fasteners" value="metal">
+                  <label class="calculator-heading radio-fasteners" for="fasteners-metal" class="radio-wrapper">металл</label>
+                </div>
+                <!-- /.radio-box -->
               </div>
-              <!-- /.calculator-color -->
+              <!-- /.calculator-fasteners -->
+
+              <div class="calculator-block calculator-advanced">
+                <div class="checkbox">
+                  <input type="checkbox" id="calculator-iron-knob" />
+                  <label for="calculator-iron-knob">металлические ручки</label>
+                  <span>+700р</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="calculator-install" />
+                  <label for="calculator-install">установка</label>
+                  <span>+1000р</span>
+                </div>
+              </div>
+              <!-- /.calculator-advanced -->
+
+              <div class="calculator-block calculator-final">
+                <h3 class="calculator-title">Итого:</h3>
+                <div class="calculator-order">
+                  <span class="calculator-price">0р</span>
+                  <button class="button button-large">Заказать</button>
+                </div>
+                <!-- /.calculator-order -->
+              </div>
+              <!-- /.calculator-column -->
             </div>
-            <!-- /.calculator-column -->
+            <!-- /.calculator-wrapper -->
           </div>
-          <!-- /.calculator-wrapper -->
-        </div>
-        <!-- /.calculator -->
-      </div>
-      <!-- /.container -->
+          <!-- /.calculator -->
+        </form>
+        <!-- /.container -->
     </section>
 
     <section id="other-products">
@@ -281,8 +304,8 @@
         <form class="form form-modal" action="">
           <h2 class="modal-title">Заказать обратный звонок</h2>
           <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем удобное время и дату</p>
-          <input class="input input-text" type="text" name="" placeholder="Ваше имя">
-          <input class="input input-text" type="text" name="" placeholder="Ваше имя">
+          <input class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
+          <input class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
           <div class="checkbox">
             <input type="checkbox" id="accept" />
             <label for="accept">Я согласен на обработку моих персональных данных согласно условиям <a href="" class="politics">политики конфиденциальности</a></label>
