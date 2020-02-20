@@ -24,6 +24,15 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
   const callbackButtons = document.querySelectorAll("[data-modal-callback]");
+  const callbackAccept = document.getElementById("modal-callback-accept");
+  const politicsAccept = document.getElementById("accept");
+
+  politicsAccept.addEventListener("change", event => {
+    if (event.target.checked) callbackAccept.removeAttribute("disabled", "disabled");
+    else callbackAccept.setAttribute("disabled", "disabled");
+  });
+
+
   for (const button of callbackButtons) {
     button.addEventListener("click", () => {
       MicroModal.show("modal-callback"); // [1]

@@ -274,8 +274,8 @@
     <section id="callback">
       <div class="container">
         <div class="section-title">
-          <h2 class="primary-heading">Наш каталог товаров и услуг</h2>
-          <p class="secondary-heading">Посмотрите, что мы можем вам предложить</p>
+          <h2 class="primary-heading">У вас возникли вопросы?</h2>
+          <p class="secondary-heading">Оставьте заявку, и мы вам перезвоним!</p>
         </div>
         <form class="form form-callback" action="">
           <input class="input input-text" type="text" name="" placeholder="Ваше имя">
@@ -363,6 +363,8 @@
                 </div>
                 <!-- /.feedback-text -->
               </div>
+              <!-- /.swiper-slide -->
+
               <div class="swiper-slide feedback-card">
                 <img src="img/avatar.jpg" alt="" class="avatar">
                 <div class="feedback-text">
@@ -376,32 +378,23 @@
                 </div>
                 <!-- /.feedback-text -->
               </div>
+              <!-- /.swiper-slide -->
+
               <div class="swiper-slide feedback-card">
                 <img src="img/avatar.jpg" alt="" class="avatar">
                 <div class="feedback-text">
-                  <p class="feedback-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                  <p class="feedback-description">Добрый день! Заказывали у вас сетки в Видное. Спасибо большое, все быстро и качественно. Теперь живем с открытыми окнами - это такой кайф :)</p>
                   <div class="feedback-info">
-                    <span class="name">Иван Гордиенко</span>
-                    <a href="" class="social-link"><img class="social-icon" src="" alt=""></a>
+                    <span class="name">Александра Иванова</span>
+                    <a href="https://www.instagram.com/izuminka.msk/" class="social-link"><img class="social-icon" src="img/icons/instagram.svg" alt=""></a>
                     <time>22.01.2020</time>
                   </div>
                   <!-- /.feedback-info -->
                 </div>
                 <!-- /.feedback-text -->
               </div>
-              <div class="swiper-slide feedback-card">
-                <img src="img/avatar.jpg" alt="" class="avatar">
-                <div class="feedback-text">
-                  <p class="feedback-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                  <div class="feedback-info">
-                    <span class="name">Иван Гордиенко</span>
-                    <a href="" class="social-link"><img class="social-icon" src="" alt=""></a>
-                    <time>22.01.2020</time>
-                  </div>
-                  <!-- /.feedback-info -->
-                </div>
-                <!-- /.feedback-text -->
-              </div>
+              <!-- /.swiper-slide -->
+
             </div>
           </div>
           <!-- /.swiper-container -->
@@ -485,13 +478,13 @@
           <h2 class="modal-title">Заказать обратный звонок</h2>
           <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем удобное время и дату</p>
           <input class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
-          <input class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
+          <input class="input input-text input-shadow" type="number" name="" placeholder="Ваш телефон">
           <div class="checkbox">
             <input type="checkbox" id="accept" />
             <label for="accept">Я согласен на обработку моих персональных данных согласно условиям <a href="" class="politics">политики конфиденциальности</a></label>
           </div>
           <!-- /.politics -->
-          <button class="button button-large button-form">Заказать</button>
+          <button disabled id="modal-callback-accept" class="button button-large button-form">Заказать</button>
         </form>
       </div>
       <!-- /.modal__container -->

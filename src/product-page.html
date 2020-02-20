@@ -140,12 +140,12 @@
               <h3 class="calculator-title">Размеры</h3>
               <div class="calculator-block input-wrapper">
                 <label class="input-label">
-                  <span class="input-info">высота (макс. 300см)</span>
-                  <input class="input input-text input-shadow" type="number" max="300" placeholder="Например, 200см">
+                  <span class="input-info">высота</span>
+                  <input id="calculator-height" class="input input-text input-shadow" type="number"  placeholder="Например, 200см">
                 </label>
                 <label class="input-label">
-                  <span class="input-info">ширина (макс. 200см)</span>
-                  <input class="input input-text input-shadow" max="200" type="number"  placeholder="Например, 100см">
+                  <span class="input-info">ширина</span>
+                  <input id="calculator-width" class="input input-text input-shadow"  type="number"  placeholder="Например, 100см">
                 </label>
               </div>
               <!-- /.input-wrapper -->
@@ -159,7 +159,7 @@
             <!-- /.calculator-column -->
             <div class="calculator-column">
               <h3 class="calculator-title">Цвет</h3>
-              <div class="calculator-block calculator-color">
+              <div id="calculator-color" class="calculator-block calculator-color">
                 <div class="radio-box radio-box-color">
                   <input class="radio radio-color" type="radio" id="color-white" name="color" value="white">
                   <label class="calculator-heading radio-color-icon" for="color-white" class="radio-wrapper">белый</label>
@@ -205,8 +205,8 @@
               <div class="calculator-block calculator-final">
                 <h3 class="calculator-title">Итого:</h3>
                 <div class="calculator-order">
-                  <span class="calculator-price">0р</span>
-                  <button class="button button-large">Заказать</button>
+                  <span id="calculator-price" class="calculator-price">0р</span>
+                  <button disabled id="calculator-order-button" class="button button-large">Заказать</button>
                 </div>
                 <!-- /.calculator-order -->
               </div>
@@ -305,13 +305,13 @@
           <h2 class="modal-title">Заказать обратный звонок</h2>
           <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем удобное время и дату</p>
           <input class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
-          <input class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
+          <input class="input input-text input-shadow" type="number" name="" placeholder="Ваш телефон">
           <div class="checkbox">
             <input type="checkbox" id="accept" />
             <label for="accept">Я согласен на обработку моих персональных данных согласно условиям <a href="" class="politics">политики конфиденциальности</a></label>
           </div>
           <!-- /.politics -->
-          <button class="button button-large button-form">Заказать</button>
+          <button disabled id="modal-callback-accept" class="button button-large button-form">Заказать</button>
         </form>
       </div>
       <!-- /.modal__container -->
@@ -331,6 +331,8 @@
   <script src="scripts/swiper.js"></script>
   <script src="scripts/mircomodal.js"></script>
   <script src="scripts/smoothscroll.js"></script>
+  <script src="script/countup.js"></script>
+  <script src="scripts/calculator.js"></script>
   <script src="scripts/script.js"></script>
   <!-- endbuild -->
 
