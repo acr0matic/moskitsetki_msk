@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
     var mySwiper = new Swiper(".swiper-container", {
       // Optional parameters
       loop: true,
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 30,
 
       // If we need pagination
@@ -20,6 +20,12 @@ window.addEventListener("DOMContentLoaded", () => {
       // And if we need scrollbar
       scrollbar: {
         el: ".swiper-scrollbar"
+      },
+
+      breakpoints: {
+        1024: {
+          slidesPerView: 2,
+        }
       }
     });
 

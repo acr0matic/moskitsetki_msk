@@ -37,14 +37,23 @@ span {
 
 .button-large,
 .feedback-info .name,
+p,
 h3,
 li {
   font-size: $font-3;
+
+  @include breakpoint($laptop) {
+    font-size: $font-3 - 2;
+  }
 }
 
 h2 {
   font-size: $font-2;
   font-weight: 500;
+
+  @include breakpoint($laptop) {
+    font-size: $font-2 - 6;
+  }
 }
 
 .calculator-price,
@@ -52,6 +61,10 @@ h2 {
 .block-title,
 h1 {
   font-size: $font-1;
+
+  @include breakpoint($laptop) {
+    font-size: $font-1 - 10;
+  }
 }
 
 .title {
@@ -74,10 +87,6 @@ h3,
 
 h4 {
   line-height: 24px;
-}
-
-p {
-  font-size: $font-3;
 }
 
 .calculator-title {

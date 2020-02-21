@@ -2,14 +2,31 @@
   padding-top: 65px;
 
   .content {
-
     padding-top: 65px;
     max-width: 40%;
+
+    @include breakpoint($laptop) {
+      padding-top: 35px;
+    }
+  }
+
+  span {
+    @include breakpoint($laptop) {
+      display: none;
+    }
+  }
+
+  .promo-image {
+    width: 55%;
   }
 }
 
 .advantages {
   margin-top: 64px;
+
+  @include breakpoint($laptop) {
+    margin-top: 15px;
+  }
 
   &-item {
     margin-bottom: 28px;

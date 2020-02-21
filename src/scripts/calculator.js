@@ -8,6 +8,7 @@ var prices = {
 var widthField = document.getElementById("calculator-width");
 var heightField = document.getElementById("calculator-height");
 var colors = document.querySelectorAll(".radio-color");
+var fasteners = document.querySelectorAll(".radio-input-fasteners");
 
 var priceElement = document.getElementById("calculator-price");
 var ironCnob = document.getElementById("calculator-iron-knob");
@@ -16,7 +17,7 @@ var install = document.getElementById("calculator-install");
 var accept = document.getElementById("calculator-order-button");
 
 var price = 0;
-var color, width, height;
+var color, fastener, width, height;
 
 ironCnob.addEventListener("change", event => {
   if (event.target.checked) IncreasePrice(prices.ironCnob);
@@ -42,7 +43,18 @@ for (const colorValue of colors) {
   colorValue.addEventListener("change", () => {
     color = colorValue.getAttribute("value");
     CheckState();
-  })
+  });
+}
+
+for (const fastenersValue of fasteners) {
+  fastenersValue.addEventListener("change", () => {
+    fastener = fastenersValue.getAttribute("value");
+
+    if (fastener == "metal") IncreasePrice(prices.fastenersMetal);
+    else if (price != 0) DecreasePrice(prices.fastenersMetal);
+
+    CheckState();
+  });
 }
 
 function IncreasePrice(cost) {
