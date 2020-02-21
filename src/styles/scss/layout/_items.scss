@@ -59,9 +59,13 @@
   &-item {
     width: 100%;
     max-width: 275px;
-    min-height: 360px;
+    height: 360px;
     margin-bottom: 50px;
 
+    @include breakpoint($laptop) {
+      width: 200px;
+      height: 300px;
+    }
 
     &-other {
       width: 24%;
@@ -77,6 +81,10 @@
     height: 265px;
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 
+    @include breakpoint($laptop) {
+      width: 200px;
+      height: 200px;
+    }
 
     &-other {
       height: 180px;
