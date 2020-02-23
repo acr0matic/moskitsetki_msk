@@ -11,11 +11,27 @@
 .swiper-button-next {
   z-index: $first-layer;
   top: 45%;
+  outline: none;
 }
 
 .swiper-slide {
   margin-bottom: 80px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
+}
+
+#popular-kits {
+  .swiper-button-prev {
+    left: -15px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+
+    @include breakpoint($tablet) {
+      display: block;
+    }
+  }
 }
 
 // .swiper-button-prev {
@@ -24,4 +40,3 @@
 // .swiper-button-next {
 //   right: 21%;
 // }
-

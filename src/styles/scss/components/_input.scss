@@ -45,6 +45,10 @@
   .input-text {
     width: 30%;
     margin-right: 30px;
+
+    @include breakpoint($tablet) {
+      width: 100%;
+    }
   }
 }
 

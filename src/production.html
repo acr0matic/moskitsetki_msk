@@ -44,9 +44,6 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <!-- И для Яндекс.Браузера -->
-  <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade" />
-
   <!-- Стили -->
   <!-- build:css -->
   <link rel="stylesheet" href="styles/compiled/style.css" />
@@ -58,15 +55,15 @@
   <header id="header">
     <div class="container">
       <div class="wrap">
-        <a href="#other">
+        <a href="#">
           <img src="img/logo.svg" alt="" class="logo" />
         </a>
         <nav class="menu">
           <ul class="nav">
             <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
             <li class="nav-item"><a href="production.html" class="nav-link">Продукция</a></li>
-            <li class="nav-item"><a href="index.html#popular-kits" class="nav-link">Наборы</a></li>
-            <li class="nav-item"><a href="index.html#feedback" class="nav-link">Отзывы</a></li>
+            <li class="nav-item"><a href="#popular-kits" class="nav-link">Наборы</a></li>
+            <li class="nav-item"><a href="#feedback" class="nav-link">Отзывы</a></li>
           </ul>
         </nav>
         <div class="callback">
@@ -75,6 +72,11 @@
         </div>
         <!-- /.callback -->
         <button data-modal-callback class="button">Заказать звонок</button>
+        <button class="button-mobile">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
       </div>
       <!-- /.button-wrapper -->
     </div>

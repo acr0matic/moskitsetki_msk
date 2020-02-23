@@ -29,6 +29,10 @@
   @include breakpoint($laptop) {
     height: 205px;
   }
+
+  @include breakpoint($tablet) {
+    width: 49%;
+  }
 }
 
 .catalog-image {

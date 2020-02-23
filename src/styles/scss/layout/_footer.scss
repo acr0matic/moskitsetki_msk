@@ -3,6 +3,10 @@
 // -----------------------------------------------------------------------------
 
 #footer {
+  .wrapper {
+    align-items: center;
+  }
+  
   padding: 40px 0;
   background: #f9fcff;
 
@@ -21,5 +25,11 @@
 
   .social {
     margin-left: auto;
+
+    @include breakpoint($tablet) {
+      span {
+        display: none;
+      }
+    }
   }
 }

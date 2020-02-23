@@ -4,6 +4,10 @@
   &-callback {
     align-items: center;
     justify-content: center;
+
+    @include breakpoint($tablet) {
+      flex-direction: column;
+    }
   }
 
   &-contact {

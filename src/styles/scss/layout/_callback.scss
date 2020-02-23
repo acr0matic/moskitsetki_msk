@@ -1,4 +1,18 @@
 #callback {
   background-color: #f9fcff;
   padding: 80px;
+
+  .input {
+    @include breakpoint($tablet) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .button {
+    @include breakpoint($tablet) {
+      margin-left: auto;
+    }
+  }
 }

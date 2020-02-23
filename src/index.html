@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <!-- Базовые мета-теги для поисковиков -->
@@ -44,9 +44,6 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <!-- И для Яндекс.Браузера -->
-  <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade" />
-
   <!-- Стили -->
   <!-- build:css -->
   <link rel="stylesheet" href="styles/compiled/style.css" />
@@ -75,6 +72,11 @@
         </div>
         <!-- /.callback -->
         <button data-modal-callback class="button">Заказать звонок</button>
+        <button class="button-mobile">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
       </div>
       <!-- /.button-wrapper -->
     </div>
@@ -201,72 +203,84 @@
           <p class="secondary-heading">Самые популярые конфигурации сеток и штор</p>
         </div>
         <!-- /.section-title -->
+        <div class="slider">
+          <div class="container">
+            <div class="swiper-container swiper-kits">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper ">
+                <!-- Slides -->
+                <div class="swiper-slide kit">
+                  <img class="kit-image" src="img/kit-image.jpg" alt="">
+                  <div class="kit-wrapper">
+                    <div class="kit-content">
+                      <h3 class="kit-title">Lorem ipsum dolor sit amet.</h3>
+                      <span class="kit-subtitle">Lorem ipsum dolor sit amet.</span>
+                      <ul class="kit-items">
+                        <li class="kit-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="kit-item">Deleniti mollitia laboriosam</li>
+                        <li class="kit-item">Obcaecati quibusdam reprehe</li>
+                        <li class="kit-item">Perferendis distinctio aspernatur accusamus odit.</li>
+                        <li class="kit-item">Nobis impedit ipsam eos possimus.</li>
+                      </ul>
+                    </div>
+                    <!-- /.kit-content -->
+                    <button data-modal-callback class="button button-kit button-center">Подробнее</button>
+                  </div>
+                  <!-- /.kit-wrapper -->
+                </div>
+                <!-- /.kit -->
 
-        <div class="kits">
-          <div class="kit">
-            <img class="kit-image" src="img/kit-image.jpg" alt="">
-            <div class="kit-wrapper">
-              <div class="kit-content">
-                <h3 class="kit-title">Lorem ipsum dolor sit amet.</h3>
-                <span class="kit-subtitle">Lorem ipsum dolor sit amet.</span>
-                <ul class="kit-items">
-                  <li class="kit-item">Lorem ipsum dolor sit amet.</li>
-                  <li class="kit-item">Deleniti mollitia laboriosam</li>
-                  <li class="kit-item">Obcaecati quibusdam reprehe</li>
-                  <li class="kit-item">Perferendis distinctio aspernatur accusamus odit.</li>
-                  <li class="kit-item">Nobis impedit ipsam eos possimus.</li>
-                </ul>
-              </div>
-              <!-- /.kit-content -->
-              <button data-modal-callback class="button button-kit button-center">Подробнее</button>
-            </div>
-            <!-- /.kit-wrapper -->
-          </div>
-          <!-- /.kit -->
+                <div class="swiper-slide kit">
+                  <img class="kit-image" src="img/kit-image.jpg" alt="">
+                  <div class="kit-wrapper">
+                    <div class="kit-content">
+                      <h3 class="kit-title">Lorem ipsum dolor sit amet.</h3>
+                      <span class="kit-subtitle">Lorem ipsum dolor sit amet.</span>
+                      <ul class="kit-items">
+                        <li class="kit-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="kit-item">Deleniti mollitia laboriosam</li>
+                        <li class="kit-item">Obcaecati quibusdam reprehe</li>
+                        <li class="kit-item">Perferendis distinctio aspernatur accusamus odit.</li>
+                        <li class="kit-item">Nobis impedit ipsam eos possimus.</li>
+                      </ul>
+                    </div>
+                    <!-- /.kit-content -->
+                    <button data-modal-callback class="button button-kit button-center">Подробнее</button>
+                  </div>
+                  <!-- /.kit-wrapper -->
+                </div>
+                <!-- /.kit -->
 
-          <div class="kit">
-            <img class="kit-image" src="img/kit-image.jpg" alt="">
-            <div class="kit-wrapper">
-              <div class="kit-content">
-                <h3 class="kit-title">Lorem ipsum dolor sit amet</h3>
-                <span class="kit-subtitle">Lorem ipsum dolor sit amet.</span>
-                <ul class="kit-items">
-                  <li class="kit-item">Lorem ipsum dolor sit amet.</li>
-                  <li class="kit-item">Deleniti mollitia laboriosam tenetur voluptatum.</li>
-                  <li class="kit-item">Obcaecati quibusdam reprehenderit ratione ipsa.</li>
-                  <li class="kit-item">Perferendis distinctio aspernatur accusamus odit.</li>
-                  <li class="kit-item">Nobis impedit ipsam eos possimus.</li>
-                </ul>
-              </div>
-              <!-- /.kit-content -->
-              <button data-modal-callback class="button button-kit button-center">Подробнее</button>
-            </div>
-            <!-- /.kit-wrapper -->
-          </div>
-          <!-- /.kit -->
+                <div class="swiper-slide kit">
+                  <img class="kit-image" src="img/kit-image.jpg" alt="">
+                  <div class="kit-wrapper">
+                    <div class="kit-content">
+                      <h3 class="kit-title">Lorem ipsum dolor sit amet.</h3>
+                      <span class="kit-subtitle">Lorem ipsum dolor sit amet.</span>
+                      <ul class="kit-items">
+                        <li class="kit-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="kit-item">Deleniti mollitia laboriosam</li>
+                        <li class="kit-item">Obcaecati quibusdam reprehe</li>
+                        <li class="kit-item">Perferendis distinctio aspernatur accusamus odit.</li>
+                        <li class="kit-item">Nobis impedit ipsam eos possimus.</li>
+                      </ul>
+                    </div>
+                    <!-- /.kit-content -->
+                    <button data-modal-callback class="button button-kit button-center">Подробнее</button>
+                  </div>
+                  <!-- /.kit-wrapper -->
+                </div>
+                <!-- /.kit -->
 
-          <div class="kit">
-            <img class="kit-image" src="img/kit-image.jpg" alt="">
-            <div class="kit-wrapper">
-              <div class="kit-content">
-                <h3 class="kit-title">Lorem ipsum dolor sit amet.</h3>
-                <span class="kit-subtitle">Lorem ipsum dolor sit amet.</span>
-                <ul class="kit-items">
-                  <li class="kit-item">Lorem ipsum dolor sit amet.</li>
-                  <li class="kit-item">Deleniti mollitia laboriosam tenetur voluptatum.</li>
-                  <li class="kit-item">Obcaecati quibusdam reprehenderit ratione ipsa.</li>
-                  <li class="kit-item">Perferendis distinctio aspernatur accusamus odit.</li>
-                  <li class="kit-item">Nobis impedit ipsam eos possimus.</li>
-                </ul>
               </div>
-              <!-- /.kit-text -->
-              <button data-modal-callback class="button button-kit button-center">Подробнее</button>
             </div>
-            <!-- /.kit-wrapper -->
+            <!-- /.swiper-container -->
           </div>
-          <!-- /.kit -->
+          <!-- /.container -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <!-- /.kits -->
+        <!-- /.slider -->
       </div>
       <!-- /.container -->
     </section>
@@ -343,7 +357,7 @@
     <section id="feedback">
       <div class="slider">
         <div class="container">
-          <div class="swiper-container">
+          <div class="swiper-container swiper-feedback">
             <div class="section-title">
               <h2 class="primary-heading">Отзывы наших клиентов</h2>
             </div>

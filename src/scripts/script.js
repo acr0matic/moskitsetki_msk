@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
-  if (document.body.contains(document.querySelector(".swiper-container")))
-    var mySwiper = new Swiper(".swiper-container", {
+  if (document.body.contains(document.querySelector(".swiper-feedback")))
+    var feedbackSlider = new Swiper(".swiper-feedback", {
       // Optional parameters
       loop: true,
       slidesPerView: 1,
@@ -23,8 +23,44 @@ window.addEventListener("DOMContentLoaded", () => {
       },
 
       breakpoints: {
+        1180: {
+          slidesPerView: 2
+        }
+      }
+    });
+
+  if (document.body.contains(document.querySelector(".swiper-kits")))
+    var kitsSlider = new Swiper(".swiper-kits", {
+      // Optional parameters
+      loop: true,
+      spaceBetween: 30,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination"
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar"
+      },
+
+      breakpoints: {
+        540: {
+          slidesPerView: 2
+        },
+        761: {
+          slidesPerView: 3
+        },
         1024: {
-          slidesPerView: 2,
+          allowSlidePrev: false,
+          allowSlideNext: false
         }
       }
     });
@@ -34,10 +70,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const politicsAccept = document.getElementById("accept");
 
   politicsAccept.addEventListener("change", event => {
-    if (event.target.checked) callbackAccept.removeAttribute("disabled", "disabled");
+    if (event.target.checked)
+      callbackAccept.removeAttribute("disabled", "disabled");
     else callbackAccept.setAttribute("disabled", "disabled");
   });
-
 
   for (const button of callbackButtons) {
     button.addEventListener("click", () => {

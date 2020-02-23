@@ -16,11 +16,7 @@ $text-important-lighter: #ffc81e;
 
 // Цвета компонентов
 $component-button: #ffc827;
-$component-button-gradient: linear-gradient(
-  180deg,
-  rgba(255, 227, 69, 1) 0%,
-  rgba(255, 194, 34, 1) 100%
-);
+$component-button-gradient: linear-gradient(180deg, rgba(255, 227, 69, 1) 0%, rgba(255, 194, 34, 1) 100%);
 $component-button-shadow: #f9a123;
 
 // Размеры шрифтов
@@ -45,4 +41,4 @@ $calculator-brown: #a06e2c;
 
 // Точки для медиа-запросов
 $laptop: max-width 1024px;
-
+$tablet: max-width 768px;

@@ -36,6 +36,31 @@
     width: 30%;
   }
 
+  &-mobile {
+    display: none;
+
+    width: 36px;
+    height: 38px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: #000000;
+    font-size: 32px;
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+
+    @include breakpoint($tablet) {
+      display: block;
+    }
+  }
+
   &-center {
     margin-left: auto;
     margin-right: auto;
