@@ -5,9 +5,19 @@
   padding: 50px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 
+  .input {
+    @include breakpoint($tablet) {
+      margin-bottom: 22px;
+    }
+  }
+
   &-wrapper {
     display: flex;
     justify-content: center;
+
+    @include breakpoint($tablet) {
+      justify-content: space-between;
+    }
   }
 
   &-title {
@@ -17,6 +27,11 @@
   &-column {
     width: 50%;
     padding: 40px;
+
+    @include breakpoint($tablet) {
+      width: 47%;
+      padding: 10px;
+    }
   }
 
   &-block {
@@ -42,11 +57,21 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+  }
+
+  &-price {
+    margin-bottom: 30px;
   }
 
   &-order {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include breakpoint($tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }

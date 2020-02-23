@@ -31,7 +31,7 @@
   cursor: pointer;
   outline: none;
   border: 0;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .modal__close:hover {
@@ -43,11 +43,9 @@
   font-size: 20px;
 }
 
-
 .modal-text {
   margin: 30px 0;
 }
-
 
 /**************************\
   Demo Animation Style
@@ -145,21 +143,24 @@
 
 /* Modal Content (Image) */
 .gallery-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: block;
   width: 95%;
   margin: auto;
   border-radius: 10px;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+  transform: translate(-50%, -50%);
+  // animation-name: zoom;
+  // animation-duration: 1s;
 }
-
 
 @keyframes zoom {
   from {
-    transform: scale(0);
+    opacity: 0;
   }
   to {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 
