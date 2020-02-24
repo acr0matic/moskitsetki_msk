@@ -1,10 +1,21 @@
-.feedback {
+#feedback {
+  .button {
+    margin-top: 80px;
+  }
+}
 
+.feedback {
   &-card {
     display: flex;
     align-items: center;
     height: 270px;
     border-radius: 10px;
+
+    @include breakpoint($phone-l) {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+    }
   }
 
   &-text {
@@ -25,5 +36,12 @@
     time {
       margin-left: auto;
     }
+  }
+}
+
+.avatar {
+  @include breakpoint($phone-l) {
+    border-radius: 20px;
+    margin-bottom: 15px;
   }
 }

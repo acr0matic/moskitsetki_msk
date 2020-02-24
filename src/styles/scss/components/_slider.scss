@@ -10,20 +10,49 @@
 .swiper-button-prev,
 .swiper-button-next {
   z-index: $first-layer;
-  top: 45%;
   outline: none;
+  top: 50%;
+}
+.swiper-button-prev {
+  left: 20%;
+}
+.swiper-button-next {
+  right: 20%;
 }
 
 .swiper-slide {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 }
 
-#popular-kits {
-  .swiper-button-prev {
-    left: -15px;
+.swiper {
+  &-controls {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 45px;
   }
 
+  &-pagination {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include breakpoint($tablet) {
+      display: block;
+    }
+
+    &-bullet-active {
+      background: $text-important-lighter;
+    }
+
+    span {
+      margin: 0 5px;
+    }
+  }
+}
+
+#popular-kits {
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
@@ -32,11 +61,11 @@
       display: block;
     }
   }
-}
+  &-pagination {
+    display: none;
 
-// .swiper-button-prev {
-//   left: 21%;
-// }
-// .swiper-button-next {
-//   right: 21%;
-// }
+    @include breakpoint($tablet) {
+      display: block;
+    }
+  }
+}

@@ -18,12 +18,24 @@
 
   @include first-child() {
     width: 49%;
+
+    @include breakpoint($phone-l) {
+      width: 100%;
+    }
   }
   @include last-child() {
     width: 49%;
+
+    @include breakpoint($phone-l) {
+      width: 100%;
+    }
   }
   @include between(1, 3) {
     margin-bottom: 2%;
+
+    @include breakpoint($phone-l) {
+      margin-bottom: 20px;
+    }
   }
 
   @include breakpoint($laptop) {
@@ -32,6 +44,11 @@
 
   @include breakpoint($tablet) {
     width: 49%;
+  }
+
+  @include breakpoint($phone-l) {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 

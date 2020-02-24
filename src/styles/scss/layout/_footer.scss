@@ -6,7 +6,7 @@
   .wrapper {
     align-items: center;
   }
-  
+
   padding: 40px 0;
   background: #f9fcff;
 
@@ -17,6 +17,12 @@
   .wrapper:last-child {
     justify-content: flex-start;
     margin-top: 45px;
+
+    @include breakpoint($phone-l) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .politics {
@@ -30,6 +36,10 @@
       span {
         display: none;
       }
+    }
+
+    @include breakpoint($phone-l) {
+      margin-left: 0;
     }
   }
 }

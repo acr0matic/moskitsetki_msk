@@ -20,6 +20,10 @@
     padding: 90px;
 
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
+
+    @include breakpoint($phone-l) {
+      padding: 20px;
+    }
   }
 
   &-modal {

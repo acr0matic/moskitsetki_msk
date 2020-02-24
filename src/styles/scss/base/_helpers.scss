@@ -41,6 +41,10 @@
   display: flex;
   align-items: center;
 
+  @include breakpoint($phone-l) {
+    margin-top: 25px;
+  }
+
   &-link {
     margin-left: 14px;
   }

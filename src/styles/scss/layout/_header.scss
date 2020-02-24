@@ -9,6 +9,18 @@
   width: 100%;
   padding: 15px 0 20px 0;
   box-shadow: 0 8px 90px 0 rgba(0, 0, 0, 0.06);
+
+  .callback {
+    @include breakpoint($phone-l) {
+      display: none;
+    }
+  }
+
+  .button {
+    @include breakpoint($phone-l) {
+      display: none;
+    }
+  }
 }
 
 .menu {

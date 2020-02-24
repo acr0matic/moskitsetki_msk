@@ -1,15 +1,30 @@
 #contact {
+  .wrap {
+    flex-wrap: wrap;
+
+    @include breakpoint($phone-l) {
+      justify-content: center;
+    }
+  }
+
   .input {
     width: 100%;
   }
 
   .button {
     width: 48%;
+    @include breakpoint($phone-l) {
+      width: 100%;
+    }
   }
 
   .input-wrapper {
     .input {
       width: 48%;
+
+      @include breakpoint($phone-l) {
+        width: 100%;
+      }
     }
   }
 }

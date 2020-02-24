@@ -46,10 +46,6 @@ window.addEventListener("DOMContentLoaded", () => {
         prevEl: ".swiper-button-prev"
       },
 
-      // And if we need scrollbar
-      scrollbar: {
-        el: ".swiper-scrollbar"
-      },
 
       breakpoints: {
         540: {
