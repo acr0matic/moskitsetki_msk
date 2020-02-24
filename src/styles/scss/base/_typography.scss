@@ -103,8 +103,13 @@ h4 {
   }
 }
 
+.mobile-menu-link,
 .product-title a {
   color: $text-primary;
+}
+
+.mobile-menu-link {
+  font-size: $font-3;
 }
 
 .block-title {
