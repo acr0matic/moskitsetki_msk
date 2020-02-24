@@ -55,12 +55,10 @@ window.addEventListener("DOMContentLoaded", () => {
         540: {
           slidesPerView: 2
         },
-        761: {
-          slidesPerView: 3
-        },
         1024: {
+          slidesPerView: 3,
           allowSlidePrev: false,
-          allowSlideNext: false
+          allowSlideNext: false,
         }
       }
     });
