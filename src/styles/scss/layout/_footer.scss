@@ -5,6 +5,10 @@
 #footer {
   .wrapper {
     align-items: center;
+
+    @include breakpoint($phone-m) {
+      justify-content: center;
+    }
   }
 
   padding: 40px 0;
@@ -12,8 +16,11 @@
 
   .callback {
     margin-right: 0;
-  }
 
+    @include breakpoint($phone-m) {
+      display: none;
+    }
+  }
   .wrapper:last-child {
     justify-content: flex-start;
     margin-top: 45px;
