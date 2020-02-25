@@ -68,23 +68,6 @@ window.addEventListener("DOMContentLoaded", () => {
     else callbackAccept.setAttribute("disabled", "disabled");
   });
 
-  const mobileMenu = document.querySelector(".mobile-menu-wrapper");
-  const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
-  const mobileMenuOpenButton = document.getElementById("mobile-menu-open");
-  const mobileMenuCloseButton = document.getElementById("mobile-menu-close");
-
-  mobileMenuOpenButton.addEventListener("click", () => {
-    mobileMenu.classList.add("mobile-menu-visible");
-    mobileMenuOverlay.classList.add("mobile-menu-overlay-visible");
-  });
-
-  mobileMenuCloseButton.addEventListener("click", () => {
-    if (mobileMenu.classList.contains("mobile-menu-visible"))
-      mobileMenu.classList.remove("mobile-menu-visible");
-
-    if (mobileMenuOverlay.classList.contains("mobile-menu-overlay-visible"))
-      mobileMenuOverlay.classList.remove("mobile-menu-overlay-visible");
-  });
 
   for (const button of callbackButtons) {
     button.addEventListener("click", () => {

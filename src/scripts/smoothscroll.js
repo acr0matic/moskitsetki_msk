@@ -24,4 +24,5 @@ function SmoothScroll(blockID) {
     behavior: "smooth",
     block: "start"
   });
+  closeMobileMenu();
 }
