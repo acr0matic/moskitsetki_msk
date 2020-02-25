@@ -20,10 +20,10 @@
 
         @include breakpoint($phone-l) {
           margin-right: auto;
+        }
       }
     }
   }
-}
 
   &-curtains {
     .product-item {
@@ -68,8 +68,6 @@
   @include breakpoint($phone-m) {
     display: none;
   }
-
-
 }
 
 .product {
@@ -109,6 +107,13 @@
     &-other {
       width: 24%;
       max-width: unset;
+
+      @include breakpoint($phone-l) {
+        width: 45%;
+        @include between(1, 2) {
+          margin-bottom: 40px;
+        }
+      }
     }
   }
 

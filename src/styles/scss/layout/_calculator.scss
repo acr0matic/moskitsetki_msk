@@ -18,6 +18,12 @@
     @include breakpoint($tablet) {
       justify-content: space-between;
     }
+
+    @include breakpoint($phone-l) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &-title {
@@ -31,6 +37,10 @@
     @include breakpoint($tablet) {
       width: 47%;
       padding: 10px;
+    }
+
+    @include breakpoint($phone-l) {
+      width: 100%;
     }
   }
 

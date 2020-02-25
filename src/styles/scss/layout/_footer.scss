@@ -8,6 +8,7 @@
 
     @include breakpoint($phone-m) {
       justify-content: center;
+      text-align: center;
     }
   }
 
@@ -34,6 +35,11 @@
 
   .politics {
     margin-left: 40px;
+
+    @include breakpoint($phone-m) {
+      margin-top: 20px;
+      margin-left: 0;
+    }
   }
 
   .social {
