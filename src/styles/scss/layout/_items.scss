@@ -5,21 +5,39 @@
 .block {
   &-nets,
   &-curtains {
-    width: 50%;
+    width: 49%;
   }
 
   &-nets {
     .product-item {
+      @include breakpoint($phone-l) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       @include even {
         margin-right: 20px;
+
+        @include breakpoint($phone-l) {
+          margin-right: auto;
       }
     }
   }
+}
 
   &-curtains {
     .product-item {
+      @include breakpoint($phone-l) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       @include odd {
         margin-left: 20px;
+
+        @include breakpoint($phone-l) {
+          margin-left: auto;
+        }
       }
     }
   }
@@ -33,6 +51,10 @@
   &-title {
     text-align: center;
     margin-bottom: 30px;
+
+    @include breakpoint($phone-m) {
+      display: none;
+    }
   }
 }
 
@@ -42,6 +64,12 @@
   margin: 0 10px;
   margin-bottom: 150px;
   background-color: $text-info;
+
+  @include breakpoint($phone-m) {
+    display: none;
+  }
+
+
 }
 
 .product {
@@ -52,7 +80,9 @@
     justify-content: space-between;
 
     &-other {
-      justify-content: space-between;
+      @include breakpoint($phone-l) {
+        justify-content: space-around;
+      }
     }
   }
 
@@ -72,7 +102,9 @@
       height: 250px;
     }
 
-
+    @include breakpoint($phone-m) {
+      width: 135px;
+    }
 
     &-other {
       width: 24%;

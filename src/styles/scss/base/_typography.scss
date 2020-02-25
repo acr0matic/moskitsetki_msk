@@ -65,6 +65,11 @@ h1 {
   @include breakpoint($laptop) {
     font-size: $font-1 - 10;
   }
+
+
+  @include breakpoint($phone-m) {
+    font-size: $font-1 - 12;
+  }
 }
 
 .title {
@@ -164,7 +169,9 @@ h4 {
   .primary-heading,
   .secondary-heading {
     text-align: center;
+
   }
+
 
   .sub-heading {
     font-weight: 400;
