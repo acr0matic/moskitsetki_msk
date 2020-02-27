@@ -8,13 +8,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
       // If we need pagination
       pagination: {
-        el: ".swiper-pagination"
+        el: ".swiper-feedback-pagination"
       },
 
       // Navigation arrows
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".swiper-feedback-button-next",
+        prevEl: ".swiper-feedback-button-prev"
       },
 
       // And if we need scrollbar
@@ -37,13 +37,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
       // If we need pagination
       pagination: {
-        el: ".swiper-pagination"
+        el: ".swiper-kits-pagination"
       },
 
       // Navigation arrows
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".swiper-kits-button-next",
+        prevEl: ".swiper-kits-button-prev"
       },
 
       breakpoints: {
@@ -76,7 +76,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   var modal = document.getElementById("gallery-modal");
-  var images = document.getElementsByClassName("gallery-item");
+  var images = document.querySelectorAll(".gallery-item, .gallery-main-item");
   var modalImg = document.getElementById("gallery-modal-image");
 
   for (var i = 0; i < images.length; i++) {

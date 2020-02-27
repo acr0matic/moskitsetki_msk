@@ -62,7 +62,8 @@
       display: block;
     }
   }
-  &-pagination {
+
+  .swiper-pagination {
     display: none;
 
     @include breakpoint($tablet) {

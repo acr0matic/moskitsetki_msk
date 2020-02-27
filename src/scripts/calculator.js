@@ -2,8 +2,18 @@ var prices = {
   ironCnob: 200,
   install: 500,
   fastenersMetal: 300,
-  fastenersPlastic: 0
+  fastenersPlastic: 0,
+
+  antiPollen: 3499,
+  ultraview: 1499,
+  mosquito: 999,
+  cat: 2499,
+  dust: 1999,
+  plunger: 1199
 };
+
+var calculator = document.getElementById("calculation");
+var product = calculator.getAttribute("data-product");
 
 var widthField = document.getElementById("calculator-width");
 var heightField = document.getElementById("calculator-height");
@@ -16,26 +26,35 @@ var install = document.getElementById("calculator-install");
 
 var accept = document.getElementById("calculator-order-button");
 
-var price = 0;
-var color, fastener, width, height;
+var price = prices[product];
+var tempPrice = price;
+var color, width = 0, height = 0;
+
+ChangePrice();
 
 ironCnob.addEventListener("change", event => {
   if (event.target.checked) IncreasePrice(prices.ironCnob);
   else DecreasePrice(prices.ironCnob);
+
+  tempPrice = price;
 });
 
 install.addEventListener("change", event => {
   if (event.target.checked) IncreasePrice(prices.install);
   else DecreasePrice(prices.install);
+
+  tempPrice = price;
 });
 
 widthField.addEventListener("change", () => {
   width = widthField.value;
+  IncreasePrice(calculateSize());
   CheckState();
 });
 
 heightField.addEventListener("change", () => {
   height = heightField.value;
+  IncreasePrice(calculateSize());
   CheckState();
 });
 
@@ -46,15 +65,25 @@ for (const colorValue of colors) {
   });
 }
 
+var fastenerState = false;
 for (const fastenersValue of fasteners) {
   fastenersValue.addEventListener("change", () => {
-    fastener = fastenersValue.getAttribute("value");
+    if (fasteners[1].checked) {
+      IncreasePrice(prices.fastenersMetal);
+      fastenerState = true;
+    } else if (fastenerState) DecreasePrice(prices.fastenersMetal);
 
-    if (fastener == "metal") IncreasePrice(prices.fastenersMetal);
-    else if (price != 0) DecreasePrice(prices.fastenersMetal);
-
-    CheckState();
+    tempPrice = price;
   });
+}
+
+function calculateSize() {
+  price = tempPrice;
+  if ((parseInt(width) + parseInt(height) >= 200) && width && height) {
+    return parseInt(width) + parseInt(height) - 200;
+  } else {
+    return 0;
+  }
 }
 
 function IncreasePrice(cost) {
