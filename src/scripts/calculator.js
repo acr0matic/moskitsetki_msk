@@ -9,7 +9,14 @@ var prices = {
   mosquito: 999,
   cat: 2499,
   dust: 1999,
-  plunger: 1199
+  plunger: 1199,
+
+  plisse: 3999,
+  rollerBlinds: 1599,
+  blackout: 2199,
+  zebra: 3499,
+  jalousie: 999,
+  romanCurtains: 699
 };
 
 var calculator = document.getElementById("calculation");
