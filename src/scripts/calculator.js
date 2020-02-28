@@ -35,23 +35,27 @@ var accept = document.getElementById("calculator-order-button");
 
 var price = prices[product];
 var tempPrice = price;
-var color, width = 0, height = 0;
+var color,
+  width = 0,
+  height = 0;
 
 ChangePrice();
 
-ironCnob.addEventListener("change", event => {
-  if (event.target.checked) IncreasePrice(prices.ironCnob);
-  else DecreasePrice(prices.ironCnob);
+if (ironCnob)
+  ironCnob.addEventListener("change", event => {
+    if (event.target.checked) IncreasePrice(prices.ironCnob);
+    else DecreasePrice(prices.ironCnob);
 
-  tempPrice = price;
-});
+    tempPrice = price;
+  });
 
-install.addEventListener("change", event => {
-  if (event.target.checked) IncreasePrice(prices.install);
-  else DecreasePrice(prices.install);
+if (install)
+  install.addEventListener("change", event => {
+    if (event.target.checked) IncreasePrice(prices.install);
+    else DecreasePrice(prices.install);
 
-  tempPrice = price;
-});
+    tempPrice = price;
+  });
 
 widthField.addEventListener("change", () => {
   width = widthField.value;
@@ -86,7 +90,7 @@ for (const fastenersValue of fasteners) {
 
 function calculateSize() {
   price = tempPrice;
-  if ((parseInt(width) + parseInt(height) >= 200) && width && height) {
+  if (parseInt(width) + parseInt(height) >= 200 && width && height) {
     return parseInt(width) + parseInt(height) - 200;
   } else {
     return 0;

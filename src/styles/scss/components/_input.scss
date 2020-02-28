@@ -147,7 +147,7 @@
 
   &-box {
     &-color {
-      max-width: 75px;
+      max-width: 65px;
       margin-right: 15px;
 
       @include breakpoint($tablet) {
@@ -188,6 +188,7 @@
 
   &-color-icon {
     position: relative;
+    margin-bottom: 20px;
 
     &:hover {
       &::after {
@@ -199,16 +200,16 @@
       content: "";
       display: block;
       cursor: pointer;
-      width: 75px;
-      height: 75px;
+      width: 65px;
+      height: 65px;
       border-radius: 10px;
       margin-top: 3px;
       border: 1px solid #dcdcdc;
       transition: all 0.3s ease;
 
       @include breakpoint($tablet) {
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
       }
     }
   }
@@ -226,6 +227,48 @@ label[for="color-brown"] {
   }
 }
 
+label[for="color-red"] {
+  &::after {
+    background-color: $calculator-red;
+  }
+}
+
+label[for="color-yellow"] {
+  &::after {
+    background-color: $calculator-yellow;
+  }
+}
+
+label[for="color-black"] {
+  &::after {
+    background-color: $calculator-black;
+  }
+}
+
+label[for="color-green"] {
+  &::after {
+    background-color: $calculator-green;
+  }
+}
+
+label[for="color-blue"] {
+  &::after {
+    background-color: $calculator-blue;
+  }
+}
+
+label[for="color-gray"] {
+  &::after {
+    background-color: $calculator-gray;
+  }
+}
+
+label[for="color-purple"] {
+  &::after {
+    background-color: $calculator-purple;
+  }
+}
+
 label[for="fasteners-plastic"] {
   &::after {
     background-image: url("../../img/plastic-fasteners.jpg");
@@ -235,6 +278,24 @@ label[for="fasteners-plastic"] {
 label[for="fasteners-metal"] {
   &::after {
     background-image: url("../../img/metal-fasteners.jpg");
+  }
+}
+
+label[for="mount-screws"] {
+  &::after {
+    background-image: url("../../img/mount-screws.jpg");
+  }
+}
+
+label[for="mount-tape"] {
+  &::after {
+    background-image: url("../../img/mount-tape.jpg");
+  }
+}
+
+label[for="mount-cover"] {
+  &::after {
+    background-image: url("../../img/mount-cover.jpg");
   }
 }
 

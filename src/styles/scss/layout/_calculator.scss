@@ -54,6 +54,7 @@
 
   &-color {
     display: flex;
+    flex-wrap: wrap;
 
     .radio-color-icon {
       display: block;
