@@ -58,6 +58,57 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+  if (document.body.contains(document.querySelector(".block-nets")))
+    var blockNetsSlider = new Swiper(".block-nets", {
+      // Optional parameters
+      spaceBetween: 30,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-block-nets-pagination"
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-block-nets-button-next",
+        prevEl: ".swiper-block-nets-button-prev"
+      }
+    });
+
+  if (document.body.contains(document.querySelector(".block-curtains")))
+    var blockCurtainsSlider = new Swiper(".block-curtains", {
+      // Optional parameters
+      spaceBetween: 30,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-block-curtains-pagination"
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-block-curtains-button-next",
+        prevEl: ".swiper-block-curtains-button-prev"
+      }
+    });
+
+  if (document.body.contains(document.querySelector(".block-other")))
+    var blockOtherSlider = new Swiper(".block-other", {
+      // Optional parameters
+      spaceBetween: 30,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-block-other-pagination"
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-block-other-button-next",
+        prevEl: ".swiper-block-other-button-prev"
+      }
+    });
+
   const callbackButtons = document.querySelectorAll("[data-modal-callback]");
   const callbackAccept = document.getElementById("modal-callback-accept");
   const politicsAccept = document.getElementById("accept");
@@ -67,7 +118,6 @@ window.addEventListener("DOMContentLoaded", () => {
       callbackAccept.removeAttribute("disabled", "disabled");
     else callbackAccept.setAttribute("disabled", "disabled");
   });
-
 
   for (const button of callbackButtons) {
     button.addEventListener("click", () => {
@@ -89,11 +139,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   var span = document.getElementsByClassName("close")[0];
 
-  span.onclick = function() {
-    modal.style.display = "none";
-  };
+  if (document.body.contains(span))
+    span.onclick = function() {
+      modal.style.display = "none";
+    };
 
-  modal.onclick = function(e) {
-    if (e.target != modalImg) modal.style.display = "none";
-  };
+  if (document.body.contains(modal))
+    modal.onclick = function(e) {
+      if (e.target != modalImg) modal.style.display = "none";
+    };
 });

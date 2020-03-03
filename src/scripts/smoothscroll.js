@@ -26,3 +26,11 @@ function SmoothScroll(blockID) {
   });
   closeMobileMenu();
 }
+
+var swiperProductButton = document.querySelectorAll("[data-scroll-product]");
+
+for (const button of swiperProductButton) {
+  button.addEventListener("click", () => {
+    SmoothScroll("#items");
+  })
+}

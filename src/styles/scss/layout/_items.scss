@@ -6,6 +6,7 @@
   &-nets,
   &-curtains {
     width: 49%;
+    padding-bottom: 100px;
   }
 
   &-nets {
@@ -42,6 +43,14 @@
     }
   }
 
+  &-other {
+    padding-bottom: 70px;
+
+    .swiper-controls {
+      margin-top: -70px;
+    }
+  }
+
   &-list,
   &-titles {
     display: flex;
@@ -62,7 +71,7 @@
   align-self: stretch;
   width: 3px;
   margin: 0 10px;
-  margin-bottom: 150px;
+  margin-bottom: 75px;
   background-color: $text-info;
 
   @include breakpoint($phone-m) {
@@ -78,6 +87,7 @@
     justify-content: space-between;
 
     &-other {
+
       @include breakpoint($phone-l) {
         justify-content: space-around;
       }
