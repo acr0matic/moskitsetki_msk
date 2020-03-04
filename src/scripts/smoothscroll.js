@@ -20,10 +20,13 @@ for (let anchor of anchors) {
 }
 
 function SmoothScroll(blockID) {
-  document.getElementById(blockID).scrollIntoView({
+  var section = document.getElementById(blockID);
+
+  section.scrollIntoView({
     behavior: "smooth",
     block: "start"
   });
+  
   closeMobileMenu();
 }
 
@@ -32,5 +35,5 @@ var swiperProductButton = document.querySelectorAll("[data-scroll-product]");
 for (const button of swiperProductButton) {
   button.addEventListener("click", () => {
     SmoothScroll("#items");
-  })
+  });
 }
