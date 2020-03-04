@@ -124,28 +124,4 @@ window.addEventListener("DOMContentLoaded", () => {
       MicroModal.show("modal-callback"); // [1]
     });
   }
-
-  var modal = document.getElementById("gallery-modal");
-  var images = document.querySelectorAll(".gallery-item, .gallery-main-item");
-  var modalImg = document.getElementById("gallery-modal-image");
-
-  for (var i = 0; i < images.length; i++) {
-    var img = images[i];
-    img.onclick = function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-    };
-  }
-
-  var span = document.getElementsByClassName("close")[0];
-
-  if (document.body.contains(span))
-    span.onclick = function() {
-      modal.style.display = "none";
-    };
-
-  if (document.body.contains(modal))
-    modal.onclick = function(e) {
-      if (e.target != modalImg) modal.style.display = "none";
-    };
 });
