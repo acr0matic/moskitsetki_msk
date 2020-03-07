@@ -92,6 +92,24 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+  if (document.body.contains(document.querySelector(".calculator-wrapper")))
+    var swiperCalculator = new Swiper(".calculator-wrapper", {
+      // Optional parameters
+      slidesPerView: 2,
+      spaceBetween: 25,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-calculator-pagination"
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-calculator-button-next",
+        prevEl: ".swiper-calculator-button-prev"
+      }
+    });
+
   if (document.body.contains(document.querySelector(".block-other")))
     var blockOtherSlider = new Swiper(".block-other", {
       // Optional parameters
