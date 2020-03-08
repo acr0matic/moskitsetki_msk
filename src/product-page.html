@@ -214,15 +214,38 @@
                       <label class="calculator-heading radio-fasteners" for="fasteners-metal" class="radio-wrapper">металл</label>
                     </div>
                     <!-- /.radio-box -->
+
+                    <div class="radio-box radio-box-fasteners">
+                      <input class="radio radio-input-fasteners" type="radio" id="fasteners-plunger" name="fasteners" value="plunger">
+                      <label class="calculator-heading radio-fasteners" for="fasteners-plunger" class="radio-wrapper">плунжер</label>
+                    </div>
+                    <!-- /.radio-box -->
+                  </div>
+                  <!-- /.calculator-fasteners -->
+                  <button type="button" id="calculator-order-button" class="button button-large">Далее</button>
+                </div>
+                <!-- /.calculator-column -->
+              </div>
+              <!-- /.swipe-slide -->
+
+              <div class="swiper-slide">
+                <div class="calculator-column">
+                  <h3 class="calculator-title">Ручки</h3>
+                  <div class="calculator-block calculator-fasteners">
+                    <div class="radio-box radio-box-fasteners">
+                      <input class="radio radio-input-fasteners" type="radio" id="handle-plastic" name="handle" value="plastic">
+                      <label class="calculator-heading radio-fasteners" for="handle-plastic" class="radio-wrapper">пластик</label>
+                    </div>
+                    <!-- /.radio-box -->
+                    <div class="radio-box radio-box-fasteners">
+                      <input class="radio radio-input-fasteners" type="radio" id="handle-metal" name="handle" value="metal">
+                      <label class="calculator-heading radio-fasteners" for="handle-metal" class="radio-wrapper">металл</label>
+                    </div>
+                    <!-- /.radio-box -->
                   </div>
                   <!-- /.calculator-fasteners -->
 
                   <div class="calculator-block calculator-advanced">
-                    <div class="checkbox">
-                      <input type="checkbox" id="calculator-iron-knob" />
-                      <label for="calculator-iron-knob">металлические ручки</label>
-                      <span>+200р</span>
-                    </div>
                     <div class="checkbox">
                       <input type="checkbox" id="calculator-install" />
                       <label for="calculator-install">установка</label>
@@ -232,13 +255,56 @@
                   <!-- /.calculator-advanced -->
 
                   <div class="calculator-block calculator-final">
-                    <h3 class="calculator-title">Итого:</h3>
                     <div class="calculator-order">
-                      <span id="calculator-price" class="calculator-price">0р</span>
+                      <div class="calculator-order-text">
+                        <h3 class="calculator-title">Итого:</h3>
+                        <span id="calculator-price" class="calculator-price">0р</span>
+                      </div>
+                      <!-- /.calculator-order-text -->
                       <button disabled id="calculator-order-button" class="button button-large">Заказать</button>
                     </div>
                     <!-- /.calculator-order -->
                   </div>
+                  <!-- /.calculator-column -->
+                </div>
+                <!-- /.calculator-column -->
+              </div>
+              <!-- /.swipe-slide -->
+
+
+              <div class="swiper-slide">
+                <div class="calculator-column">
+                  <h3 class="calculator-title">Отчет</h3>
+                  <table>
+                    <tr>
+                      <th>Параметр</th>
+                      <th>Стоимость</th>
+                    </tr>
+                    <tr>
+                      <td>Ширина</td>
+                      <td id="table-width">0р</td>
+                    </tr>
+                    <tr>
+                      <td>Высота</td>
+                      <td id="table-height">0р</td>
+                    </tr>
+                    <tr>
+                      <td>Цвет</td>
+                      <td id="table-color">0р</td>
+                    </tr>
+                    <tr>
+                      <td>Крепеж</td>
+                      <td id="table-fasteners">0р</td>
+                    </tr>
+                    <tr>
+                      <td>Ручки</td>
+                      <td id="table-handle">0р</td>
+                    </tr>
+                    <tr>
+                      <td>Установка</td>
+                      <td id="table-install">0р</td>
+                    </tr>
+                  </table>
                   <!-- /.calculator-column -->
                 </div>
                 <!-- /.calculator-column -->

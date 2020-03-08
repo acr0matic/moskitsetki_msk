@@ -281,6 +281,24 @@ label[for="fasteners-metal"] {
   }
 }
 
+label[for="fasteners-plunger"] {
+  &::after {
+    background-image: url("../../img/plunger-fasteners.jpg");
+  }
+}
+
+label[for="handle-plastic"] {
+  &::after {
+    background-image: url("../../img/handle-plastic.jpg");
+  }
+}
+
+label[for="handle-metal"] {
+  &::after {
+    background-image: url("../../img/handle-metal.jpg");
+  }
+}
+
 label[for="mount-screws"] {
   &::after {
     background-image: url("../../img/mount-screws.jpg");
@@ -300,7 +318,8 @@ label[for="mount-cover"] {
 }
 
 input[type="radio"]:checked + label::after {
-  transform: scale(0.7) rotate(45deg);
+  border: 1px solid $text-important-lighter;
+  transform: scale(0.9);
 }
 
 input::-webkit-outer-spin-button,

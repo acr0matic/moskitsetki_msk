@@ -96,7 +96,9 @@ window.addEventListener("DOMContentLoaded", () => {
     var swiperCalculator = new Swiper(".calculator-wrapper", {
       // Optional parameters
       slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 25,
+      simulateTouch: false,
 
       // If we need pagination
       pagination: {
