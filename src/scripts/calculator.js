@@ -9,6 +9,8 @@ var prices = {
   handlePlastic: 0,
   handleMetal: 200,
 
+  plunger: 200,
+
   colorWhite: 0,
   colorBrown: 200,
 
@@ -53,6 +55,10 @@ var fastenersCell = document.getElementById("table-fasteners-item");
 var handleCell = document.getElementById("table-handle-item");
 var installCell = document.getElementById("table-install-item");
 
+var itemName = document.getElementById("item-name");
+var itemType = document.getElementById("item-type");
+var itemCost = document.getElementById("item-cost");
+
 var widthField = document.getElementById("calculator-width");
 var heightField = document.getElementById("calculator-height");
 var colors = document.querySelectorAll(".radio-color");
@@ -70,6 +76,7 @@ var fastenerPrice = 0,
   colorPrice = 0,
   handlePrice = 0,
   installPrice = 0,
+  typePrice = 0,
   sizePrice = 0;
 
 var addPriceValue = (prices[product] / 100) * 10;
@@ -79,6 +86,17 @@ init();
 function init() {
   sizePrice = prices[product];
   ChangePrice();
+
+  if (calculatorType == "mosquito-nets") {
+    itemName.innerHTML = "Тип сетки";
+    itemType.innerHTML = "Классическая";
+  }
+
+  else if (calculatorType == "curtains") {
+    itemName.innerHTML = "Тип";
+    itemType.innerHTML = "";
+  }
+
   sizeCell.innerHTML = "50x50";
   sizeCost.innerHTML = FormatPrice(prices[product]);
 }
@@ -120,23 +138,32 @@ for (const fastenersValue of fasteners) {
 
     if (fastener == "plastic") {
       fastenerPrice = prices.fastenersPlastic;
+      typePrice = 0;
       ChangePrice();
       fastenersCell.innerHTML = "Пластик";
       fastenersCost.innerHTML = FormatPrice(prices.fastenersPlastic);
+      itemType.innerHTML = "Классическая";
+      itemCost.innerHTML = FormatPrice(0);
     }
 
     if (fastener == "metal") {
       fastenerPrice = prices.fastenersMetal;
+      typePrice = 0;
       ChangePrice();
       fastenersCell.innerHTML = "Металл";
       fastenersCost.innerHTML = FormatPrice(prices.fastenersMetal);
+      itemType.innerHTML = "Классическая";
+      itemCost.innerHTML = FormatPrice(0);
     }
 
     if (fastener == "plunger") {
       fastenerPrice = prices.fastenersPlunger;
+      typePrice = prices.plunger;
       ChangePrice();
       fastenersCell.innerHTML = "Плунжер";
       fastenersCost.innerHTML = FormatPrice(prices.fastenersPlunger);
+      itemType.innerHTML = "Плунжерная";
+      itemCost.innerHTML = FormatPrice(200);
     }
   });
 }
@@ -190,21 +217,19 @@ function calculateSize() {
   if (heightValue * widthValue > 10000) {
     var multiplier = (heightValue * widthValue) / 1000 - 10;
 
-    if (multiplier != 0) sizePrice = Math.floor(prices["new_" + product] + (multiplier * addPriceValue));
+    if (multiplier != 0)
+      sizePrice = Math.floor(
+        prices["new_" + product] + multiplier * addPriceValue
+      );
     else sizePrice = prices["new_" + product];
-  }
-
-  else if (heightValue * widthValue > 2500)
+  } else if (heightValue * widthValue > 2500)
     sizePrice = prices["new_" + product];
-
-  else
-    sizePrice = prices[product];
-
+  else sizePrice = prices[product];
 }
 
 function ChangePrice() {
   priceElement.innerHTML = FormatPrice(
-    fastenerPrice + colorPrice + handlePrice + installPrice + sizePrice
+    fastenerPrice + colorPrice + handlePrice + installPrice + sizePrice + typePrice
   );
 }
 
