@@ -95,10 +95,9 @@ window.addEventListener("DOMContentLoaded", () => {
   if (document.body.contains(document.querySelector(".calculator-wrapper")))
     var swiperCalculator = new Swiper(".calculator-wrapper", {
       // Optional parameters
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      spaceBetween: 25,
-      simulateTouch: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 105,
 
       // If we need pagination
       pagination: {
@@ -109,6 +108,14 @@ window.addEventListener("DOMContentLoaded", () => {
       navigation: {
         nextEl: ".swiper-calculator-button-next",
         prevEl: ".swiper-calculator-button-prev"
+      },
+
+      breakpoints: {
+        1024: {
+          spaceBetween: 25,
+          slidesPerView: 2,
+          slidesPerGroup: 2
+        }
       }
     });
 

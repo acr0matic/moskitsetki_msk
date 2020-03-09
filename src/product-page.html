@@ -177,9 +177,12 @@
                   </div>
                   <!-- /.input-wrapper -->
                   <img class="calculator-block calculator-preview" src="img/net-prototype.svg" alt="">
-                  <h3 class="calculator-title">Доп. информация</h3>
-                  <p class="calculator-block calculator-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <!-- /.input-wrapper -->
+                  <div class="calculator-description">
+                    <h3 class="calculator-title">Доп. информация</h3>
+                    <p class="calculator-block calculator-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <!-- /.calculator-description -->
+                  <button type="button" class="button button-large button-invisible calculator-button">Далее</button>
                 </div>
                 <!-- /.calculator-column -->
               </div>
@@ -201,7 +204,6 @@
                     <!-- /.radio-box -->
                   </div>
                   <!-- /.calculator-color -->
-
                   <h3 class="calculator-title">Крепежи</h3>
                   <div class="calculator-block calculator-fasteners">
                     <div class="radio-box radio-box-fasteners">
@@ -222,7 +224,13 @@
                     <!-- /.radio-box -->
                   </div>
                   <!-- /.calculator-fasteners -->
-                  <button type="button" id="calculator-order-button" class="button button-large">Далее</button>
+                  <div class="calculator-description">
+                    <h3 class="calculator-title">Доп. информация</h3>
+                    <p class="calculator-block calculator-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <!-- /.input-wrapper -->
+                  </div>
+                  <!-- /.calculator-description -->
+                  <button type="button" class="button button-large calculator-button">Далее</button>
                 </div>
                 <!-- /.calculator-column -->
               </div>
@@ -254,23 +262,16 @@
                   </div>
                   <!-- /.calculator-advanced -->
 
-                  <div class="calculator-block calculator-final">
-                    <div class="calculator-order">
-                      <div class="calculator-order-text">
-                        <h3 class="calculator-title">Итого:</h3>
-                        <span id="calculator-price" class="calculator-price">0р</span>
-                      </div>
-                      <!-- /.calculator-order-text -->
-                      <button disabled id="calculator-order-button" class="button button-large">Заказать</button>
-                    </div>
-                    <!-- /.calculator-order -->
+                  <div class="calculator-description">
+                    <h3 class="calculator-title">Доп. информация</h3>
+                    <p class="calculator-block calculator-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
-                  <!-- /.calculator-column -->
+                  <!-- /.calculator-description -->
+                  <button type="button" class="button button-large button-invisible calculator-button">Далее</button>
                 </div>
                 <!-- /.calculator-column -->
               </div>
               <!-- /.swipe-slide -->
-
 
               <div class="swiper-slide">
                 <div class="calculator-column">
@@ -305,19 +306,25 @@
                       <td id="table-install">0р</td>
                     </tr>
                   </table>
-                  <!-- /.calculator-column -->
+
+                  <div class="calculator-block calculator-final">
+                    <div class="calculator-order">
+                      <div class="calculator-order-text">
+                        <h3 class="calculator-title">Итого:</h3>
+                        <span id="calculator-price" class="calculator-price">0р</span>
+                      </div>
+                      <!-- /.calculator-order-text -->
+                      <button disabled id="calculator-order-button" class="button button-large">Заказать</button>
+                    </div>
+                    <!-- /.calculator-order -->
+                  </div>
+                  <!-- /.calculator-block -->
                 </div>
                 <!-- /.calculator-column -->
               </div>
               <!-- /.swipe-slide -->
             </div>
             <!-- /.swiper-wrapper -->
-            <div class="swiper-controls">
-              <div class="swiper-pagination swiper-calculator-pagination"></div>
-              <div class="swiper-button-prev swiper-calculator-button-prev"></div>
-              <div class="swiper-button-next swiper-calculator-button-next"></div>
-            </div>
-            <!-- /.swiper-controls -->
           </div>
           <!-- /.swiper-container -->
         </form>

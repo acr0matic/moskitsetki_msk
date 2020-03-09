@@ -12,6 +12,7 @@
 
     @include breakpoint($tablet) {
       margin-bottom: 22px;
+      width: 90%;
     }
   }
 
@@ -33,13 +34,20 @@
     margin-bottom: 10px;
   }
 
+  &-description {
+    margin-top: auto;
+  }
+
   &-column {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
     width: 90%;
     margin-top: 30px;
 
     @include breakpoint($tablet) {
-      width: 47%;
-      padding: 10px;
+      width: 100%;
+      padding: 0;
     }
 
     @include breakpoint($phone-l) {
@@ -53,6 +61,16 @@
 
   &-fasteners {
     display: flex;
+
+    @include breakpoint($tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-button {
+    position: absolute;
+    bottom: -50px;
+    right: 30px;
   }
 
   &-color {
@@ -84,7 +102,7 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 45px;
+    margin-top: 100px;
 
 
     @include breakpoint($tablet) {
