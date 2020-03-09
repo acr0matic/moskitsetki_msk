@@ -34,6 +34,10 @@
 
   &-invisible {
     display: none;
+    
+    @include breakpoint($phone-l) {
+      display: block;
+    }
   }
 
   &-form {

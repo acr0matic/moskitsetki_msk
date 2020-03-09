@@ -92,12 +92,13 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-  if (document.body.contains(document.querySelector(".calculator-wrapper")))
+  if (document.body.contains(document.querySelector(".calculator-wrapper"))) {
     var swiperCalculator = new Swiper(".calculator-wrapper", {
       // Optional parameters
       slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: 105,
+      spaceBetween: 15,
+      simulateTouch: false,
 
       // If we need pagination
       pagination: {
@@ -118,6 +119,21 @@ window.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
+
+    var nextSlideButtons = document.querySelectorAll(".calculator-button-next");
+    for (const button of nextSlideButtons) {
+      button.addEventListener("click", () => {
+        swiperCalculator.slideNext();
+      })
+    }
+
+    var prevSlideButtons = document.querySelectorAll(".calculator-button-prev");
+    for (const button of prevSlideButtons) {
+      button.addEventListener("click", () => {
+        swiperCalculator.slidePrev();
+      })
+    }
+  }
 
   if (document.body.contains(document.querySelector(".block-other")))
     var blockOtherSlider = new Swiper(".block-other", {

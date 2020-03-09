@@ -5,6 +5,10 @@
   padding: 50px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 
+  @include breakpoint($phone-l) {
+    padding: 5px;
+  }
+
   .input {
     &-text {
       width: unset;
@@ -67,10 +71,18 @@
     }
   }
 
-  &-button {
+  &-button-next,
+  &-button-prev {
     position: absolute;
     bottom: -50px;
-    right: 30px;
+  }
+
+  &-button-next {
+    right: 0;
+  }
+
+  &-button-prev {
+    left: 0;
   }
 
   &-color {
@@ -102,7 +114,8 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 100px;
+    margin-top: auto;
+    margin-bottom: 70px;
 
 
     @include breakpoint($tablet) {

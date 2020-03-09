@@ -168,7 +168,7 @@
                   <div class="calculator-block input-wrapper">
                     <label class="input-label">
                       <span class="input-info">высота</span>
-                      <input id="calculator-height" class="input input-text input-shadow" type="number"  placeholder="Например, 200см">
+                      <input id="calculator-height" class="input input-text input-shadow" type="number"  placeholder="Например, 200см" >
                     </label>
                     <label class="input-label">
                       <span class="input-info">ширина</span>
@@ -182,7 +182,8 @@
                     <p class="calculator-block calculator-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                   <!-- /.calculator-description -->
-                  <button type="button" class="button button-large button-invisible calculator-button">Далее</button>
+                  <button type="button" class="button button-invisible calculator-button-next">Далее</button>
+                  <button type="button" class="button button-invisible calculator-button-prev">Назад</button>
                 </div>
                 <!-- /.calculator-column -->
               </div>
@@ -193,7 +194,7 @@
                   <h3 class="calculator-title">Цвет</h3>
                   <div id="calculator-color" class="calculator-block calculator-color">
                     <div class="radio-box radio-box-color">
-                      <input class="radio radio-color" type="radio" id="color-white" name="color" value="white">
+                      <input class="radio radio-color" type="radio" id="color-white" name="color" value="white" checked>
                       <label class="calculator-heading radio-color-icon" for="color-white" class="radio-wrapper">белый</label>
                     </div>
                     <!-- /.radio-box -->
@@ -207,7 +208,7 @@
                   <h3 class="calculator-title">Крепежи</h3>
                   <div class="calculator-block calculator-fasteners">
                     <div class="radio-box radio-box-fasteners">
-                      <input class="radio radio-input-fasteners" type="radio" id="fasteners-plastic" name="fasteners" value="plastic">
+                      <input class="radio radio-input-fasteners" type="radio" id="fasteners-plastic" name="fasteners" value="plastic" checked>
                       <label class="calculator-heading radio-fasteners" for="fasteners-plastic" class="radio-wrapper">пластик</label>
                     </div>
                     <!-- /.radio-box -->
@@ -230,7 +231,8 @@
                     <!-- /.input-wrapper -->
                   </div>
                   <!-- /.calculator-description -->
-                  <button type="button" class="button button-large calculator-button">Далее</button>
+                  <button type="button" class="button calculator-button-next">Далее</button>
+                  <button type="button" class="button button-invisible calculator-button-prev">Назад</button>
                 </div>
                 <!-- /.calculator-column -->
               </div>
@@ -241,7 +243,7 @@
                   <h3 class="calculator-title">Ручки</h3>
                   <div class="calculator-block calculator-fasteners">
                     <div class="radio-box radio-box-fasteners">
-                      <input class="radio radio-input-fasteners" type="radio" id="handle-plastic" name="handle" value="plastic">
+                      <input class="radio radio-input-fasteners" type="radio" id="handle-plastic" name="handle" value="plastic" checked>
                       <label class="calculator-heading radio-fasteners" for="handle-plastic" class="radio-wrapper">пластик</label>
                     </div>
                     <!-- /.radio-box -->
@@ -267,7 +269,8 @@
                     <p class="calculator-block calculator-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                   <!-- /.calculator-description -->
-                  <button type="button" class="button button-large button-invisible calculator-button">Далее</button>
+                  <button type="button" class="button button-invisible calculator-button-next">Далее</button>
+                  <button type="button" class="button calculator-button-prev">Назад</button>
                 </div>
                 <!-- /.calculator-column -->
               </div>
@@ -279,46 +282,45 @@
                   <table>
                     <tr>
                       <th>Параметр</th>
-                      <th>Стоимость</th>
+                      <th>Значение</th>
+                      <th>Цена</th>
                     </tr>
                     <tr>
-                      <td>Ширина</td>
-                      <td id="table-width">0р</td>
-                    </tr>
-                    <tr>
-                      <td>Высота</td>
-                      <td id="table-height">0р</td>
+                      <td>Размеры</td>
+                      <td>50x50</td>
+                      <td id="table-size">0р</td>
                     </tr>
                     <tr>
                       <td>Цвет</td>
+                      <td>Белый</td>
                       <td id="table-color">0р</td>
                     </tr>
                     <tr>
                       <td>Крепеж</td>
+                      <td>Пластик</td>
                       <td id="table-fasteners">0р</td>
                     </tr>
                     <tr>
                       <td>Ручки</td>
+                      <td>Пластик</td>
                       <td id="table-handle">0р</td>
                     </tr>
                     <tr>
                       <td>Установка</td>
+                      <td>Нет</td>
                       <td id="table-install">0р</td>
                     </tr>
                   </table>
 
-                  <div class="calculator-block calculator-final">
-                    <div class="calculator-order">
-                      <div class="calculator-order-text">
-                        <h3 class="calculator-title">Итого:</h3>
-                        <span id="calculator-price" class="calculator-price">0р</span>
-                      </div>
-                      <!-- /.calculator-order-text -->
-                      <button disabled id="calculator-order-button" class="button button-large">Заказать</button>
+                  <div class="calculator-order">
+                    <div class="calculator-order-text">
+                      <h3 class="calculator-title">Итого:</h3>
+                      <span id="calculator-price" class="calculator-price">0р</span>
                     </div>
-                    <!-- /.calculator-order -->
+                    <!-- /.calculator-order-text -->
+                    <button disabled id="calculator-order-button" class="button button-large">Заказать</button>
                   </div>
-                  <!-- /.calculator-block -->
+                  <!-- /.calculator-order -->
                 </div>
                 <!-- /.calculator-column -->
               </div>
