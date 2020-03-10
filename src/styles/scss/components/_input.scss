@@ -299,6 +299,18 @@ label[for="handle-metal"] {
   }
 }
 
+label[for="corner-plastic"] {
+  &::after {
+    background-image: url("../../img/corner-plastic.jpg");
+  }
+}
+
+label[for="corner-metal"] {
+  &::after {
+    background-image: url("../../img/corner-metal.jpg");
+  }
+}
+
 label[for="mount-screws"] {
   &::after {
     background-image: url("../../img/mount-screws.jpg");

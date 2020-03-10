@@ -9,6 +9,9 @@ var prices = {
   handlePlastic: 0,
   handleMetal: 200,
 
+  cornerPlastic: 0,
+  cornerMetal: 500,
+
   plunger: 200,
 
   colorWhite: 0,
@@ -48,12 +51,14 @@ var colorCost = document.getElementById("table-color-cost");
 var fastenersCost = document.getElementById("table-fasteners-cost");
 var handleCost = document.getElementById("table-handle-cost");
 var installCost = document.getElementById("table-install-cost");
+var cornerCost = document.getElementById("table-corner-cost");
 
 var sizeCell = document.getElementById("table-size-item");
 var colorCell = document.getElementById("table-color-item");
 var fastenersCell = document.getElementById("table-fasteners-item");
 var handleCell = document.getElementById("table-handle-item");
 var installCell = document.getElementById("table-install-item");
+var cornerCell = document.getElementById("table-corner-item");
 
 var itemName = document.getElementById("item-name");
 var itemType = document.getElementById("item-type");
@@ -64,6 +69,7 @@ var heightField = document.getElementById("calculator-height");
 var colors = document.querySelectorAll(".radio-color");
 var fasteners = document.querySelectorAll(".radio-input-fasteners");
 var handles = document.querySelectorAll(".radio-input-handle");
+var corners = document.querySelectorAll(".radio-input-corner");
 
 var priceElement = document.getElementById("calculator-price");
 var install = document.getElementById("calculator-install");
@@ -75,11 +81,12 @@ var color, width, height;
 var fastenerPrice = 0,
   colorPrice = 0,
   handlePrice = 0,
+  cornerPrice = 0,
   installPrice = 0,
   typePrice = 0,
   sizePrice = 0;
 
-var addPriceValue = (prices[product] / 100) * 10;
+var addPriceValue = (prices["new_" + product] / 100) * 10;
 
 init();
 
@@ -188,6 +195,26 @@ for (const handlesValue of handles) {
   });
 }
 
+for (const cornersValue of corners) {
+  cornersValue.addEventListener("change", () => {
+    var handle = cornersValue.getAttribute("value");
+
+    if (handle == "plastic") {
+      cornerPrice = prices.cornerPlastic;
+      ChangePrice();
+      cornerCell.innerHTML = "Пластик";
+      cornerCost.innerHTML = FormatPrice(prices.cornerPlastic);
+    }
+
+    if (handle == "metal") {
+      cornerPrice = prices.cornerMetal;
+      ChangePrice();
+      cornerCell.innerHTML = "Металл";
+      cornerCost.innerHTML = FormatPrice(prices.cornerMetal);
+    }
+  });
+}
+
 for (const colorValue of colors) {
   colorValue.addEventListener("change", () => {
     color = colorValue.getAttribute("value");
@@ -229,7 +256,7 @@ function calculateSize() {
 
 function ChangePrice() {
   priceElement.innerHTML = FormatPrice(
-    fastenerPrice + colorPrice + handlePrice + installPrice + sizePrice + typePrice
+    fastenerPrice + colorPrice + handlePrice + installPrice + sizePrice + typePrice + cornerPrice
   );
 }
 
