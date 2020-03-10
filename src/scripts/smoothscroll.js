@@ -26,14 +26,21 @@ function SmoothScroll(blockID) {
     behavior: "smooth",
     block: "start"
   });
-  
+
   closeMobileMenu();
 }
 
-var swiperProductButton = document.querySelectorAll("[data-scroll-product]");
+var netsScrollButtons = document.querySelectorAll("[data-scroll-nets]");
+var curtainsScrollButtons = document.querySelectorAll("[data-scroll-curtains]");
 
-for (const button of swiperProductButton) {
+for (const button of netsScrollButtons) {
   button.addEventListener("click", () => {
-    SmoothScroll("#items");
+    SmoothScroll("mosquito");
+  });
+}
+
+for (const button of curtainsScrollButtons) {
+  button.addEventListener("click", () => {
+    SmoothScroll("curtains");
   });
 }

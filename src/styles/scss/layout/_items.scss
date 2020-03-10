@@ -6,40 +6,15 @@
   &-nets,
   &-curtains {
     width: 49%;
-    padding-bottom: 100px;
-  }
 
-  &-nets {
-    .product-item {
-      @include breakpoint($phone-l) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      @include even {
-        margin-right: 20px;
-
-        @include breakpoint($phone-l) {
-          margin-right: auto;
-        }
-      }
+    @include breakpoint($phone-l) {
+      width: 100%;
     }
-  }
 
-  &-curtains {
-    .product-item {
-      @include breakpoint($phone-l) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      @include odd {
-        margin-left: 20px;
-
-        @include breakpoint($phone-l) {
-          margin-left: auto;
-        }
-      }
+    .swiper-controls {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
     }
   }
 
@@ -51,10 +26,13 @@
     }
   }
 
-  &-list,
-  &-titles {
+  &-list {
     display: flex;
     justify-content: space-around;
+
+    @include breakpoint($phone-l) {
+      flex-direction: column;
+    }
   }
 
   &-title {
@@ -70,12 +48,13 @@
 .separtor-line {
   align-self: stretch;
   width: 3px;
-  margin: 0 10px;
-  margin-bottom: 75px;
+  margin: 75px 10px 105px 10px;
   background-color: $text-info;
 
-  @include breakpoint($phone-m) {
-    display: none;
+  @include breakpoint($phone-l) {
+    width: 100%;
+    height: 3px;
+    margin: 75px 0;
   }
 }
 
@@ -85,13 +64,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 15px;
 
-    &-other {
-
-      @include breakpoint($phone-l) {
-        justify-content: space-around;
-      }
-    }
   }
 
   &-item {
@@ -105,25 +79,18 @@
       height: 300px;
     }
 
-    @include breakpoint($tablet) {
-      width: 150px;
-      height: 250px;
+    @include breakpoint($phone-l) {
+      width: 45%;
+      height: 275px;
     }
 
     @include breakpoint($phone-m) {
-      width: 135px;
+      height: 240px;
     }
 
     &-other {
       width: 24%;
       max-width: unset;
-
-      @include breakpoint($phone-l) {
-        width: 45%;
-        @include between(1, 2) {
-          margin-bottom: 40px;
-        }
-      }
     }
   }
 

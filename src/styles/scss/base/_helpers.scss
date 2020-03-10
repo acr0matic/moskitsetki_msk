@@ -37,6 +37,13 @@
   padding-bottom: 15px;
 }
 
+.anchor {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  height: 80px;
+}
+
 .social {
   display: flex;
   align-items: center;
