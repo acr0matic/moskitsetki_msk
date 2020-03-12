@@ -5,15 +5,23 @@
   padding: 50px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 
+  @include breakpoint($phone-l) {
+    padding: 5px;
+  }
+
   .input {
+    &-text {
+      width: unset;
+    }
+
     @include breakpoint($tablet) {
       margin-bottom: 22px;
+      width: 90%;
     }
   }
 
   &-wrapper {
-    display: flex;
-    justify-content: center;
+    width: 100%;
 
     @include breakpoint($tablet) {
       justify-content: space-between;
@@ -30,13 +38,20 @@
     margin-bottom: 10px;
   }
 
+  &-description {
+    margin-top: auto;
+  }
+
   &-column {
-    width: 50%;
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 90%;
+    margin-top: 30px;
 
     @include breakpoint($tablet) {
-      width: 47%;
-      padding: 10px;
+      width: 100%;
+      padding: 0;
     }
 
     @include breakpoint($phone-l) {
@@ -50,6 +65,24 @@
 
   &-fasteners {
     display: flex;
+
+    @include breakpoint($tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-button-next,
+  &-button-prev {
+    position: absolute;
+    bottom: -50px;
+  }
+
+  &-button-next {
+    right: 0;
+  }
+
+  &-button-prev {
+    left: 0;
   }
 
   &-color {
@@ -69,6 +102,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    max-width: 450px;
   }
 
   &-price {
@@ -79,6 +113,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin-top: auto;
+    margin-bottom: 30px;
+
 
     @include breakpoint($tablet) {
       flex-direction: column;

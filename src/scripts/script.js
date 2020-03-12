@@ -92,6 +92,49 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+  if (document.body.contains(document.querySelector(".calculator-wrapper"))) {
+    var swiperCalculator = new Swiper(".calculator-wrapper", {
+      // Optional parameters
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 15,
+      simulateTouch: false,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-calculator-pagination"
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-calculator-button-next",
+        prevEl: ".swiper-calculator-button-prev"
+      },
+
+      breakpoints: {
+        1024: {
+          spaceBetween: 25,
+          slidesPerView: 2,
+          slidesPerGroup: 2
+        }
+      }
+    });
+
+    var nextSlideButtons = document.querySelectorAll(".calculator-button-next");
+    for (const button of nextSlideButtons) {
+      button.addEventListener("click", () => {
+        swiperCalculator.slideNext();
+      })
+    }
+
+    var prevSlideButtons = document.querySelectorAll(".calculator-button-prev");
+    for (const button of prevSlideButtons) {
+      button.addEventListener("click", () => {
+        swiperCalculator.slidePrev();
+      })
+    }
+  }
+
   if (document.body.contains(document.querySelector(".block-other")))
     var blockOtherSlider = new Swiper(".block-other", {
       // Optional parameters

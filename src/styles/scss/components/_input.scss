@@ -5,7 +5,7 @@
   border-radius: 12px;
   outline: none;
 
-  padding: 20px;
+  padding: 0 20px;
 
   transition: all 0.3s ease;
 
@@ -147,7 +147,7 @@
 
   &-box {
     &-color {
-      max-width: 65px;
+      max-width: 70px;
       margin-right: 15px;
 
       @include breakpoint($tablet) {
@@ -281,6 +281,36 @@ label[for="fasteners-metal"] {
   }
 }
 
+label[for="fasteners-plunger"] {
+  &::after {
+    background-image: url("../../img/plunger-fasteners.jpg");
+  }
+}
+
+label[for="handle-plastic"] {
+  &::after {
+    background-image: url("../../img/handle-plastic.jpg");
+  }
+}
+
+label[for="handle-metal"] {
+  &::after {
+    background-image: url("../../img/handle-metal.jpg");
+  }
+}
+
+label[for="corner-plastic"] {
+  &::after {
+    background-image: url("../../img/corner-plastic.jpg");
+  }
+}
+
+label[for="corner-metal"] {
+  &::after {
+    background-image: url("../../img/corner-metal.jpg");
+  }
+}
+
 label[for="mount-screws"] {
   &::after {
     background-image: url("../../img/mount-screws.jpg");
@@ -300,7 +330,8 @@ label[for="mount-cover"] {
 }
 
 input[type="radio"]:checked + label::after {
-  transform: scale(0.7) rotate(45deg);
+  border: 1px solid $text-important-lighter;
+  transform: scale(0.9);
 }
 
 input::-webkit-outer-spin-button,
