@@ -21,7 +21,7 @@ var prices = {
   ultraview: 999,
   mosquito: 499,
   cat: 1299,
-  dust: 1119,
+  dust: 1199,
   provedal: 2299,
   mosquitoDoor: 2999,
 
