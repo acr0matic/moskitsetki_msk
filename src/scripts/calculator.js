@@ -33,12 +33,15 @@ var prices = {
   new_provedal: 2299,
   new_mosquitoDoor: 2999,
 
+  rollerBlinds: 699,
+  rollerBlindsBox: 1199,
+  zebra: 1599,
+  zebraBox: 1799,
   plisse: 3999,
-  rollerBlinds: 1599,
-  blackout: 2199,
-  zebra: 3499,
-  jalousie: 999,
-  romanCurtains: 699
+  jalousieHorizontal: 1399,
+  jalousieVertical: 1499,
+  rollerBlindsGrand: 2199,
+  zebraGrand: 3999
 };
 
 var calculator = document.getElementById("calculation");
@@ -97,14 +100,14 @@ function init() {
   if (calculatorType == "mosquito-nets") {
     itemName.innerHTML = "Тип сетки";
     itemType.innerHTML = "Классическая";
+    sizeCell.innerHTML = "50x50";
   }
 
   else if (calculatorType == "curtains") {
-    itemName.innerHTML = "Тип";
-    itemType.innerHTML = "";
+    itemName.innerHTML = "Тип шторы";
+    sizeCell.innerHTML = "20x30";
   }
 
-  sizeCell.innerHTML = "50x50";
   sizeCost.innerHTML = FormatPrice(prices[product]);
 }
 
