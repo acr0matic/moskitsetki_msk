@@ -35,19 +35,36 @@ var prices = {
 
   rollerBlinds: 699,
   rollerBlindsBox: 1199,
+  rollerBlindsGrand: 2199,
+
   zebra: 1599,
   zebraBox: 1799,
+  zebraGrand: 3999,
+
   plisse: 3999,
   jalousieHorizontal: 1399,
-  jalousieVertical: 1499,
-  rollerBlindsGrand: 2199,
-  zebraGrand: 3999
+  jalousieVertical: 1499
+};
+
+var curtains_prices = {
+  rollerBlinds: 400,
+  rollerBlindsBox: 600,
+  rollerBlindsGrand: 800,
+
+  zebra: 600,
+  zebraBox: 600,
+  zebraGrand: 800,
+
+  plisse: 1,
+  jalousieHorizontal: 1,
+  jalousieVertical: 1
 };
 
 var calculator = document.getElementById("calculation");
 
 var product = calculator.getAttribute("data-product");
 var calculatorType = calculator.getAttribute("data-calculator-type");
+var calculatorMethod = calculator.getAttribute("data-calculator-method");
 
 var sizeCost = document.getElementById("table-size-cost");
 var colorCost = document.getElementById("table-color-cost");
@@ -101,9 +118,7 @@ function init() {
     itemName.innerHTML = "Тип сетки";
     itemType.innerHTML = "Классическая";
     sizeCell.innerHTML = "50x50";
-  }
-
-  else if (calculatorType == "curtains") {
+  } else if (calculatorType == "curtains") {
     itemName.innerHTML = "Тип шторы";
     sizeCell.innerHTML = "20x30";
   }
@@ -129,7 +144,12 @@ if (install)
 widthField.addEventListener("change", () => {
   width = widthField.value;
   calculateSize();
+  CheckState();
   ChangePrice();
+
+  if (!height) height = 0;
+  if (!width) width = 0;
+
   sizeCell.innerHTML = height + "x" + width;
   sizeCost.innerHTML = FormatPrice(sizePrice);
 });
@@ -137,7 +157,12 @@ widthField.addEventListener("change", () => {
 heightField.addEventListener("change", () => {
   height = heightField.value;
   calculateSize();
+  CheckState();
   ChangePrice();
+
+  if (!height) height = 0;
+  if (!width) width = 0;
+
   sizeCell.innerHTML = height + "x" + width;
   sizeCost.innerHTML = FormatPrice(sizePrice);
 });
@@ -244,28 +269,53 @@ function calculateSize() {
   var heightValue = parseInt(height);
   var widthValue = parseInt(width);
 
-  if (heightValue * widthValue > 10000) {
-    var multiplier = (heightValue * widthValue) / 1000 - 10;
+  if (calculatorType == "curtains") {
+    if (heightValue > 20 || widthValue > 30) {
+      var heightMultiplier = Math.ceil((heightValue - 20) / 10);
+      var widthMultiplier = Math.ceil((widthValue - 30) / 10);
 
-    if (multiplier != 0)
-      sizePrice = Math.floor(
-        prices["new_" + product] + multiplier * addPriceValue
-      );
-    else sizePrice = prices["new_" + product];
-  } else if (heightValue * widthValue > 2500)
-    sizePrice = prices["new_" + product];
-  else sizePrice = prices[product];
+      if (calculatorMethod == "width")
+        sizePrice = prices[product] + widthMultiplier * curtains_prices[product];
+
+      else if (calculatorMethod == "height")
+        sizePrice = prices[product] + heightMultiplier * curtains_prices[product];
+
+    } else {
+      sizePrice = prices[product];
+    }
+  } else if (calculatorType == "mosquito-nets") {
+    if (heightValue * widthValue > 10000) {
+      var multiplier = (heightValue * widthValue) / 1000 - 10;
+
+      if (multiplier != 0)
+        sizePrice = Math.floor(
+          prices["new_" + product] + multiplier * addPriceValue
+        );
+      else sizePrice = prices["new_" + product];
+    } else if (heightValue * widthValue > 2500)
+      sizePrice = prices["new_" + product];
+    else sizePrice = prices[product];
+  }
 }
 
 function ChangePrice() {
   priceElement.innerHTML = FormatPrice(
-    fastenerPrice + colorPrice + handlePrice + installPrice + sizePrice + typePrice + cornerPrice
+    fastenerPrice +
+      colorPrice +
+      handlePrice +
+      installPrice +
+      sizePrice +
+      typePrice +
+      cornerPrice
   );
 }
 
 function CheckState() {
-  if (width && height && color) accept.removeAttribute("disabled", "disabled");
-  else accept.setAttribute("disabled", "disabled");
+  if (widthField.value != "" && heightField.value != "") {
+    accept.disabled = false;
+  } else {
+    accept.disabled = true;
+  }
 }
 
 function FormatPrice(price) {

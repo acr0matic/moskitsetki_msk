@@ -151,7 +151,7 @@
       <!-- /.container -->
     </section>
 
-    <section id="calculation" data-product="rollerBlinds" data-calculator-type="curtains">
+    <section id="calculation" data-product="rollerBlinds" data-calculator-type="curtains" data-calculator-method="width">
       <div class="container">
         <div class="section-title">
           <h2 class="sub-heading">Рассчитать стоимость</h2>
@@ -167,11 +167,11 @@
                   <div class="calculator-block input-wrapper">
                     <label class="input-label">
                       <span class="input-info">высота</span>
-                      <input id="calculator-height" class="input input-text input-shadow" type="number"  placeholder="Например, 200см">
+                      <input min="0" id="calculator-height" class="input input-text input-shadow" type="number"  placeholder="Например, 200см">
                     </label>
                     <label class="input-label">
                       <span class="input-info">ширина</span>
-                      <input id="calculator-width" class="input input-text input-shadow"  type="number"  placeholder="Например, 100см">
+                      <input min="0" id="calculator-width" class="input input-text input-shadow"  type="number"  placeholder="Например, 100см">
                     </label>
                   </div>
                   <!-- /.input-wrapper -->
