@@ -23,6 +23,15 @@
   }
 }
 
+.logo {
+  width: 100%;
+  max-width: 220px;
+
+  @include breakpoint($phone-l) {
+    max-width: 160px;
+  }
+}
+
 .menu {
   margin-left: 60px;
 

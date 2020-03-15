@@ -1,6 +1,9 @@
 table {
   text-align: left;
   border-collapse: collapse;
+  @include breakpoint($phone-l) {
+    margin-right: 5px;
+  }
 }
 
 table,
@@ -13,6 +16,8 @@ th {
 th,
 td {
   padding: 17px;
+
+
 }
 
 td {
