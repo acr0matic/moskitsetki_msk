@@ -44,3 +44,14 @@ for (const button of curtainsScrollButtons) {
     SmoothScroll("curtains");
   });
 }
+
+var logoElements = document.querySelectorAll(".logo");
+
+for (const logo of logoElements) {
+  logo.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}

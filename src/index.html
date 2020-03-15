@@ -55,9 +55,7 @@
   <header id="header">
     <div class="container">
       <div class="wrap">
-        <a href="#">
-          <img src="img/logo.svg" alt="" class="logo" />
-        </a>
+        <img src="img/logo.svg" alt="" class="logo" />
         <nav class="menu">
           <ul class="nav">
             <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
@@ -129,7 +127,7 @@
               <img src="img/catalog/moskit-setka.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Москитные сетки и москитные двери</h3>
-                <p class="catalog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="catalog-text">Множество вариаций и любой размер</p>
               </div>
               <!-- /.catalog-description -->
             </a>
@@ -140,7 +138,7 @@
               <img src="img/catalog/tinting.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Тонировка окон</h3>
-                <p class="catalog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="catalog-text">Затемнение ваших окон</p>
               </div>
               <!-- /.catalog-description -->
             </a>
@@ -151,7 +149,7 @@
               <img src="img/catalog/adjustment.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Регулировка окон</h3>
-                <p class="catalog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="catalog-text">Отрегулируем любые окна</p>
               </div>
               <!-- /.catalog-description -->
             </a>
@@ -162,7 +160,7 @@
               <img src="img/catalog/lock.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Замки от детей</h3>
-                <p class="catalog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="catalog-text">Защитим ваших детей</p>
               </div>
               <!-- /.catalog-description -->
             </a>
@@ -173,7 +171,7 @@
               <img src="img/catalog/compressor.png" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Замена уплотнителя</h3>
-                <p class="catalog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="catalog-text">Качественно заменим</p>
               </div>
               <!-- /.catalog-description -->
             </a>
@@ -184,7 +182,7 @@
               <img src="img/catalog/curtains.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Рулонные шторы и жалюзи</h3>
-                <p class="catalog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="catalog-text">Тысячи тканей и цветов на выбор</p>
               </div>
               <!-- /.catalog-description -->
             </a>
@@ -297,9 +295,9 @@
           <p class="secondary-heading">Оставьте заявку, и мы вам перезвоним!</p>
         </div>
         <form class="form form-callback" action="">
-          <input class="input input-text" type="text" name="" placeholder="Ваше имя">
-          <input class="input input-text" type="text" name="" placeholder="Номер телефона">
-          <button class="button button-form">Оставить заявку</button>
+          <input required class="input input-text" type="text" name="" placeholder="Ваше имя">
+          <input required class="input input-text" type="tel" name="" placeholder="Номер телефона">
+          <button class="button button-form ">Оставить заявку</button>
         </form>
       </div>
       <!-- /.container -->
@@ -309,7 +307,7 @@
       <div class="container">
         <div class="section-title">
           <h2 class="primary-heading">Наши партнеры</h2>
-          <p class="secondary-heading">Текст про наших партнеров</p>
+          <p class="secondary-heading">Мы сотрудничаем с известными брендами</p>
         </div>
         <div class="partners">
           <div class="partner-card">
@@ -439,12 +437,11 @@
           <h2 class="primary-heading">Есть вопросы? Оставьте заявку!</h2>
         </div>
         <div class="input-wrapper">
-          <input class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
-          <input class="input input-text input-shadow" type="text" name="" placeholder="Номер телефона">
+          <input required class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
+          <input required class="input input-text input-shadow" type="text" name="" placeholder="Номер телефона">
         </div>
         <!-- /.text-inputs -->
-        <input class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
-        <textarea class="input input-text input-shadow" cols="30" rows="10" placeholder="Вопрос, который вас интересует"></textarea>
+        <textarea required class="input input-text input-shadow" cols="30" rows="10" placeholder="Вопрос, который вас интересует"></textarea>
         <div class="wrap">
           <button class="button button-large">Оставить заявку</button>
           <div class="social">
@@ -503,8 +500,8 @@
         <form class="form form-modal" action="">
           <h2 class="modal-title">Заказать обратный звонок</h2>
           <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем удобное время и дату</p>
-          <input class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
-          <input class="input input-text input-shadow" type="number" name="" placeholder="Ваш телефон">
+          <input required class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
+          <input required class="input input-text input-shadow" type="number" name="" placeholder="Ваш телефон">
           <div class="checkbox">
             <input type="checkbox" id="accept" />
             <label for="accept">Я согласен на обработку моих персональных данных согласно условиям <a href="" class="politics">политики конфиденциальности</a></label>

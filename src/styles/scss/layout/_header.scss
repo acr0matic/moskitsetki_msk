@@ -26,6 +26,7 @@
 .logo {
   width: 100%;
   max-width: 220px;
+  cursor: pointer;
 
   @include breakpoint($phone-l) {
     max-width: 160px;
