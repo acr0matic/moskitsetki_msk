@@ -43,7 +43,9 @@ var prices = {
 
   plisse: 3999,
   jalousieHorizontal: 1399,
-  jalousieVertical: 1499
+  jalousieVertical: 1499,
+
+  tinting: 1000
 };
 
 var curtains_prices = {

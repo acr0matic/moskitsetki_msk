@@ -1,9 +1,16 @@
+.secondary-heading {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 .calculator {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
+
 
   @include breakpoint($phone-l) {
     padding: 5px;
@@ -120,7 +127,7 @@
     justify-content: space-between;
 
     margin-top: auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
     @include breakpoint($phone-l) {
       margin-bottom: 100px;
