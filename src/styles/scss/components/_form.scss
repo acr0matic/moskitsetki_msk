@@ -22,8 +22,17 @@
     margin: auto;
     padding: 60px;
 
+    @include breakpoint($phone-l) {
+      padding: 30px;
+    }
+
     .input-text {
       width: 49%;
+
+      @include breakpoint($phone-l) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
 
     .additional-info {
@@ -36,12 +45,33 @@
       width: 100%;
 
       margin-top: 50px;
+
+      @include breakpoint($phone-l) {
+        flex-direction: column;
+      }
     }
 
     .calculator-order-text {
       margin-right: 35px;
+
+      @include breakpoint($phone-l) {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
     }
 
+    .calculator-price {
+      @include breakpoint($phone-l) {
+        @include first-child {
+          margin-left: 10px;
+        }
+
+        @include last-child {
+          margin-left: 5px;
+        }
+      }
+    }
   }
 
   &-contact {

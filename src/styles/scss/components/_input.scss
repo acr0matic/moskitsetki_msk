@@ -166,6 +166,14 @@
     &-adjustment {
       width: 49%;
     }
+
+    &-lock {
+      width: 49%;
+      
+      @include breakpoint($tablet) {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   &-fasteners {
@@ -264,8 +272,9 @@
       border: 1px solid #dcdcdc;
       transition: all 0.3s ease;
 
-      @include breakpoint($tablet) {
-        height: 200px;
+      @include breakpoint($phone-l) {
+        width: 100%;
+        margin-bottom: 15px;
       }
     }
   }
@@ -323,7 +332,6 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-
 
 label[for="color-white"] {
   &::after {
@@ -492,7 +500,3 @@ label[for="lock-cable"] {
     background-image: url("../../img/lock-cable.jpg");
   }
 }
-
-
-
-

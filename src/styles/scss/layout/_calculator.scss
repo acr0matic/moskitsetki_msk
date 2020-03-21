@@ -5,7 +5,6 @@
   margin-top: 50px;
 }
 
-
 .calculator {
   display: flex;
   flex-direction: column;
@@ -21,10 +20,14 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include breakpoint($phone-l) {
+      flex-direction: column;
+    }
   }
 
   &-parameter-wrapper {
-    width: 49%;
+    width: 100%;
   }
 
   .input {
@@ -109,6 +112,12 @@
   &-lock-type {
     display: flex;
     width: 49%;
+
+    @include breakpoint($tablet) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 
   &-button-next,
