@@ -2,7 +2,9 @@
   text-align: left;
   width: 100%;
   margin-bottom: 15px;
+  margin-top: 50px;
 }
+
 
 .calculator {
   display: flex;
@@ -11,9 +13,18 @@
   padding: 50px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 
-
   @include breakpoint($phone-l) {
     padding: 5px;
+  }
+
+  &-parameter-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &-parameter-wrapper {
+    width: 49%;
   }
 
   .input {
@@ -52,8 +63,8 @@
   &-column {
     display: flex;
     flex-direction: column;
-    height: 650px;
     width: 90%;
+    height: 650px;
     margin-top: 30px;
 
     @include breakpoint($tablet) {
@@ -76,6 +87,28 @@
     @include breakpoint($tablet) {
       flex-wrap: wrap;
     }
+  }
+
+  &-compressor-type {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &-limiter-type {
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+  }
+
+  &-color-type {
+    display: flex;
+    width: 49%;
+  }
+
+  &-lock-type {
+    display: flex;
+    width: 49%;
   }
 
   &-button-next,
@@ -127,7 +160,7 @@
     justify-content: space-between;
 
     margin-top: auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @include breakpoint($phone-l) {
       margin-bottom: 100px;

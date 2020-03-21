@@ -1,6 +1,7 @@
 var prices = {
   ironCnob: 200,
   install: 500,
+  delivery: 500,
 
   fastenersPlunger: 500,
   fastenersMetal: 300,
@@ -45,7 +46,20 @@ var prices = {
   jalousieHorizontal: 1399,
   jalousieVertical: 1499,
 
-  tinting: 1000
+  tinting: 1000,
+
+  compressorWindow: 2000,
+  compressorDoor: 3000,
+
+  adjustmentWindow: 500,
+  adjustmentDoor: 1000,
+
+  limiterPlastic: 300,
+  limiterMetal: 500,
+
+  lockCable: 1000,
+  lockBottom: 800,
+  lockHandle: 1000
 };
 
 var curtains_prices = {
@@ -74,6 +88,7 @@ var fastenersCost = document.getElementById("table-fasteners-cost");
 var handleCost = document.getElementById("table-handle-cost");
 var installCost = document.getElementById("table-install-cost");
 var cornerCost = document.getElementById("table-corner-cost");
+var deliveryCost = document.getElementById("table-delivery-cost");
 
 var sizeCell = document.getElementById("table-size-item");
 var colorCell = document.getElementById("table-color-item");
@@ -81,6 +96,7 @@ var fastenersCell = document.getElementById("table-fasteners-item");
 var handleCell = document.getElementById("table-handle-item");
 var installCell = document.getElementById("table-install-item");
 var cornerCell = document.getElementById("table-corner-item");
+var deliveryCell = document.getElementById("table-delivery-item");
 
 var itemName = document.getElementById("item-name");
 var itemType = document.getElementById("item-type");
@@ -92,9 +108,14 @@ var colors = document.querySelectorAll(".radio-color");
 var fasteners = document.querySelectorAll(".radio-input-fasteners");
 var handles = document.querySelectorAll(".radio-input-handle");
 var corners = document.querySelectorAll(".radio-input-corner");
+var compressors = document.querySelectorAll(".radio-input-compressor");
+var adjustments = document.querySelectorAll(".radio-input-adjustment");
+var limiters = document.querySelectorAll(".radio-input-limiter");
+var locks = document.querySelectorAll(".radio-input-lock");
 
 var priceElement = document.getElementById("calculator-price");
 var install = document.getElementById("calculator-install");
+var delivery = document.getElementById("calculator-delivery");
 
 var accept = document.getElementById("calculator-order-button");
 
@@ -105,27 +126,55 @@ var fastenerPrice = 0,
   handlePrice = 0,
   cornerPrice = 0,
   installPrice = 0,
+  deliveryPrice = 0,
   typePrice = 0,
-  sizePrice = 0;
+  sizePrice = 0,
+  compressorPrice = 0,
+  adjustmentPrice = 0,
+  limiterPrice = 0,
+  lockPrice = 0;
 
 var addPriceValue = (prices["new_" + product] / 100) * 10;
 
 init();
 
 function init() {
-  sizePrice = prices[product];
+  if (calculatorType != "other") {
+    sizePrice = prices[product];
+  } else {
+    if (product == "tinting") {
+      typePrice = prices.tinting;
+    }
+
+    if (product == "compressor") {
+      compressorPrice = prices.compressorWindow;
+    }
+
+    if (product == "adjustment") {
+      adjustmentPrice = prices.adjustmentWindow;
+    }
+
+    if (product == "limiter") {
+      limiterPrice = prices.limiterPlastic;
+    }
+
+    if (product == "lock") {
+      lockPrice = prices.lockCable;
+    }
+  }
+
   ChangePrice();
 
   if (calculatorType == "mosquito-nets") {
     itemName.innerHTML = "Тип сетки";
     itemType.innerHTML = "Классическая";
     sizeCell.innerHTML = "50x50";
+    sizeCost.innerHTML = FormatPrice(prices[product]);
   } else if (calculatorType == "curtains") {
     itemName.innerHTML = "Тип шторы";
     sizeCell.innerHTML = "20x30";
+    sizeCost.innerHTML = FormatPrice(prices[product]);
   }
-
-  sizeCost.innerHTML = FormatPrice(prices[product]);
 }
 
 if (install)
@@ -143,31 +192,49 @@ if (install)
     }
   });
 
-widthField.addEventListener("change", () => {
-  width = widthField.value;
-  calculateSize();
-  CheckState();
-  ChangePrice();
+if (delivery) delivery.addEventListener("change", event => {
+  if (event.target.checked) {
+    deliveryPrice = prices.delivery;
+    ChangePrice();
+    deliveryCell.innerHTML = "Да";
+    deliveryCost.innerHTML = FormatPrice(prices.delivery);
+  }
 
-  if (!height) height = 0;
-  if (!width) width = 0;
-
-  sizeCell.innerHTML = height + "x" + width;
-  sizeCost.innerHTML = FormatPrice(sizePrice);
+  else {
+    deliveryPrice = 0;
+    ChangePrice();
+    deliveryCell.innerHTML = "Нет";
+    deliveryCost.innerHTML = FormatPrice(0);
+  }
 });
 
-heightField.addEventListener("change", () => {
-  height = heightField.value;
-  calculateSize();
-  CheckState();
-  ChangePrice();
+if (widthField)
+  widthField.addEventListener("change", () => {
+    width = widthField.value;
+    calculateSize();
+    CheckState();
+    ChangePrice();
 
-  if (!height) height = 0;
-  if (!width) width = 0;
+    if (!height) height = 0;
+    if (!width) width = 0;
 
-  sizeCell.innerHTML = height + "x" + width;
-  sizeCost.innerHTML = FormatPrice(sizePrice);
-});
+    sizeCell.innerHTML = height + "x" + width;
+    sizeCost.innerHTML = FormatPrice(sizePrice);
+  });
+
+if (heightField)
+  heightField.addEventListener("change", () => {
+    height = heightField.value;
+    calculateSize();
+    CheckState();
+    ChangePrice();
+
+    if (!height) height = 0;
+    if (!width) width = 0;
+
+    sizeCell.innerHTML = height + "x" + width;
+    sizeCost.innerHTML = FormatPrice(sizePrice);
+  });
 
 for (const fastenersValue of fasteners) {
   fastenersValue.addEventListener("change", () => {
@@ -263,6 +330,85 @@ for (const colorValue of colors) {
         colorCell.innerHTML = "Белый";
         colorCost.innerHTML = FormatPrice(0);
       }
+    } else if (calculatorType == "other") {
+      if (color == "brown") {
+        colorPrice = prices.colorBrown;
+        ChangePrice();
+      }
+
+      if (color == "white") {
+        colorPrice = prices.colorWhite;
+        ChangePrice();
+      }
+    }
+  });
+}
+
+for (const compressorValue of compressors) {
+  compressorValue.addEventListener("change", () => {
+    var compressor = compressorValue.getAttribute("value");
+
+    if (compressor == "window") {
+      compressorPrice = prices.compressorWindow;
+      ChangePrice();
+    }
+
+    if (compressor == "door") {
+      compressorPrice = prices.compressorDoor;
+      ChangePrice();
+    }
+  });
+}
+
+for (const adjustmentValue of adjustments) {
+  adjustmentValue.addEventListener("change", () => {
+    var adjustment = adjustmentValue.getAttribute("value");
+
+    if (adjustment == "window") {
+      adjustmentPrice = prices.adjustmentWindow;
+      ChangePrice();
+    }
+
+    if (adjustment == "door") {
+      adjustmentPrice = prices.adjustmentDoor;
+      ChangePrice();
+    }
+  });
+}
+
+for (const limiterValue of limiters) {
+  limiterValue.addEventListener("change", () => {
+    var limiter = limiterValue.getAttribute("value");
+
+    if (limiter == "plastic") {
+      limiterPrice = prices.limiterPlastic;
+      ChangePrice();
+    }
+
+    if (limiter == "metal") {
+      limiterPrice = prices.limiterMetal;
+      ChangePrice();
+    }
+  });
+}
+
+for (const lockValue of locks) {
+  lockValue.addEventListener("change", () => {
+    var lock = lockValue.getAttribute("value");
+
+    if (lock == "cable") {
+      lockPrice = prices.lockCable;
+      ChangePrice();
+    }
+
+    if (lock == "bottom") {
+      lockPrice = prices.lockBottom;
+      ChangePrice();
+    }
+
+    if (lock == "handle") {
+      lockPrice = prices.lockHandle;
+      ChangePrice();
     }
   });
 }
@@ -277,11 +423,11 @@ function calculateSize() {
       var widthMultiplier = Math.ceil((widthValue - 30) / 10);
 
       if (calculatorMethod == "width")
-        sizePrice = prices[product] + widthMultiplier * curtains_prices[product];
-
+        sizePrice =
+          prices[product] + widthMultiplier * curtains_prices[product];
       else if (calculatorMethod == "height")
-        sizePrice = prices[product] + heightMultiplier * curtains_prices[product];
-
+        sizePrice =
+          prices[product] + heightMultiplier * curtains_prices[product];
     } else {
       sizePrice = prices[product];
     }
@@ -306,9 +452,14 @@ function ChangePrice() {
       colorPrice +
       handlePrice +
       installPrice +
+      deliveryPrice +
       sizePrice +
       typePrice +
-      cornerPrice
+      cornerPrice +
+      compressorPrice +
+      adjustmentPrice +
+      limiterPrice +
+      lockPrice
   );
 }
 

@@ -161,6 +161,11 @@
         margin-right: 10px;
       }
     }
+
+    &-compressor,
+    &-adjustment {
+      width: 49%;
+    }
   }
 
   &-fasteners {
@@ -179,6 +184,88 @@
       @include breakpoint($tablet) {
         width: 105px;
         height: 105px;
+      }
+    }
+  }
+
+  &-compressor {
+    &::after {
+      content: "";
+      display: block;
+      cursor: pointer;
+      background-size: cover;
+      width: 100%;
+      height: 255px;
+      border-radius: 10px;
+      margin-top: 3px;
+      border: 1px solid #dcdcdc;
+      transition: all 0.3s ease;
+
+      @include breakpoint($tablet) {
+        height: 200px;
+      }
+    }
+  }
+
+  &-adjustment {
+    &::after {
+      content: "";
+      display: block;
+      cursor: pointer;
+      background-size: cover;
+      width: 100%;
+      height: 255px;
+      border-radius: 10px;
+      margin-top: 3px;
+      border: 1px solid #dcdcdc;
+      transition: all 0.3s ease;
+
+      @include breakpoint($tablet) {
+        height: 200px;
+      }
+    }
+  }
+
+  &-limiter {
+    &::after {
+      content: "";
+      display: block;
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 155px;
+      height: 155px;
+      border-radius: 10px;
+      margin-top: 3px;
+      margin-right: 15px;
+      border: 1px solid #dcdcdc;
+      transition: all 0.3s ease;
+
+      @include breakpoint($tablet) {
+        height: 200px;
+      }
+    }
+  }
+
+  &-lock {
+    &::after {
+      content: "";
+      display: block;
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 133px;
+      height: 133px;
+      border-radius: 10px;
+      margin-top: 3px;
+      margin-right: 15px;
+      border: 1px solid #dcdcdc;
+      transition: all 0.3s ease;
+
+      @include breakpoint($tablet) {
+        height: 200px;
       }
     }
   }
@@ -211,6 +298,32 @@
     }
   }
 }
+
+input[type="radio"]:checked + label::after {
+  border: 1px solid $text-important-lighter;
+  transform: scale(0.9);
+}
+
+input[name="compressor"]:checked + label::after {
+  border: 1px solid $text-important-lighter;
+  transform: scale(1) translateY(5px);
+}
+
+input[name="adjustment"]:checked + label::after {
+  border: 1px solid $text-important-lighter;
+  transform: scale(1) translateY(5px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 
 label[for="color-white"] {
   &::after {
@@ -326,17 +439,60 @@ label[for="mount-cover"] {
   }
 }
 
-input[type="radio"]:checked + label::after {
-  border: 1px solid $text-important-lighter;
-  transform: scale(0.9);
+label[for="compressor-window"] {
+  &::after {
+    background-image: url("../../img/compressor-window.jpg");
+  }
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+label[for="compressor-door"] {
+  &::after {
+    background-image: url("../../img/compressor-door.jpg");
+  }
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
+label[for="adjustment-window"] {
+  &::after {
+    background-image: url("../../img/adjustment-window.jpg");
+  }
 }
+
+label[for="adjustment-door"] {
+  &::after {
+    background-image: url("../../img/adjustment-door.jpg");
+  }
+}
+
+label[for="limiter-plastic"] {
+  &::after {
+    background-image: url("../../img/limiter-plastic.jpg");
+  }
+}
+
+label[for="limiter-metal"] {
+  &::after {
+    background-image: url("../../img/limiter-metal.jpg");
+  }
+}
+
+label[for="lock-handle"] {
+  &::after {
+    background-image: url("../../img/lock-handle.jpg");
+  }
+}
+
+label[for="lock-bottom"] {
+  &::after {
+    background-image: url("../../img/lock-bottom.jpg");
+  }
+}
+
+label[for="lock-cable"] {
+  &::after {
+    background-image: url("../../img/lock-cable.jpg");
+  }
+}
+
+
+
+
