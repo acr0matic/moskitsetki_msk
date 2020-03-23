@@ -124,14 +124,14 @@ window.addEventListener("DOMContentLoaded", () => {
     for (const button of nextSlideButtons) {
       button.addEventListener("click", () => {
         swiperCalculator.slideNext();
-      })
+      });
     }
 
     var prevSlideButtons = document.querySelectorAll(".calculator-button-prev");
     for (const button of prevSlideButtons) {
       button.addEventListener("click", () => {
         swiperCalculator.slidePrev();
-      })
+      });
     }
   }
 
@@ -166,5 +166,77 @@ window.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       MicroModal.show("modal-callback"); // [1]
     });
+  }
+
+  function setCursorPosition(pos, elem) {
+    elem.focus();
+    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+    else if (elem.createTextRange) {
+      var range = elem.createTextRange();
+      range.collapse(true);
+      range.moveEnd("character", pos);
+      range.moveStart("character", pos);
+      range.select();
+    }
+  }
+
+  var len = 0;
+  function mask(event) {
+    var matrix = "+7 (___) ___ ____",
+      i = 0,
+      def = matrix.replace(/\D/g, ""),
+      val = this.value.replace(/\D/g, "");
+    if (def.length >= val.length) val = def;
+    this.value = matrix.replace(/[_\d]/g, function(a) {
+      return i < val.length ? val.charAt(i++) : a;
+    });
+    i = this.value.indexOf("_");
+    if (val.length < len) i = this.value.lastIndexOf(val.substr(-1)) + 1;
+    if (i != -1) {
+      i < 5 && (i = 3);
+      this.value = this.value.slice(0, i);
+    }
+    if (event.type == "blur") {
+      if (this.value.length < 5) this.value = "";
+    } else setCursorPosition(this.value.length, this);
+    len = val.length;
+  }
+
+  var callbackForm = document.getElementById("callbackForm");
+  var errorLabel = document.getElementById("form-error-label");
+  var nameInput = document.querySelector("input[name=user_name]");
+  var phoneInput = document.querySelector("input[name=user_phone]");
+
+  phoneInput.addEventListener("input", mask, false);
+  phoneInput.addEventListener("focus", mask, false);
+  phoneInput.addEventListener("blur", mask, false);
+
+  callbackAccept.addEventListener("click", () => {
+    if (CheckForm()) callbackForm.submit();
+  });
+
+  function CheckForm() {
+    if (ValidName(nameInput) && ValidPhone(phoneInput)) return true;
+    return false;
+  }
+
+  function ValidName(input) {
+    var regex = /^[a-zA-Zа-яА-Я]+(([',. -][a-zA-Zа-яА-Я])?[a-zA-Zа-яА-Я]*)*$/;
+    var valid = regex.test(input.value);
+    if (!valid) {
+      errorLabel.style.display = "block";
+      errorLabel.innerText = "Вы неправильно ввели имя"
+    }
+    return valid;
+  }
+
+  function ValidPhone(input) {
+    var regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+    var valid = regex.test(input.value);
+    if (!valid) {
+      errorLabel.style.display = "block";
+      errorLabel.innerText = "Вы неправильно номер телефона"
+    }
+    return valid;
   }
 });

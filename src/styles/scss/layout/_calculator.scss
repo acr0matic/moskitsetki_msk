@@ -1,11 +1,6 @@
-.secondary-heading {
-  text-align: left;
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 50px;
-}
 
 .calculator {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +106,6 @@
 
   &-lock-type {
     display: flex;
-    width: 49%;
 
     @include breakpoint($tablet) {
       flex-wrap: wrap;

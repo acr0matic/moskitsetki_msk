@@ -23,7 +23,7 @@
       width: 100%;
     }
   }
-  @include last-child() {
+  @include first(2) {
     width: 49%;
 
     @include breakpoint($phone-l) {

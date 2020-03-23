@@ -1,6 +1,7 @@
 var prices = {
   ironCnob: 200,
   install: 500,
+  installProvedal: 1000,
   delivery: 500,
 
   fastenersPlunger: 500,
@@ -8,7 +9,7 @@ var prices = {
   fastenersPlastic: 0,
 
   handlePlastic: 0,
-  handleMetal: 200,
+  handleMetal: 250,
 
   cornerPlastic: 0,
   cornerMetal: 500,
@@ -23,7 +24,7 @@ var prices = {
   mosquito: 499,
   cat: 1299,
   dust: 1199,
-  provedal: 2299,
+  provedal: 2499,
   mosquitoDoor: 2999,
 
   new_antiPollen: 3499,
@@ -180,10 +181,18 @@ function init() {
 if (install)
   install.addEventListener("change", event => {
     if (event.target.checked) {
-      installPrice = prices.install;
-      ChangePrice();
-      installCell.innerHTML = "Да";
-      installCost.innerHTML = FormatPrice(prices.install);
+      if (product != "provedal") {
+        installPrice = prices.install;
+        ChangePrice();
+        installCell.innerHTML = "Да";
+        installCost.innerHTML = FormatPrice(prices.install);
+      }
+      else {
+        installPrice = prices.installProvedal;
+        ChangePrice();
+        installCell.innerHTML = "Да";
+        installCost.innerHTML = FormatPrice(prices.installProvedal);
+      }
     } else {
       installPrice = 0;
       ChangePrice();
@@ -192,21 +201,20 @@ if (install)
     }
   });
 
-if (delivery) delivery.addEventListener("change", event => {
-  if (event.target.checked) {
-    deliveryPrice = prices.delivery;
-    ChangePrice();
-    deliveryCell.innerHTML = "Да";
-    deliveryCost.innerHTML = FormatPrice(prices.delivery);
-  }
-
-  else {
-    deliveryPrice = 0;
-    ChangePrice();
-    deliveryCell.innerHTML = "Нет";
-    deliveryCost.innerHTML = FormatPrice(0);
-  }
-});
+if (delivery)
+  delivery.addEventListener("change", event => {
+    if (event.target.checked) {
+      deliveryPrice = prices.delivery;
+      ChangePrice();
+      deliveryCell.innerHTML = "Да";
+      deliveryCost.innerHTML = FormatPrice(prices.delivery);
+    } else {
+      deliveryPrice = 0;
+      ChangePrice();
+      deliveryCell.innerHTML = "Нет";
+      deliveryCost.innerHTML = FormatPrice(0);
+    }
+  });
 
 if (widthField)
   widthField.addEventListener("change", () => {
@@ -433,15 +441,18 @@ function calculateSize() {
     }
   } else if (calculatorType == "mosquito-nets") {
     if (heightValue * widthValue > 10000) {
-      var multiplier = (heightValue * widthValue) / 1000 - 10;
+      var multiplier = Math.ceil((heightValue * widthValue) / 1000 - 10);
 
       if (multiplier != 0)
-        sizePrice = Math.floor(
-          prices["new_" + product] + multiplier * addPriceValue
-        );
-      else sizePrice = prices["new_" + product];
-    } else if (heightValue * widthValue > 2500)
+        sizePrice = Math.floor(prices["new_" + product] + (multiplier * addPriceValue));
+
+      else
+        sizePrice = prices["new_" + product];
+    }
+
+    else if (heightValue * widthValue > 2500)
       sizePrice = prices["new_" + product];
+
     else sizePrice = prices[product];
   }
 }

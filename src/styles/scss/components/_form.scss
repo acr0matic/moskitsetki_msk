@@ -10,6 +10,12 @@
     }
   }
 
+  &-error-label {
+    display: none;
+    margin-top: 40px;
+    margin-bottom: -30px;
+  }
+
   &-order {
     flex-direction: column;
     align-items: center;
@@ -24,6 +30,13 @@
 
     @include breakpoint($phone-l) {
       padding: 30px;
+    }
+
+    .secondary-heading {
+      text-align: left;
+      width: 100%;
+      margin-bottom: 15px;
+      margin-top: 50px;
     }
 
     .input-text {

@@ -65,7 +65,7 @@
           </ul>
         </nav>
         <div class="callback">
-          <a href="tel:89653171030" class="phone">+7 965 317 10 30</a>
+          <a href="tel:89266304556" class="phone">+7 926 630 45 56</a>
           <small class="worktime">Ежедневно с 9 до 22</small>
         </div>
         <!-- /.callback -->
@@ -291,7 +291,7 @@
           </ul>
         </nav>
         <div class="callback">
-          <a href="tel:89653171030" class="phone">+7 965 317 10 30</a>
+          <a href="tel:89266304556" class="phone">+7 926 630 45 56</a>
           <small class="worktime">Ежедневно с 9 до 22</small>
         </div>
         <!-- /.callback -->
@@ -315,17 +315,18 @@
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        <form class="form form-modal" action="">
+        <form id="callbackForm" class="form form-modal" action="mail.php" method="POST" enctype="multipart/form-data">
           <h2 class="modal-title">Заказать обратный звонок</h2>
           <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем удобное время и дату</p>
-          <input required class="input input-text input-shadow" type="text" name="" placeholder="Ваше имя">
-          <input required class="input input-text input-shadow" type="number" name="" placeholder="Ваш телефон">
+          <input required class="input input-text input-shadow" type="text" name="user_name" placeholder="Ваше имя">
+          <input required class="input input-text input-shadow" type="tel" name="user_phone" placeholder="Ваш телефон">
           <div class="checkbox">
             <input type="checkbox" id="accept" />
             <label for="accept">Я согласен на обработку моих персональных данных согласно условиям <a href="" class="politics">политики конфиденциальности</a></label>
           </div>
           <!-- /.politics -->
-          <button disabled id="modal-callback-accept" class="button button-large button-form">Заказать</button>
+          <button type="button" disabled id="modal-callback-accept" class="button button-large button-form">Заказать</button>
+          <p id="form-error-label" class="form-error-label"></p>
         </form>
       </div>
       <!-- /.modal__container -->
@@ -333,6 +334,7 @@
     <!-- /.modal__overlay -->
   </div>
   <!-- /.micromodal-slide -->
+
 
   <div id="mobile-menu" class="mobile-menu">
     <div class="mobile-menu-overlay">
@@ -347,7 +349,7 @@
           </ul>
         </nav>
         <div class="callback">
-          <a href="tel:89653171030" class="phone">+7 965 317 10 30</a>
+          <a href="tel:89266304556" class="phone">+7 926 630 45 56</a>
           <small class="worktime">Ежедневно с 9 до 22</small>
         </div>
         <button data-modal-callback class="button">Заказать звонок</button>
