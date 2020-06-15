@@ -11,7 +11,6 @@
 
 .kit {
   width: 32%;
-  min-height: 810px;
 
   text-align: center;
 
@@ -40,7 +39,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 550px;
+  min-height: 425px;
   padding: 45px;
 
   @include breakpoint($laptop) {

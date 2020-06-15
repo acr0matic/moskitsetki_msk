@@ -40,23 +40,14 @@ var curtainsScrollButtons = document.querySelectorAll("[data-scroll-curtains]");
 
 for (const button of netsScrollButtons) {
   button.addEventListener("click", () => {
-    SmoothScroll("mosquito");
+    SmoothScroll("#mosquito");
   });
 }
 
 for (const button of curtainsScrollButtons) {
   button.addEventListener("click", () => {
-    SmoothScroll("curtains");
+    SmoothScroll("#curtains");
   });
-}
-
-CheckViewport();
-
-function CheckViewport() {
-  var media = window.matchMedia("(max-width: 768px)");
-
-  if (media.matches)
-    anchorChange.setAttribute("href", "production.html#curtains")
 }
 
 var logoElements = document.querySelectorAll(".logo");
@@ -69,3 +60,16 @@ for (const logo of logoElements) {
     });
   });
 }
+
+let calculatorButtons = document.querySelectorAll(".calculator-button-next, .calculator-button-prev");
+
+for (const button of calculatorButtons) {
+  button.addEventListener("click", () => {
+    SmoothScroll("#calculation");
+  })
+}
+
+// Пожалуй, это единственное, что есть чудесное в этом проекте
+// Коментарий, поясняющий другим разработчикам, что я люблю Кристюшу <3
+//
+// ..........................................................30/03/2020

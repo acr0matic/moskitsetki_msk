@@ -17,7 +17,7 @@
   }
 
   .button {
-    @include breakpoint($phone-l) {
+    @include breakpoint($tablet) {
       display: none;
     }
   }
@@ -28,7 +28,7 @@
   max-width: 220px;
   cursor: pointer;
 
-  @include breakpoint($phone-l) {
+  @include breakpoint($laptop) {
     max-width: 160px;
   }
 }
@@ -62,7 +62,7 @@
   margin-right: 30px;
 
   @include breakpoint($tablet) {
-    margin: 0;
+    margin-left: auto;
   }
 
   .worktime {

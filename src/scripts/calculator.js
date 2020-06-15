@@ -26,6 +26,7 @@ var prices = {
   dust: 1199,
   provedal: 2499,
   mosquitoDoor: 2999,
+  inner: 1250,
 
   new_antiPollen: 3499,
   new_ultraview: 1499,
@@ -34,6 +35,7 @@ var prices = {
   new_dust: 1999,
   new_provedal: 2299,
   new_mosquitoDoor: 2999,
+  new_inner: 2500,
 
   rollerBlinds: 699,
   rollerBlindsBox: 1199,
@@ -60,7 +62,7 @@ var prices = {
 
   lockCable: 1000,
   lockBottom: 800,
-  lockHandle: 1000
+  lockHandle: 1000,
 };
 
 var curtains_prices = {
@@ -74,12 +76,13 @@ var curtains_prices = {
 
   plisse: 1,
   jalousieHorizontal: 1,
-  jalousieVertical: 1
+  jalousieVertical: 1,
 };
 
 var calculator = document.getElementById("calculation");
 
 var product = calculator.getAttribute("data-product");
+var productName = document.querySelector(".product-heading").innerHTML;
 var calculatorType = calculator.getAttribute("data-calculator-type");
 var calculatorMethod = calculator.getAttribute("data-calculator-method");
 
@@ -120,7 +123,9 @@ var delivery = document.getElementById("calculator-delivery");
 
 var accept = document.getElementById("calculator-order-button");
 
-var color, width, height;
+var color = "white",
+  width,
+  height;
 
 var fastenerPrice = 0,
   colorPrice = 0,
@@ -179,15 +184,14 @@ function init() {
 }
 
 if (install)
-  install.addEventListener("change", event => {
+  install.addEventListener("change", (event) => {
     if (event.target.checked) {
       if (product != "provedal") {
         installPrice = prices.install;
         ChangePrice();
         installCell.innerHTML = "Да";
         installCost.innerHTML = FormatPrice(prices.install);
-      }
-      else {
+      } else {
         installPrice = prices.installProvedal;
         ChangePrice();
         installCell.innerHTML = "Да";
@@ -202,7 +206,7 @@ if (install)
   });
 
 if (delivery)
-  delivery.addEventListener("change", event => {
+  delivery.addEventListener("change", (event) => {
     if (event.target.checked) {
       deliveryPrice = prices.delivery;
       ChangePrice();
@@ -444,15 +448,12 @@ function calculateSize() {
       var multiplier = Math.ceil((heightValue * widthValue) / 1000 - 10);
 
       if (multiplier != 0)
-        sizePrice = Math.floor(prices["new_" + product] + (multiplier * addPriceValue));
-
-      else
-        sizePrice = prices["new_" + product];
-    }
-
-    else if (heightValue * widthValue > 2500)
+        sizePrice = Math.floor(
+          prices["new_" + product] + multiplier * addPriceValue
+        );
+      else sizePrice = prices["new_" + product];
+    } else if (heightValue * widthValue > 2500)
       sizePrice = prices["new_" + product];
-
     else sizePrice = prices[product];
   }
 }
@@ -484,4 +485,126 @@ function CheckState() {
 
 function FormatPrice(price) {
   return price + "р";
+}
+
+/* Данная функция создаёт кроссбраузерный объект XMLHTTP */
+function getXmlHttp() {
+  var xmlhttp;
+  try {
+    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  } catch (e) {
+    try {
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (E) {
+      xmlhttp = false;
+    }
+  }
+  if (!xmlhttp && typeof XMLHttpRequest != "undefined") {
+    xmlhttp = new XMLHttpRequest();
+  }
+  return xmlhttp;
+}
+
+accept.addEventListener("click", () => {
+  MicroModal.show("modal-order");
+});
+
+var orderAcceptButton = document.getElementById("button-order-accept");
+var orderForm = document.getElementById("orderForm");
+var userName;
+var userPhone;
+
+orderAcceptButton.addEventListener("click", () => {
+  userName = orderForm.querySelector("input[name=user_name]").value;
+  userPhone = orderForm.querySelector("input[name=user_phone]").value;
+
+  MicroModal.close("modal-order");
+  SendValues();
+  MicroModal.show("modal-accept");
+});
+
+function SendValues() {
+  var xmlhttp = getXmlHttp(); // Создаём объект XMLHTTP
+  xmlhttp.open("POST", "mail-calculator.php", true); // Открываем асинхронное соединение
+  xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // Отправляем кодировку
+
+  if (calculatorType == "mosquito-nets") {
+    xmlhttp.send(
+      "&name=" +
+        encodeURIComponent(userName) +
+        "&phone=" +
+        encodeURIComponent(userPhone) +
+        "&productionType=" +
+        encodeURIComponent(calculatorType) +
+        "&type=" +
+        encodeURIComponent(productName) +
+        "&size=" +
+        encodeURIComponent(sizeCell.innerHTML) +
+        "&sizePrice=" +
+        encodeURIComponent(sizePrice + "р") +
+        "&color=" +
+        encodeURIComponent(colorCell.innerHTML) +
+        "&colorPrice=" +
+        encodeURIComponent(colorPrice + "р") +
+        "&fastener=" +
+        encodeURIComponent(fastenersCell.innerHTML) +
+        "&fastenerPrice=" +
+        encodeURIComponent(fastenerPrice + "р") +
+        "&handle=" +
+        encodeURIComponent(handleCell.innerHTML) +
+        "&handlePrice=" +
+        encodeURIComponent(handlePrice + "р") +
+        "&corner=" +
+        encodeURIComponent(cornerCell.innerHTML) +
+        "&cornerPrice=" +
+        encodeURIComponent(cornerPrice + "р") +
+        "&install=" +
+        encodeURIComponent(installCell.innerHTML) +
+        "&installPrice=" +
+        encodeURIComponent(installPrice + "р") +
+        "&delivery=" +
+        encodeURIComponent(deliveryCell.innerHTML) +
+        "&deliveryPrice=" +
+        encodeURIComponent(deliveryPrice + "р") +
+        "&cost=" +
+        encodeURIComponent(priceElement.innerHTML)
+    );
+  }
+
+  if (calculatorType == "curtains") {
+    xmlhttp.send(
+      "&name=" +
+        encodeURIComponent(userName) +
+        "&phone=" +
+        encodeURIComponent(userPhone) +
+        "&productionType=" +
+        encodeURIComponent(calculatorType) +
+        "&type=" +
+        encodeURIComponent(productName) +
+        "&size=" +
+        encodeURIComponent(sizeCell.innerHTML) +
+        "&sizePrice=" +
+        encodeURIComponent(sizePrice + "р") +
+        "&install=" +
+        encodeURIComponent(installCell.innerHTML) +
+        "&installPrice=" +
+        encodeURIComponent(installPrice + "р") +
+        "&delivery=" +
+        encodeURIComponent(deliveryCell.innerHTML) +
+        "&deliveryPrice=" +
+        encodeURIComponent(deliveryPrice + "р") +
+        "&cost=" +
+        encodeURIComponent(priceElement.innerHTML)
+    );
+  }
+  xmlhttp.onreadystatechange = function () {
+    // Ждём ответа от сервера
+    if (xmlhttp.readyState == 4) {
+      // Ответ пришёл
+      if (xmlhttp.status == 200) {
+        // Сервер вернул код 200 (что хорошо)
+        console.log(xmlhttp.responseText);
+      }
+    }
+  };
 }

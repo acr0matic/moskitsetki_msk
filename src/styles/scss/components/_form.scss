@@ -1,12 +1,17 @@
 .form {
   display: flex;
+  flex-direction: column;
 
   &-callback {
-    align-items: center;
-    justify-content: center;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
 
-    @include breakpoint($tablet) {
-      flex-direction: column;
+      @include breakpoint($tablet) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -113,4 +118,3 @@
     justify-content: center;
   }
 }
-

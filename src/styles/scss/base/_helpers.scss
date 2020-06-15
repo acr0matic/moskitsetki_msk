@@ -71,6 +71,10 @@
 .page-head-image {
   min-height: 520px;
   padding-top: 65px;
+
+  @include breakpoint($phone-l) {
+    min-height: 300px;
+  }
 }
 
 .product-page-image {

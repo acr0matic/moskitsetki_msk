@@ -30,12 +30,17 @@
   &-large {
     min-width: 240px;
     height: 70px;
+
+    @include breakpoint($phone-l) {
+      min-width: 170px;
+      height: 60px;
+    }
   }
 
   &-invisible {
     display: none;
-    
-    @include breakpoint($phone-l) {
+
+    @include breakpoint($tablet) {
       display: block;
     }
   }

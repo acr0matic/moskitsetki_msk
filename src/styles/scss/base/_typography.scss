@@ -27,6 +27,11 @@ span {
   text-align: center;
 }
 
+.politics-text {
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
 .calculator-heading,
 .calculator-text,
 .footer-nav-link,
@@ -154,6 +159,10 @@ h4 {
   .phone {
     font-size: 24px;
     color: $text-primary;
+
+    @include breakpoint($laptop) {
+      font-size: 20px;
+    }
   }
 
   .worktime {

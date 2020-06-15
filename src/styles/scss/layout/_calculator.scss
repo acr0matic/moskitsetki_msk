@@ -1,6 +1,5 @@
 
 .calculator {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +7,7 @@
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 
   @include breakpoint($phone-l) {
-    padding: 5px;
+    padding: 15px 0 0 0;
   }
 
   &-parameter-container {
@@ -32,7 +31,7 @@
 
     @include breakpoint($tablet) {
       margin-bottom: 22px;
-      width: 90%;
+      width: 100%;
     }
   }
 
@@ -47,6 +46,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 5px 15px 0 15px;
     }
   }
 
@@ -56,6 +56,10 @@
 
   &-description {
     margin-top: auto;
+
+    @include breakpoint($phone-l) {
+      margin-top: 20px;
+    }
   }
 
   &-column {
@@ -77,6 +81,10 @@
 
   &-block {
     margin-bottom: 45px;
+
+    @include breakpoint($phone-l) {
+      margin-bottom: 15px;
+    }
   }
 
   &-fasteners {
@@ -117,11 +125,16 @@
   &-button-next,
   &-button-prev {
     position: absolute;
-    bottom: -50px;
+    bottom: -35px;
 
     @include breakpoint($phone-l) {
       width: 130px;
       min-width: unset !important;
+    }
+
+    @include breakpoint($phone-m) {
+      bottom: -35px;
+      width: 120px;
     }
   }
 
@@ -166,6 +179,7 @@
     margin-bottom: 30px;
 
     @include breakpoint($phone-l) {
+      margin-top: 20px;
       margin-bottom: 100px;
     }
   }

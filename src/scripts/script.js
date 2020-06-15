@@ -202,41 +202,117 @@ window.addEventListener("DOMContentLoaded", () => {
     len = val.length;
   }
 
-  var callbackForm = document.getElementById("callbackForm");
-  var errorLabel = document.getElementById("form-error-label");
-  var nameInput = document.querySelector("input[name=user_name]");
-  var phoneInput = document.querySelector("input[name=user_phone]");
+  var phoneInputs = document.querySelectorAll("input[name=user_phone]");
 
-  phoneInput.addEventListener("input", mask, false);
-  phoneInput.addEventListener("focus", mask, false);
-  phoneInput.addEventListener("blur", mask, false);
+  for (const input of phoneInputs) {
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+  }
 
-  callbackAccept.addEventListener("click", () => {
-    if (CheckForm()) callbackForm.submit();
-  });
+  var errorLabel;
 
-  function CheckForm() {
-    if (ValidName(nameInput) && ValidPhone(phoneInput)) return true;
+  function CheckForm(form) {
+    var formNameInput = form.querySelector("input[name=user_name]");
+    var formPhoneInput = form.querySelector("input[name=user_phone]");
+    errorLabel = form.querySelector("[data-error-label]");
+
+    formNameInput.addEventListener("click", () => {
+      if (formNameInput.classList.contains("input-error")) {
+        formNameInput.classList.remove("input-error");
+        errorLabel.style.display = "none";
+      }
+    });
+
+    formPhoneInput.addEventListener("click", () => {
+      if (formPhoneInput.classList.contains("input-error")) {
+        formPhoneInput.classList.remove("input-error");
+        errorLabel.style.display = "none";
+      }
+    });
+
+    if (
+      ValidName(formNameInput, errorLabel) &&
+      ValidPhone(formPhoneInput, errorLabel)
+    )
+      return true;
     return false;
   }
 
-  function ValidName(input) {
-    var regex = /^[a-zA-Zа-яА-Я]+(([',. -][a-zA-Zа-яА-Я])?[a-zA-Zа-яА-Я]*)*$/;
+  function ValidName(input, errorLabel) {
+    var regex = /[a-zA-Zа-яА-Я]/;
     var valid = regex.test(input.value);
     if (!valid) {
       errorLabel.style.display = "block";
-      errorLabel.innerText = "Вы неправильно ввели имя"
+      errorLabel.innerText = "Вы неправильно ввели имя";
+      input.classList.add("input-error");
     }
     return valid;
   }
 
-  function ValidPhone(input) {
+  function ValidPhone(input, errorLabel) {
     var regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
     var valid = regex.test(input.value);
     if (!valid) {
       errorLabel.style.display = "block";
-      errorLabel.innerText = "Вы неправильно номер телефона"
+      errorLabel.innerText = "Номер телефона введен неверно";
+      input.classList.add("input-error");
     }
     return valid;
+  }
+
+  var callbackForm = document.getElementById("callbackForm");
+  var callbackIndexForm = document.getElementById("callback-index-form");
+  var orderForm = document.getElementById("orderForm");
+
+  var callbackIndexAccept = document.getElementById("callback-index-accept");
+
+  if (callbackForm) AJAXform(callbackForm, callbackAccept);
+  if (callbackIndexForm) AJAXform(callbackIndexForm, callbackIndexAccept);
+
+  function AJAXform(formID, buttonID, formMethod = "post") {
+    var selectForm = formID;
+    var selectButton = buttonID;
+    var formAction = selectForm.getAttribute("action");
+    var formInputs = selectForm.querySelectorAll("input");
+    var formType = selectForm.getAttribute("data-form-type");
+
+    function XMLhttp() {
+      var httpRequest = new XMLHttpRequest();
+      var formData = new FormData();
+
+      for (var i = 0; i < formInputs.length; i++) {
+        formData.append(formInputs[i].name, formInputs[i].value);
+      }
+
+      httpRequest.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          if (formType == "no-modal") MicroModal.show("modal-accept");
+          else if (formType == "modal") {
+            MicroModal.close("modal-callback");
+            MicroModal.show("modal-accept");
+          }
+
+          for (const input of formInputs) {
+            input.value = "";
+            input.checked = false;
+          }
+        }
+      };
+
+      httpRequest.open(formMethod, formAction);
+      httpRequest.send(formData);
+    }
+
+    selectButton.onclick = function() {
+      if (CheckForm(selectForm)) {
+        errorLabel.style.display = "none";
+        XMLhttp();
+      }
+    };
+
+    selectForm.onsubmit = function() {
+      return false;
+    };
   }
 });
