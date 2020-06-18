@@ -7,9 +7,9 @@ const { reload } = browserSync;
 
 gulp.task('serve', () => {
   browserSync.init({
-    server: './src/',
-    port: 4000,
+    proxy: 'bestforhome24.ru',
     notify: false,
+    port: 3001,
   });
 
   gulp.watch(paths.html.watch).on('all', reload);

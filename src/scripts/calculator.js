@@ -1,4 +1,4 @@
-var prices = {
+const prices = {
   ironCnob: 200,
   install: 500,
   installProvedal: 1000,
@@ -65,7 +65,7 @@ var prices = {
   lockHandle: 1000,
 };
 
-var curtains_prices = {
+const curtains_prices = {
   rollerBlinds: 400,
   rollerBlindsBox: 600,
   rollerBlindsGrand: 800,
@@ -79,149 +79,151 @@ var curtains_prices = {
   jalousieVertical: 1,
 };
 
-var calculator = document.getElementById("calculation");
+const calculator = document.getElementById('calculation');
 
-var product = calculator.getAttribute("data-product");
-var productName = document.querySelector(".product-heading").innerHTML;
-var calculatorType = calculator.getAttribute("data-calculator-type");
-var calculatorMethod = calculator.getAttribute("data-calculator-method");
+const product = calculator.getAttribute('data-product');
+const productName = document.querySelector('.product-heading').innerHTML;
+const calculatorType = calculator.getAttribute('data-calculator-type');
+const calculatorMethod = calculator.getAttribute('data-calculator-method');
 
-var sizeCost = document.getElementById("table-size-cost");
-var colorCost = document.getElementById("table-color-cost");
-var fastenersCost = document.getElementById("table-fasteners-cost");
-var handleCost = document.getElementById("table-handle-cost");
-var installCost = document.getElementById("table-install-cost");
-var cornerCost = document.getElementById("table-corner-cost");
-var deliveryCost = document.getElementById("table-delivery-cost");
+const sizeCost = document.getElementById('table-size-cost');
+const colorCost = document.getElementById('table-color-cost');
+const fastenersCost = document.getElementById('table-fasteners-cost');
+const handleCost = document.getElementById('table-handle-cost');
+const installCost = document.getElementById('table-install-cost');
+const cornerCost = document.getElementById('table-corner-cost');
+const deliveryCost = document.getElementById('table-delivery-cost');
 
-var sizeCell = document.getElementById("table-size-item");
-var colorCell = document.getElementById("table-color-item");
-var fastenersCell = document.getElementById("table-fasteners-item");
-var handleCell = document.getElementById("table-handle-item");
-var installCell = document.getElementById("table-install-item");
-var cornerCell = document.getElementById("table-corner-item");
-var deliveryCell = document.getElementById("table-delivery-item");
+const sizeCell = document.getElementById('table-size-item');
+const colorCell = document.getElementById('table-color-item');
+const fastenersCell = document.getElementById('table-fasteners-item');
+const handleCell = document.getElementById('table-handle-item');
+const installCell = document.getElementById('table-install-item');
+const cornerCell = document.getElementById('table-corner-item');
+const deliveryCell = document.getElementById('table-delivery-item');
 
-var itemName = document.getElementById("item-name");
-var itemType = document.getElementById("item-type");
-var itemCost = document.getElementById("item-cost");
+const itemName = document.getElementById('item-name');
+const itemType = document.getElementById('item-type');
+const itemCost = document.getElementById('item-cost');
 
-var widthField = document.getElementById("calculator-width");
-var heightField = document.getElementById("calculator-height");
-var colors = document.querySelectorAll(".radio-color");
-var fasteners = document.querySelectorAll(".radio-input-fasteners");
-var handles = document.querySelectorAll(".radio-input-handle");
-var corners = document.querySelectorAll(".radio-input-corner");
-var compressors = document.querySelectorAll(".radio-input-compressor");
-var adjustments = document.querySelectorAll(".radio-input-adjustment");
-var limiters = document.querySelectorAll(".radio-input-limiter");
-var locks = document.querySelectorAll(".radio-input-lock");
+const widthField = document.getElementById('calculator-width');
+const heightField = document.getElementById('calculator-height');
+const colors = document.querySelectorAll('.radio-color');
+const fasteners = document.querySelectorAll('.radio-input-fasteners');
+const handles = document.querySelectorAll('.radio-input-handle');
+const corners = document.querySelectorAll('.radio-input-corner');
+const compressors = document.querySelectorAll('.radio-input-compressor');
+const adjustments = document.querySelectorAll('.radio-input-adjustment');
+const limiters = document.querySelectorAll('.radio-input-limiter');
+const locks = document.querySelectorAll('.radio-input-lock');
 
-var priceElement = document.getElementById("calculator-price");
-var install = document.getElementById("calculator-install");
-var delivery = document.getElementById("calculator-delivery");
+const priceElement = document.getElementById('calculator-price');
+const install = document.getElementById('calculator-install');
+const delivery = document.getElementById('calculator-delivery');
 
-var accept = document.getElementById("calculator-order-button");
+const accept = document.getElementById('calculator-order-button');
 
-var color = "white",
-  width,
-  height;
+let color = 'white';
+let width;
+let height;
 
-var fastenerPrice = 0,
-  colorPrice = 0,
-  handlePrice = 0,
-  cornerPrice = 0,
-  installPrice = 0,
-  deliveryPrice = 0,
-  typePrice = 0,
-  sizePrice = 0,
-  compressorPrice = 0,
-  adjustmentPrice = 0,
-  limiterPrice = 0,
-  lockPrice = 0;
+let fastenerPrice = 0;
+let colorPrice = 0;
+let handlePrice = 0;
+let cornerPrice = 0;
+let installPrice = 0;
+let deliveryPrice = 0;
+let typePrice = 0;
+let sizePrice = 0;
+let compressorPrice = 0;
+let adjustmentPrice = 0;
+let limiterPrice = 0;
+let lockPrice = 0;
 
-var addPriceValue = (prices["new_" + product] / 100) * 10;
+const addPriceValue = (prices[`new_${product}`] / 100) * 10;
 
 init();
 
 function init() {
-  if (calculatorType != "other") {
+  if (calculatorType != 'other') {
     sizePrice = prices[product];
   } else {
-    if (product == "tinting") {
+    if (product == 'tinting') {
       typePrice = prices.tinting;
     }
 
-    if (product == "compressor") {
+    if (product == 'compressor') {
       compressorPrice = prices.compressorWindow;
     }
 
-    if (product == "adjustment") {
+    if (product == 'adjustment') {
       adjustmentPrice = prices.adjustmentWindow;
     }
 
-    if (product == "limiter") {
+    if (product == 'limiter') {
       limiterPrice = prices.limiterPlastic;
     }
 
-    if (product == "lock") {
+    if (product == 'lock') {
       lockPrice = prices.lockCable;
     }
   }
 
   ChangePrice();
 
-  if (calculatorType == "mosquito-nets") {
-    itemName.innerHTML = "Тип сетки";
-    itemType.innerHTML = "Классическая";
-    sizeCell.innerHTML = "50x50";
+  if (calculatorType == 'mosquito-nets') {
+    itemName.innerHTML = 'Тип сетки';
+    itemType.innerHTML = 'Классическая';
+    sizeCell.innerHTML = '50x50';
     sizeCost.innerHTML = FormatPrice(prices[product]);
-  } else if (calculatorType == "curtains") {
-    itemName.innerHTML = "Тип шторы";
-    sizeCell.innerHTML = "20x30";
+  } else if (calculatorType == 'curtains') {
+    itemName.innerHTML = 'Тип шторы';
+    sizeCell.innerHTML = '20x30';
     sizeCost.innerHTML = FormatPrice(prices[product]);
   }
 }
 
-if (install)
-  install.addEventListener("change", (event) => {
+if (install) {
+  install.addEventListener('change', (event) => {
     if (event.target.checked) {
-      if (product != "provedal") {
+      if (product != 'provedal') {
         installPrice = prices.install;
         ChangePrice();
-        installCell.innerHTML = "Да";
+        installCell.innerHTML = 'Да';
         installCost.innerHTML = FormatPrice(prices.install);
       } else {
         installPrice = prices.installProvedal;
         ChangePrice();
-        installCell.innerHTML = "Да";
+        installCell.innerHTML = 'Да';
         installCost.innerHTML = FormatPrice(prices.installProvedal);
       }
     } else {
       installPrice = 0;
       ChangePrice();
-      installCell.innerHTML = "Нет";
+      installCell.innerHTML = 'Нет';
       installCost.innerHTML = FormatPrice(0);
     }
   });
+}
 
-if (delivery)
-  delivery.addEventListener("change", (event) => {
+if (delivery) {
+  delivery.addEventListener('change', (event) => {
     if (event.target.checked) {
       deliveryPrice = prices.delivery;
       ChangePrice();
-      deliveryCell.innerHTML = "Да";
+      deliveryCell.innerHTML = 'Да';
       deliveryCost.innerHTML = FormatPrice(prices.delivery);
     } else {
       deliveryPrice = 0;
       ChangePrice();
-      deliveryCell.innerHTML = "Нет";
+      deliveryCell.innerHTML = 'Нет';
       deliveryCost.innerHTML = FormatPrice(0);
     }
   });
+}
 
-if (widthField)
-  widthField.addEventListener("change", () => {
+if (widthField) {
+  widthField.addEventListener('change', () => {
     width = widthField.value;
     calculateSize();
     CheckState();
@@ -230,12 +232,13 @@ if (widthField)
     if (!height) height = 0;
     if (!width) width = 0;
 
-    sizeCell.innerHTML = height + "x" + width;
+    sizeCell.innerHTML = `${height}x${width}`;
     sizeCost.innerHTML = FormatPrice(sizePrice);
   });
+}
 
-if (heightField)
-  heightField.addEventListener("change", () => {
+if (heightField) {
+  heightField.addEventListener('change', () => {
     height = heightField.value;
     calculateSize();
     CheckState();
@@ -244,111 +247,112 @@ if (heightField)
     if (!height) height = 0;
     if (!width) width = 0;
 
-    sizeCell.innerHTML = height + "x" + width;
+    sizeCell.innerHTML = `${height}x${width}`;
     sizeCost.innerHTML = FormatPrice(sizePrice);
   });
+}
 
 for (const fastenersValue of fasteners) {
-  fastenersValue.addEventListener("change", () => {
-    var fastener = fastenersValue.getAttribute("value");
+  fastenersValue.addEventListener('change', () => {
+    const fastener = fastenersValue.getAttribute('value');
 
-    if (fastener == "plastic") {
+    if (fastener == 'plastic') {
       fastenerPrice = prices.fastenersPlastic;
       typePrice = 0;
       ChangePrice();
-      fastenersCell.innerHTML = "Пластик";
+      fastenersCell.innerHTML = 'Пластик';
       fastenersCost.innerHTML = FormatPrice(prices.fastenersPlastic);
-      itemType.innerHTML = "Классическая";
+      itemType.innerHTML = 'Классическая';
       itemCost.innerHTML = FormatPrice(0);
     }
 
-    if (fastener == "metal") {
+    if (fastener == 'metal') {
       fastenerPrice = prices.fastenersMetal;
       typePrice = 0;
       ChangePrice();
-      fastenersCell.innerHTML = "Металл";
+      fastenersCell.innerHTML = 'Металл';
       fastenersCost.innerHTML = FormatPrice(prices.fastenersMetal);
-      itemType.innerHTML = "Классическая";
+      itemType.innerHTML = 'Классическая';
       itemCost.innerHTML = FormatPrice(0);
     }
 
-    if (fastener == "plunger") {
+    if (fastener == 'plunger') {
       fastenerPrice = prices.fastenersPlunger;
       typePrice = prices.plunger;
       ChangePrice();
-      fastenersCell.innerHTML = "Плунжер";
+      fastenersCell.innerHTML = 'Плунжер';
       fastenersCost.innerHTML = FormatPrice(prices.fastenersPlunger);
-      itemType.innerHTML = "Плунжерная";
+      itemType.innerHTML = 'Плунжерная';
       itemCost.innerHTML = FormatPrice(200);
     }
   });
 }
 
 for (const handlesValue of handles) {
-  handlesValue.addEventListener("change", () => {
-    var handle = handlesValue.getAttribute("value");
+  handlesValue.addEventListener('change', () => {
+    const handle = handlesValue.getAttribute('value');
 
-    if (handle == "plastic") {
+    if (handle == 'plastic') {
       handlePrice = prices.handlePlastic;
       ChangePrice();
-      handleCell.innerHTML = "Пластик";
+      handleCell.innerHTML = 'Пластик';
       handleCost.innerHTML = FormatPrice(prices.handlePlastic);
     }
 
-    if (handle == "metal") {
+    if (handle == 'metal') {
       handlePrice = prices.handleMetal;
       ChangePrice();
-      handleCell.innerHTML = "Металл";
+      handleCell.innerHTML = 'Металл';
       handleCost.innerHTML = FormatPrice(prices.handleMetal);
     }
   });
 }
 
 for (const cornersValue of corners) {
-  cornersValue.addEventListener("change", () => {
-    var handle = cornersValue.getAttribute("value");
+  cornersValue.addEventListener('change', () => {
+    const handle = cornersValue.getAttribute('value');
 
-    if (handle == "plastic") {
+    if (handle == 'plastic') {
       cornerPrice = prices.cornerPlastic;
       ChangePrice();
-      cornerCell.innerHTML = "Пластик";
+      cornerCell.innerHTML = 'Пластик';
       cornerCost.innerHTML = FormatPrice(prices.cornerPlastic);
     }
 
-    if (handle == "metal") {
+    if (handle == 'metal') {
       cornerPrice = prices.cornerMetal;
       ChangePrice();
-      cornerCell.innerHTML = "Металл";
+      cornerCell.innerHTML = 'Металл';
       cornerCost.innerHTML = FormatPrice(prices.cornerMetal);
     }
   });
 }
 
 for (const colorValue of colors) {
-  colorValue.addEventListener("change", () => {
-    color = colorValue.getAttribute("value");
+  colorValue.addEventListener('change', () => {
+    color = colorValue.getAttribute('value');
 
-    if (calculatorType == "mosquito-nets") {
-      if (color == "brown") {
+    if (calculatorType == 'mosquito-nets') {
+      if (color == 'brown') {
         colorPrice = prices.colorBrown;
         ChangePrice();
-        colorCell.innerHTML = "Коричневый";
+        colorCell.innerHTML = 'Коричневый';
         colorCost.innerHTML = FormatPrice(prices.colorBrown);
       }
 
-      if (color == "white") {
+      if (color == 'white') {
         colorPrice = prices.colorWhite;
         ChangePrice();
-        colorCell.innerHTML = "Белый";
+        colorCell.innerHTML = 'Белый';
         colorCost.innerHTML = FormatPrice(0);
       }
-    } else if (calculatorType == "other") {
-      if (color == "brown") {
+    } else if (calculatorType == 'other') {
+      if (color == 'brown') {
         colorPrice = prices.colorBrown;
         ChangePrice();
       }
 
-      if (color == "white") {
+      if (color == 'white') {
         colorPrice = prices.colorWhite;
         ChangePrice();
       }
@@ -357,15 +361,15 @@ for (const colorValue of colors) {
 }
 
 for (const compressorValue of compressors) {
-  compressorValue.addEventListener("change", () => {
-    var compressor = compressorValue.getAttribute("value");
+  compressorValue.addEventListener('change', () => {
+    const compressor = compressorValue.getAttribute('value');
 
-    if (compressor == "window") {
+    if (compressor == 'window') {
       compressorPrice = prices.compressorWindow;
       ChangePrice();
     }
 
-    if (compressor == "door") {
+    if (compressor == 'door') {
       compressorPrice = prices.compressorDoor;
       ChangePrice();
     }
@@ -373,15 +377,15 @@ for (const compressorValue of compressors) {
 }
 
 for (const adjustmentValue of adjustments) {
-  adjustmentValue.addEventListener("change", () => {
-    var adjustment = adjustmentValue.getAttribute("value");
+  adjustmentValue.addEventListener('change', () => {
+    const adjustment = adjustmentValue.getAttribute('value');
 
-    if (adjustment == "window") {
+    if (adjustment == 'window') {
       adjustmentPrice = prices.adjustmentWindow;
       ChangePrice();
     }
 
-    if (adjustment == "door") {
+    if (adjustment == 'door') {
       adjustmentPrice = prices.adjustmentDoor;
       ChangePrice();
     }
@@ -389,15 +393,15 @@ for (const adjustmentValue of adjustments) {
 }
 
 for (const limiterValue of limiters) {
-  limiterValue.addEventListener("change", () => {
-    var limiter = limiterValue.getAttribute("value");
+  limiterValue.addEventListener('change', () => {
+    const limiter = limiterValue.getAttribute('value');
 
-    if (limiter == "plastic") {
+    if (limiter == 'plastic') {
       limiterPrice = prices.limiterPlastic;
       ChangePrice();
     }
 
-    if (limiter == "metal") {
+    if (limiter == 'metal') {
       limiterPrice = prices.limiterMetal;
       ChangePrice();
     }
@@ -405,20 +409,20 @@ for (const limiterValue of limiters) {
 }
 
 for (const lockValue of locks) {
-  lockValue.addEventListener("change", () => {
-    var lock = lockValue.getAttribute("value");
+  lockValue.addEventListener('change', () => {
+    const lock = lockValue.getAttribute('value');
 
-    if (lock == "cable") {
+    if (lock == 'cable') {
       lockPrice = prices.lockCable;
       ChangePrice();
     }
 
-    if (lock == "bottom") {
+    if (lock == 'bottom') {
       lockPrice = prices.lockBottom;
       ChangePrice();
     }
 
-    if (lock == "handle") {
+    if (lock == 'handle') {
       lockPrice = prices.lockHandle;
       ChangePrice();
     }
@@ -426,57 +430,50 @@ for (const lockValue of locks) {
 }
 
 function calculateSize() {
-  var heightValue = parseInt(height);
-  var widthValue = parseInt(width);
+  const heightValue = parseInt(height);
+  const widthValue = parseInt(width);
 
-  if (calculatorType == "curtains") {
+  if (calculatorType == 'curtains') {
     if (heightValue > 20 || widthValue > 30) {
-      var heightMultiplier = Math.ceil((heightValue - 20) / 10);
-      var widthMultiplier = Math.ceil((widthValue - 30) / 10);
+      const heightMultiplier = Math.ceil((heightValue - 20) / 10);
+      const widthMultiplier = Math.ceil((widthValue - 30) / 10);
 
-      if (calculatorMethod == "width")
-        sizePrice =
-          prices[product] + widthMultiplier * curtains_prices[product];
-      else if (calculatorMethod == "height")
-        sizePrice =
-          prices[product] + heightMultiplier * curtains_prices[product];
+      if (calculatorMethod == 'width') { sizePrice = prices[product] + widthMultiplier * curtains_prices[product]; } else if (calculatorMethod == 'height') { sizePrice = prices[product] + heightMultiplier * curtains_prices[product]; }
     } else {
       sizePrice = prices[product];
     }
-  } else if (calculatorType == "mosquito-nets") {
+  } else if (calculatorType == 'mosquito-nets') {
     if (heightValue * widthValue > 10000) {
-      var multiplier = Math.ceil((heightValue * widthValue) / 1000 - 10);
+      const multiplier = Math.ceil((heightValue * widthValue) / 1000 - 10);
 
-      if (multiplier != 0)
+      if (multiplier != 0) {
         sizePrice = Math.floor(
-          prices["new_" + product] + multiplier * addPriceValue
+          prices[`new_${product}`] + multiplier * addPriceValue,
         );
-      else sizePrice = prices["new_" + product];
-    } else if (heightValue * widthValue > 2500)
-      sizePrice = prices["new_" + product];
-    else sizePrice = prices[product];
+      } else sizePrice = prices[`new_${product}`];
+    } else if (heightValue * widthValue > 2500) { sizePrice = prices[`new_${product}`]; } else sizePrice = prices[product];
   }
 }
 
 function ChangePrice() {
   priceElement.innerHTML = FormatPrice(
-    fastenerPrice +
-      colorPrice +
-      handlePrice +
-      installPrice +
-      deliveryPrice +
-      sizePrice +
-      typePrice +
-      cornerPrice +
-      compressorPrice +
-      adjustmentPrice +
-      limiterPrice +
-      lockPrice
+    fastenerPrice
+      + colorPrice
+      + handlePrice
+      + installPrice
+      + deliveryPrice
+      + sizePrice
+      + typePrice
+      + cornerPrice
+      + compressorPrice
+      + adjustmentPrice
+      + limiterPrice
+      + lockPrice,
   );
 }
 
 function CheckState() {
-  if (widthField.value != "" && heightField.value != "") {
+  if (widthField.value != '' && heightField.value != '') {
     accept.disabled = false;
   } else {
     accept.disabled = true;
@@ -484,117 +481,117 @@ function CheckState() {
 }
 
 function FormatPrice(price) {
-  return price + "р";
+  return `${price}р`;
 }
 
 /* Данная функция создаёт кроссбраузерный объект XMLHTTP */
 function getXmlHttp() {
-  var xmlhttp;
+  let xmlhttp;
   try {
-    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+    xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
   } catch (e) {
     try {
-      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
     } catch (E) {
       xmlhttp = false;
     }
   }
-  if (!xmlhttp && typeof XMLHttpRequest != "undefined") {
+  if (!xmlhttp && typeof XMLHttpRequest !== 'undefined') {
     xmlhttp = new XMLHttpRequest();
   }
   return xmlhttp;
 }
 
-accept.addEventListener("click", () => {
-  MicroModal.show("modal-order");
+accept.addEventListener('click', () => {
+  MicroModal.show('modal-order');
 });
 
-var orderAcceptButton = document.getElementById("button-order-accept");
-var orderForm = document.getElementById("orderForm");
-var userName;
-var userPhone;
+const orderAcceptButton = document.getElementById('button-order-accept');
+const orderForm = document.getElementById('orderForm');
+let userName;
+let userPhone;
 
-orderAcceptButton.addEventListener("click", () => {
-  userName = orderForm.querySelector("input[name=user_name]").value;
-  userPhone = orderForm.querySelector("input[name=user_phone]").value;
+orderAcceptButton.addEventListener('click', () => {
+  userName = orderForm.querySelector('input[name=user_name]').value;
+  userPhone = orderForm.querySelector('input[name=user_phone]').value;
 
-  MicroModal.close("modal-order");
+  MicroModal.close('modal-order');
   SendValues();
-  MicroModal.show("modal-accept");
+  MicroModal.show('modal-accept');
 });
 
 function SendValues() {
-  var xmlhttp = getXmlHttp(); // Создаём объект XMLHTTP
-  xmlhttp.open("POST", "mail-calculator.php", true); // Открываем асинхронное соединение
-  xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // Отправляем кодировку
+  const xmlhttp = getXmlHttp(); // Создаём объект XMLHTTP
+  xmlhttp.open('POST', 'mail-calculator.php', true); // Открываем асинхронное соединение
+  xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); // Отправляем кодировку
 
-  if (calculatorType == "mosquito-nets") {
+  if (calculatorType == 'mosquito-nets') {
     xmlhttp.send(
-      "&name=" +
-        encodeURIComponent(userName) +
-        "&phone=" +
-        encodeURIComponent(userPhone) +
-        "&productionType=" +
-        encodeURIComponent(calculatorType) +
-        "&type=" +
-        encodeURIComponent(productName) +
-        "&size=" +
-        encodeURIComponent(sizeCell.innerHTML) +
-        "&sizePrice=" +
-        encodeURIComponent(sizePrice + "р") +
-        "&color=" +
-        encodeURIComponent(colorCell.innerHTML) +
-        "&colorPrice=" +
-        encodeURIComponent(colorPrice + "р") +
-        "&fastener=" +
-        encodeURIComponent(fastenersCell.innerHTML) +
-        "&fastenerPrice=" +
-        encodeURIComponent(fastenerPrice + "р") +
-        "&handle=" +
-        encodeURIComponent(handleCell.innerHTML) +
-        "&handlePrice=" +
-        encodeURIComponent(handlePrice + "р") +
-        "&corner=" +
-        encodeURIComponent(cornerCell.innerHTML) +
-        "&cornerPrice=" +
-        encodeURIComponent(cornerPrice + "р") +
-        "&install=" +
-        encodeURIComponent(installCell.innerHTML) +
-        "&installPrice=" +
-        encodeURIComponent(installPrice + "р") +
-        "&delivery=" +
-        encodeURIComponent(deliveryCell.innerHTML) +
-        "&deliveryPrice=" +
-        encodeURIComponent(deliveryPrice + "р") +
-        "&cost=" +
-        encodeURIComponent(priceElement.innerHTML)
+      `&name=${
+        encodeURIComponent(userName)
+      }&phone=${
+        encodeURIComponent(userPhone)
+      }&productionType=${
+        encodeURIComponent(calculatorType)
+      }&type=${
+        encodeURIComponent(productName)
+      }&size=${
+        encodeURIComponent(sizeCell.innerHTML)
+      }&sizePrice=${
+        encodeURIComponent(`${sizePrice}р`)
+      }&color=${
+        encodeURIComponent(colorCell.innerHTML)
+      }&colorPrice=${
+        encodeURIComponent(`${colorPrice}р`)
+      }&fastener=${
+        encodeURIComponent(fastenersCell.innerHTML)
+      }&fastenerPrice=${
+        encodeURIComponent(`${fastenerPrice}р`)
+      }&handle=${
+        encodeURIComponent(handleCell.innerHTML)
+      }&handlePrice=${
+        encodeURIComponent(`${handlePrice}р`)
+      }&corner=${
+        encodeURIComponent(cornerCell.innerHTML)
+      }&cornerPrice=${
+        encodeURIComponent(`${cornerPrice}р`)
+      }&install=${
+        encodeURIComponent(installCell.innerHTML)
+      }&installPrice=${
+        encodeURIComponent(`${installPrice}р`)
+      }&delivery=${
+        encodeURIComponent(deliveryCell.innerHTML)
+      }&deliveryPrice=${
+        encodeURIComponent(`${deliveryPrice}р`)
+      }&cost=${
+        encodeURIComponent(priceElement.innerHTML)}`,
     );
   }
 
-  if (calculatorType == "curtains") {
+  if (calculatorType == 'curtains') {
     xmlhttp.send(
-      "&name=" +
-        encodeURIComponent(userName) +
-        "&phone=" +
-        encodeURIComponent(userPhone) +
-        "&productionType=" +
-        encodeURIComponent(calculatorType) +
-        "&type=" +
-        encodeURIComponent(productName) +
-        "&size=" +
-        encodeURIComponent(sizeCell.innerHTML) +
-        "&sizePrice=" +
-        encodeURIComponent(sizePrice + "р") +
-        "&install=" +
-        encodeURIComponent(installCell.innerHTML) +
-        "&installPrice=" +
-        encodeURIComponent(installPrice + "р") +
-        "&delivery=" +
-        encodeURIComponent(deliveryCell.innerHTML) +
-        "&deliveryPrice=" +
-        encodeURIComponent(deliveryPrice + "р") +
-        "&cost=" +
-        encodeURIComponent(priceElement.innerHTML)
+      `&name=${
+        encodeURIComponent(userName)
+      }&phone=${
+        encodeURIComponent(userPhone)
+      }&productionType=${
+        encodeURIComponent(calculatorType)
+      }&type=${
+        encodeURIComponent(productName)
+      }&size=${
+        encodeURIComponent(sizeCell.innerHTML)
+      }&sizePrice=${
+        encodeURIComponent(`${sizePrice}р`)
+      }&install=${
+        encodeURIComponent(installCell.innerHTML)
+      }&installPrice=${
+        encodeURIComponent(`${installPrice}р`)
+      }&delivery=${
+        encodeURIComponent(deliveryCell.innerHTML)
+      }&deliveryPrice=${
+        encodeURIComponent(`${deliveryPrice}р`)
+      }&cost=${
+        encodeURIComponent(priceElement.innerHTML)}`,
     );
   }
   xmlhttp.onreadystatechange = function () {

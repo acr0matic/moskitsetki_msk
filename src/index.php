@@ -1,98 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
+<?php
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+$title = "Изготовление москитных сеток и рулонных штор на заказ";
+$description = "";
+$keywords = "";
 
-  <!-- Базовые мета-теги для поисковиков -->
-  <title>Москитные сетки и рулонные шторы на заказ</title>
-
-  <!-- Иконки для страницы -->
-  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-
-  <!-- Метатаги для ссылок в социальных сетях -->
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Москитные сетки и рулонные шторы на заказ" />
-  <meta property="og:description"
-    content="Мы рады предложить Вам изделия на заказ для Ваших окон. Москитные сетки, Рулонные шторы, Тонировка. Успешно работаем уже более 10 лет. Так же устанавливаем: защитные замки от детей, ограничители и делаем регулировку окон." />
-  <meta property="og:image" content="http://bestforhome24.ru/img/promo-img.jpg" />
-  <meta property="og:url" content="http://bestforhome24.ru/" />
-  <meta property="og:site_name" content="Москитные сетки и рулонные шторы на заказ" />
-
-  <!-- Метатаги которые выводят информацию о странице в поисковой запрос -->
-  <meta name="description"
-    content="Изготовление москитных сеток и рулонных штор под заказ. Любые размеры, выезд замерщика в день обращения. Быстро и недорого." />
-  <meta name="keywords" content="рулонные шторы, москитные сетки, на заказ, недорого, быстро" />
-
-  <!-- Контролирует поведение поисковых систем при индексации страницы -->
-  <meta name="robots" content="index,follow,noodp" />
-
-  <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
-  <meta name="theme-color" content="#ffffff" />
-
-  <!-- Для Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#ffffff" />
-
-  <!-- Для iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-  <meta name="yandex-verification" content="0a346b0658a6c095" />
-
-  <!-- Стили -->
-  <!-- build:css -->
-  <link rel="stylesheet" href="styles/style.css" />
-  <!-- endbuild -->
-</head>
-
-<body>
-  <!-- Шапка -->
-  <header id="header">
-    <div class="container">
-      <div class="wrap">
-        <img src="img/logo.svg" alt="" class="logo" />
-        <nav class="menu">
-          <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-            <li class="nav-item"><a href="production.html" class="nav-link">Продукция</a></li>
-            <li class="nav-item"><a href="#popular-kits" class="nav-link">Популярное</a></li>
-            <li class="nav-item"><a href="#feedback" class="nav-link">Отзывы</a></li>
-          </ul>
-        </nav>
-        <div class="callback">
-          <a href="tel:89266304556" class="phone">+7 926 630 45 56</a>
-          <small class="worktime">Ежедневно с 9 до 22</small>
-        </div>
-        <!-- /.callback -->
-        <button data-modal-callback class="button">Заказать звонок</button>
-        <button id="mobile-menu-open" class="button-mobile">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </button>
-      </div>
-      <!-- /.button-wrapper -->
-    </div>
-    <!-- /.container -->
-  </header>
+include 'partials/header.php' ?>
 
   <!-- Основной контент -->
   <main>
@@ -112,10 +24,10 @@
               <div class="social">
                 <span>Мы в соц. сетях:</span>
                 <a href="https://www.instagram.com/moskitsetki_msk/" target="_blank" class="social-link"><img
-                    class="social-icon" src="img/icons/instagram.svg" alt=""></a>
+                    class="social-icon" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/instagram.svg" alt=""></a>
                 <a href="https://vk.com/moskitsetki_msk" class="social-link" target="_blank"><img class="social-icon"
-                    src="img/icons/vk.svg" alt=""></a>
-                <a href="" class="social-link" target="_blank"><img class="social-icon" src="img/icons/youtube.svg"
+                    src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/vk.svg" alt=""></a>
+                <a href="" class="social-link" target="_blank"><img class="social-icon" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/youtube.svg"
                     alt=""></a>
               </div>
               <!-- /.social -->
@@ -123,7 +35,7 @@
             <!-- /.wrapper -->
           </div>
           <!-- /.content -->
-          <img class="promo-image" src="img/promo-img.jpg" alt="">
+          <img class="promo-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/promo-img.jpg" alt="">
         </div>
         <!-- /.wrapper -->
       </div>
@@ -140,7 +52,7 @@
         <div class="catalog-cards">
           <div class="catalog-card">
             <a class="item-wrapper" href="production.html">
-              <img src="img/catalog/moskit-setka.jpg" alt="" class="catalog-image">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/moskit-setka.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Москитные сетки и москитные двери</h3>
                 <p class="catalog-text">Множество вариаций и любой размер</p>
@@ -151,7 +63,7 @@
 
           <div class="catalog-card">
             <a id="anchor-change" class="item-wrapper" href="production.html">
-              <img src="img/catalog/curtains.jpg" alt="" class="catalog-image">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/curtains.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Рулонные шторы и жалюзи</h3>
                 <p class="catalog-text">Тысячи тканей и цветов на выбор</p>
@@ -162,7 +74,7 @@
           <!-- /.catalog-card -->
           <div class="catalog-card">
             <a class="item-wrapper" href="tinting.html">
-              <img src="img/catalog/tinting.jpg" alt="" class="catalog-image">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/tinting.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Тонировка окон</h3>
                 <p class="catalog-text">Затемнение ваших окон</p>
@@ -173,7 +85,7 @@
           <!-- /.catalog-card -->
           <div class="catalog-card">
             <a class="item-wrapper" href="adjustment.html">
-              <img src="img/catalog/adjustment.jpg" alt="" class="catalog-image">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/adjustment.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Регулировка окон</h3>
                 <p class="catalog-text">Отрегулируем любые окна</p>
@@ -184,7 +96,7 @@
           <!-- /.catalog-card -->
           <div class="catalog-card">
             <a class="item-wrapper" href="lock.html">
-              <img src="img/catalog/lock.jpg" alt="" class="catalog-image">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/lock.jpg" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Замки от детей</h3>
                 <p class="catalog-text">Защитим ваших детей</p>
@@ -195,7 +107,7 @@
           <!-- /.catalog-card -->
           <div class="catalog-card">
             <a class="item-wrapper" href="compressor.html">
-              <img src="img/catalog/compressor.png" alt="" class="catalog-image">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/compressor.png" alt="" class="catalog-image">
               <div class="catalog-description">
                 <h3 class="catalog-heading">Замена уплотнителя</h3>
                 <p class="catalog-text">Качественно заменим</p>
@@ -225,7 +137,7 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide kit">
-                  <img class="kit-image" src="img/catalog/items/dust.jpg" alt="">
+                  <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/dust.jpg" alt="">
                   <div class="kit-wrapper">
                     <div class="kit-content">
                       <h3 class="kit-title">Москитная сетка "Антипыль"</h3>
@@ -247,7 +159,7 @@
                 <!-- /.kit -->
 
                 <div class="swiper-slide kit">
-                  <img class="kit-image" src="img/catalog/items/zebra.jpg" alt="">
+                  <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/zebra.jpg" alt="">
                   <div class="kit-wrapper">
                     <div class="kit-content">
                       <h3 class="kit-title">Рулонная штора "Зебра" <br> (в коробе)</h3>
@@ -268,7 +180,7 @@
                 <!-- /.kit -->
 
                 <div class="swiper-slide kit">
-                  <img class="kit-image" src="img/catalog/items/mosquito.jpg" alt="">
+                  <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/mosquito.jpg" alt="">
                   <div class="kit-wrapper">
                     <div class="kit-content">
                       <h3 class="kit-title">Москитная сетка "Обычная"</h3>
@@ -334,35 +246,35 @@
         </div>
         <div class="partners">
           <div class="partner-card">
-            <img src="img/brands/brand1.png" alt="" class="partner-logo">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand1.png" alt="" class="partner-logo">
           </div>
           <!-- /.partner-card -->
           <div class="partner-card">
-            <img src="img/brands/brand2.png" alt="" class="partner-logo">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand2.png" alt="" class="partner-logo">
           </div>
           <!-- /.partner-card -->
           <div class="partner-card">
-            <img src="img/brands/brand3.png" alt="" class="partner-logo">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand3.png" alt="" class="partner-logo">
           </div>
           <!-- /.partner-card -->
           <div class="partner-card">
-            <img src="img/brands/brand4.png" alt="" class="partner-logo">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand4.png" alt="" class="partner-logo">
           </div>
           <!-- /.partner-card -->
           <div class="partner-card">
-            <img src="img/brands/brand5.png" alt="" class="partner-logo">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand5.png" alt="" class="partner-logo">
           </div>
           <!-- /.partner-card -->
           <div class="partner-card">
-            <img src="img/brands/brand6.png" alt="" class="partner-logo">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand6.png" alt="" class="partner-logo">
           </div>
           <!-- /.partner-card -->
           <div class="partner-card">
-            <img src="img/brands/brand7.png" alt="" class="partner-logo">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand7.png" alt="" class="partner-logo">
           </div>
           <!-- /.partner-card -->
           <div class="partner-card">
-            <img src="img/brands/brand8.png" alt="" class="partner-logo">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand8.png" alt="" class="partner-logo">
           </div>
           <!-- /.partner-card -->
         </div>
@@ -377,7 +289,7 @@
         </div>
       </div>
       <!-- /.container -->
-      <img class="map-image" src="img/map.jpg" alt="">
+      <img class="map-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/map.jpg" alt="">
     </section>
 
     <section id="feedback">
@@ -392,7 +304,7 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide feedback-card">
-                <img src="img/avatar.jpg" alt="" class="avatar">
+                <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/avatar.jpg" alt="" class="avatar">
                 <div class="feedback-text">
                   <p class="feedback-description">Ставили буквально месяц назад и сказать, что я довльна - ничего не
                     сказать! Ни одной летающей души в квартире, а также стало меньше пыли. Рекомендую!</p>
@@ -408,7 +320,7 @@
               <!-- /.swiper-slide -->
 
               <div class="swiper-slide feedback-card">
-                <img src="img/avatar.jpg" alt="" class="avatar">
+                <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/avatar.jpg" alt="" class="avatar">
                 <div class="feedback-text">
                   <p class="feedback-description">Благодарю Вас за установку сеточки на балконе! Душа моя спокойна по
                     поводу моего котика, надеюсь прослужит долго! Спасибо, вам, Михаил, и вашему коллеге за
@@ -426,7 +338,7 @@
               <!-- /.swiper-slide -->
 
               <div class="swiper-slide feedback-card">
-                <img src="img/avatar.jpg" alt="" class="avatar">
+                <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/avatar.jpg" alt="" class="avatar">
                 <div class="feedback-text">
                   <p class="feedback-description">Добрый день! Заказывали у вас сетки в Видное. Спасибо большое, все
                     быстро и качественно. Теперь живем с открытыми окнами - это такой кайф :)</p>
@@ -462,150 +374,4 @@
     </section>
   </main>
 
-  <!-- Подвал -->
-  <footer id="footer">
-    <div class="container">
-      <div class="wrapper">
-        <a href="#">
-          <img src="img/logo.svg" alt="" class="logo" />
-        </a>
-        <nav class="menu">
-          <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link footer-nav-link">Главная</a></li>
-            <li class="nav-item"><a href="production.html" class="nav-link footer-nav-link">Продукция</a></li>
-            <li class="nav-item"><a href="#popular-kits" class="nav-link footer-nav-link">Популярное</a></li>
-            <li class="nav-item"><a href="#feedback" class="nav-link footer-nav-link">Отзывы</a></li>
-          </ul>
-        </nav>
-        <div class="callback">
-          <a href="tel:89266304556" class="phone">+7 926 630 45 56</a>
-          <small class="worktime">Ежедневно с 9 до 22</small>
-        </div>
-        <!-- /.callback -->
-      </div>
-      <!-- /.wrapper -->
-      <div class="wrapper">
-        <span class="company-info">© 2020. «Bestforhome24.ru». Все права защищены</span>
-        <a class="politics" href="politics.html" target="_blank">Политика конфиденциальности</a>
-        <div class="social">
-          <span>Мы в соц. сетях:</span>
-          <a href="https://www.instagram.com/moskitsetki_msk/" target="_blank" class="social-link"><img
-              class="social-icon" src="img/icons/instagram.svg" alt=""></a>
-          <a href="https://vk.com/moskitsetki_msk" class="social-link" target="_blank"><img class="social-icon"
-              src="img/icons/vk.svg" alt=""></a>
-          <a href="" class="social-link" target="_blank"><img class="social-icon" src="img/icons/youtube.svg"
-              alt=""></a>
-        </div>
-      </div>
-      <!-- /.wrapper -->
-    </div>
-  </footer>
-
-  <div class="micromodal-slide" id="modal-callback" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        <form data-form-type="modal" id="callbackForm" class="form form-modal" action="mail.php" method="POST"
-          enctype="multipart/form-data">
-          <h2 class="modal-title">Заказать обратный звонок</h2>
-          <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем
-            удобное время и дату</p>
-          <input required class="input input-text input-shadow" type="text" name="user_name" placeholder="Ваше имя">
-          <input required class="input input-text input-shadow" type="tel" name="user_phone" placeholder="Ваш телефон">
-          <div class="checkbox">
-            <input type="checkbox" id="accept" />
-            <label for="accept">Я согласен на обработку моих персональных данных согласно условиям <a class="politics"
-                href="politics.html" target="_blank">Политика конфиденциальности</a></label>
-          </div>
-          <!-- /.politics -->
-          <button type="button" disabled id="modal-callback-accept"
-            class="button button-large button-form">Заказать</button>
-          <p data-error-label class="form-error-label"></p>
-        </form>
-      </div>
-      <!-- /.modal__container -->
-    </div>
-    <!-- /.modal__overlay -->
-  </div>
-  <!-- /.micromodal-slide -->
-
-  <div class="micromodal-slide" id="modal-accept" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        <div class="accept-modal-wrapper">
-          <img src="img/icons/accept-icon.svg" alt="">
-          <p class="modal-text">Ваша заявка отправлена, <span>спасибо!</span><br> В ближайшее время, мы Вам перезвоним
-          </p>
-        </div>
-        <!-- /.accept-modal-wrapper -->
-      </div>
-      <!-- /.modal__container -->
-    </div>
-    <!-- /.modal__overlay -->
-  </div>
-  <!-- /.micromodal-slide -->
-
-  <div id="mobile-menu" class="mobile-menu">
-    <div class="mobile-menu-overlay">
-      <div class="mobile-menu-wrapper">
-        <button class="modal__close" id="mobile-menu-close"></button>
-        <nav>
-          <ul class="mobile-menu-nav">
-            <li class="mobile-menu-item"><a class="mobile-menu-link" href="index.html">Главная</a></li>
-            <li class="mobile-menu-item"><a class="mobile-menu-link" href="production.html">Продукция</a></li>
-            <li class="mobile-menu-item"><a class="nav-link" href="#popular-kits">Популярное</a></li>
-            <li class="mobile-menu-item"><a class="mobile-menu-link " href="#feedback ">Отзывы</a></li>
-          </ul>
-        </nav>
-        <div class="callback">
-          <a href="tel:89266304556 " class="phone ">+7 926 630 45 56</a>
-          <small class="worktime ">Ежедневно с 9 до 22</small>
-        </div>
-        <button data-modal-callback class="button ">Заказать звонок</button>
-      </div>
-      <!-- /.mobile-menu-wrapper -->
-    </div>
-    <!-- /.mobile-menu-overlay -->
-  </div>
-  <!-- /.mobile-menu -->
-
-  <!-- Скрипты -->
-  <!-- build:js -->
-  <script src="scripts/swiper.js "></script>
-  <script src="scripts/micromodal.js "></script>
-  <script src="scripts/smoothscroll.js "></script>
-  <script src="scripts/mobilemenu.js "></script>
-  <script src="scripts/script.js "></script>
-  <!-- endbuild -->
-
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript ">
-    (function(m, e, t, r, i, k, a) {
-      m[i] = m[i] || function() {
-        (m[i].a = m[i].a || []).push(arguments)
-      };
-      m[i].l = 1 * new Date();
-      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-    })
-    (window, document, "script ", "https://mc.yandex.ru/metrika/tag.js ", "ym ");
-
-    ym(61235758, "init ", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true,
-      webvisor: true
-    });
-  </script>
-  <noscript>
-    <div><img src="https://mc.yandex.ru/watch/61235758 " style="position: absolute;
- left: -9999px; " alt=" " /></div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
-
-  <!-- Google Analytics -->
-  <!-- /Google Analytics -->
-</body>
-<!-- Страница сверстана -->
-
-</html>
+<?php include 'partials/footer.php' ?>
