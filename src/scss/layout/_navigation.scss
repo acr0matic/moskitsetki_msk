@@ -1,0 +1,14 @@
+.nav {
+  &__navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 0 15px;
+  }
+
+  &__link {
+    color: $text-primary;
+  }
+}

@@ -57,29 +57,31 @@
   <!-- Шапка -->
   <header id="header">
     <div class="container">
-      <div class="wrap">
-        <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/logo.svg" alt="" class="logo" />
-        <nav class="menu">
-          <ul class="nav">
-            <li class="nav-item"><a href="index.php" class="nav-link">Главная</a></li>
-            <li class="nav-item"><a href="production.php" class="nav-link">Продукция</a></li>
-            <li class="nav-item"><a href="index.php#popular-kits" class="nav-link">Популярное</a></li>
-            <li class="nav-item"><a href="index.php#feedback" class="nav-link">Отзывы</a></li>
-          </ul>
-        </nav>
-        <div class="callback">
-          <a href="tel:89266304556" class="phone">+7 926 630 45 56</a>
-          <small class="worktime">Ежедневно с 9 до 22</small>
-        </div>
-        <!-- /.callback -->
+      <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/logo.svg" alt="" class="logo" />
+
+      <nav class="nav">
+        <ul class="nav__navbar">
+          <li class="nav__item"><a href="index.php" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="production.php" class="nav__link">Продукция</a></li>
+          <li class="nav__item"><a href="index.php#popular-kits" class="nav__link">Популярное</a></li>
+          <li class="nav__item"><a href="index.php#feedback" class="nav__link">Отзывы</a></li>
+        </ul>
+      </nav>
+
+      <div class="callback">
+        <a href="tel:89266304556" class="callback__phone">+7 926 630 45 56</a>
+        <span class="callback__time">с 9 до 22</span>
         <button data-modal-callback class="button">Заказать звонок</button>
-        <button id="mobile-menu-open" class="button-mobile">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </button>
       </div>
-      <!-- /.button-wrapper -->
+      <!-- /.callback -->
+
+      <div id="mobile-menu-button" class="hamburger hamburger--spin">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+        <!-- /.hamburger-box -->
+      </div>
+      <!-- /.hamburger -->
     </div>
     <!-- /.container -->
   </header>

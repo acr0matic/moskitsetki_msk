@@ -4,11 +4,20 @@
 #header {
   position: fixed;
   z-index: $second-layer;
+  top: 0;
+  left: 0;
   background: #ffffff;
 
-  width: 100vw;
-  padding: 15px 0 20px 0;
-  box-shadow: 0 8px 90px 0 rgba(0, 0, 0, 0.06);
+  width: 100%;
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.1);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 80px;
+  }
 
   .callback {
     @include breakpoint($phone-l) {
@@ -24,49 +33,33 @@
 }
 
 .logo {
-  width: 100%;
-  max-width: 220px;
-  cursor: pointer;
-
   @include breakpoint($laptop) {
     max-width: 160px;
   }
-}
 
-.menu {
-  margin-left: 60px;
-
-  @include breakpoint($laptop) {
-    margin-left: 30px;
-  }
-
-  @include breakpoint($tablet) {
-    display: none;
-  }
-}
-
-.nav {
-  display: flex;
-
-  &-item {
-    margin: 0 25px;
-
-    @include breakpoint($laptop) {
-      margin: 0 10px;
-    }
-  }
+  width: 100%;
+  max-width: 220px;
+  cursor: pointer;
 }
 
 .callback {
-  margin-left: auto;
-  margin-right: 30px;
-
   @include breakpoint($tablet) {
     margin-left: auto;
   }
 
-  .worktime {
-    display: block;
-    text-align: right;
+  display: flex;
+  align-items: center;
+
+  &__phone {
+    @include breakpoint($laptop) {
+      font-size: 20px;
+    }
+
+    font-size: 24px;
+    color: $text-primary;
+  }
+
+  &__time {
+    margin: 0 15px;
   }
 }

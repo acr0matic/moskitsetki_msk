@@ -1,15 +1,12 @@
 const mobileMenu = document.querySelector('.mobile-menu-wrapper');
 const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
-const mobileMenuOpenButton = document.getElementById('mobile-menu-open');
-const mobileMenuCloseButton = document.getElementById('mobile-menu-close');
+const mobileMenuButton = document.getElementById('mobile-menu-button');
 
-mobileMenuOpenButton.addEventListener('click', () => {
+mobileMenuButton.addEventListener('click', () => {
+  mobileMenuButton.classList.toggle('is-active');
   openMobileMenu();
 });
 
-mobileMenuCloseButton.addEventListener('click', () => {
-  closeMobileMenu();
-});
 
 function openMobileMenu() {
   mobileMenu.classList.add('mobile-menu-visible');

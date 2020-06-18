@@ -1,10 +1,11 @@
 @charset 'UTF-8';
 
 // 1. Импорт библиотек
-@import "vendors/normalize";
-@import "vendors/family";
-@import "vendors/breakpoint";
-@import "vendors/swiper";
+@import 'vendors/normalize';
+@import 'vendors/family';
+@import 'vendors/hamburgers';
+@import 'vendors/breakpoint';
+@import 'vendors/swiper';
 
 // 2. Подключение базовых функций и переменных
 @import
@@ -23,7 +24,9 @@
 // 4. Подключение стилей разметки
 @import
   'layout/header',
+  'layout/navigation',
   'layout/promo',
+  'layout/catalog',
   'layout/popular-kits',
   'layout/callback',
   'layout/partnership',
