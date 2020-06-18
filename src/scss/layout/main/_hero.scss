@@ -1,0 +1,51 @@
+#hero {
+  padding-top: 75px;
+
+  .container {
+    background-image: url("../img/hero-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.hero {
+  padding: 85px;
+
+  &__text {
+
+  }
+
+  &__action {
+    margin-top: 50px;
+  }
+}
+
+.hero-text {
+  font-family: Montserrat, sans-serif;
+  color: $text-invert;
+
+  &__title {
+    font-size: $font-size-1;
+    line-height: $line-height-1 + 20;
+    font-weight: $weight-extrabold;
+  }
+
+  &__subtitle {
+    font-size: $font-size-4;
+    font-weight: $weight-medium;
+
+    margin-top: 10px;
+  }
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    margin-right: 25px;
+  }
+}

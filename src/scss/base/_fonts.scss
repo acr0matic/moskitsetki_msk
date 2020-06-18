@@ -2,22 +2,10 @@
 // В этом файле подключаются все шрифты через font-face, если таковые есть
 // -----------------------------------------------------------------------------
 
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Regular', 500);
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Medium', 600);
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Bold', 700);
 
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik/Rubik-Regular.woff2") format("woff2"),
-    url("../fonts/Rubik/Rubik-Regular.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik/Rubik-Bold.woff2") format("woff2"),
-    url("../fonts/Rubik/Rubik-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Medium', 600);
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Bold', 700);
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Black', 900);

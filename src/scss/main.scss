@@ -25,20 +25,24 @@
 @import
   'layout/header',
   'layout/navigation',
-  'layout/promo',
-  'layout/catalog',
-  'layout/popular-kits',
-  'layout/callback',
-  'layout/partnership',
-  'layout/map',
-  'layout/feedback',
-  'layout/contact',
-  'layout/items',
-  'layout/gallery',
-  'layout/product-description',
-  'layout/calculator',
   'layout/footer',
-  'layout/mobile-menu';
+  'layout/mobile-menu',
+
+  'layout/main/hero',
+  'layout/main/catalog',
+  'layout/main/popular-kits',
+  'layout/main/callback',
+  'layout/main/partnership',
+  'layout/main/map',
+  'layout/main/feedback',
+  'layout/main/contact',
+
+  'layout/production/items',
+
+  'layout/product/calculator',
+  'layout/product/product-description',
+  'layout/product/calculator';
+
 
 // 5. Подключение стилей компонентов
 @import
