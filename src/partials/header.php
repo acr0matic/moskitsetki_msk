@@ -71,7 +71,7 @@
       <div class="callback">
         <a href="tel:89266304556" class="callback__phone">+7 926 630 45 56</a>
         <span class="callback__time">с 9 до 22</span>
-        <button data-modal-callback class="button">Заказать звонок</button>
+        <button data-modal-callback class="button button-primary">Заказать звонок</button>
       </div>
       <!-- /.callback -->
 

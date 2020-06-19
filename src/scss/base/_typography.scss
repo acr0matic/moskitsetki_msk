@@ -6,14 +6,6 @@ body {
   font-family: Rubik, sans-serif;
 }
 
-label,
-.company-info,
-.politics,
-.button,
-span {
-  font-size: $font-4;
-}
-
 .nav-link {
   color: $text-primary;
 }
@@ -41,7 +33,6 @@ span {
   line-height: 30px;
 }
 
-.button-large,
 .feedback-info .name,
 p,
 h3,
@@ -71,7 +62,6 @@ h1 {
   @include breakpoint($laptop) {
     font-size: $font-1 - 10;
   }
-
 
   @include breakpoint($phone-m) {
     font-size: $font-1 - 12;
@@ -131,11 +121,6 @@ h4 {
   font-weight: 700;
 }
 
-.button,
-.item-wrapper {
-  color: $text-invert;
-}
-
 .politics {
   color: $text-important;
 }
@@ -180,7 +165,6 @@ h4 {
   .secondary-heading {
     text-align: center;
   }
-
 
   .sub-heading {
     font-weight: 400;

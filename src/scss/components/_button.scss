@@ -5,43 +5,35 @@
 .button {
   display: block;
 
-  min-width: 180px;
+  width: 185px;
   height: 50px;
 
+  color: #ffffff;
+  font-weight: $weight-medium;
+  background-color: transparent;
+
   border: none;
-  border-radius: 12px;
+  border-radius: 5px;
   outline: none;
 
-  background-color: $component-button;
-  background-image: $component-button-gradient;
-  box-shadow: 0 5px 0 0 $component-button-shadow;
+  font-size: $font-size-8;
 
   cursor: pointer;
   transition: all 0.3s ease;
 
-  &:hover {
-    box-shadow: 0 5px 0 0 $component-button-shadow, 0 5px 15px 0 #ffde4e;
-  }
+  &-primary {
+    background-color: $button-primary;
 
-  &:focus {
-    transform: translateY(3px);
-  }
+    &:hover {
 
-  &-large {
-    min-width: 240px;
-    height: 70px;
-
-    @include breakpoint($phone-l) {
-      min-width: 170px;
-      height: 60px;
     }
   }
 
-  &-invisible {
-    display: none;
+  &-secondary {
+    border: 1px solid #ffde4e;
 
-    @include breakpoint($tablet) {
-      display: block;
+    &:hover {
+      color: #ffde4e;
     }
   }
 
@@ -50,6 +42,10 @@
   }
 
   &-mobile {
+    @include breakpoint($tablet) {
+      display: block;
+    }
+
     display: none;
 
     width: 36px;
@@ -65,12 +61,8 @@
     .bar {
       width: 25px;
       height: 3px;
-      background-color: black;
+      background-color: #000000;
       margin: 4px 0;
-    }
-
-    @include breakpoint($tablet) {
-      display: block;
     }
   }
 

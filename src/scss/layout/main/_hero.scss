@@ -2,6 +2,7 @@
   padding-top: 75px;
 
   .container {
+    background-color: #000000;
     background-image: url("../img/hero-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,11 +16,10 @@
   padding: 85px;
 
   &__text {
-
   }
 
   &__action {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
@@ -29,15 +29,15 @@
 
   &__title {
     font-size: $font-size-1;
-    line-height: $line-height-1 + 20;
+    line-height: $line-height-1 + 25;
     font-weight: $weight-extrabold;
   }
 
   &__subtitle {
-    font-size: $font-size-4;
+    font-size: $font-size-5;
     font-weight: $weight-medium;
 
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }
 
@@ -46,6 +46,6 @@
   align-items: center;
 
   &__button {
-    margin-right: 25px;
+    margin-right: 35px;
   }
 }

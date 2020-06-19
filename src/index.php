@@ -18,8 +18,8 @@ include 'partials/header.php' ?>
         <!-- /.hero-text -->
 
         <div class="hero__action hero-action">
-          <button class="hero-action__button button">Сделать заказ</button>
-          <button data-anchor-button="#catalog" class="hero-action__button button">Подробнее</button>
+          <button class="hero-action__button button button-primary">Сделать заказ</button>
+          <button data-anchor-button="#catalog" class="hero-action__button button button-secondary">Подробнее</button>
         </div>
         <!-- /.hero-action -->
       </div>
