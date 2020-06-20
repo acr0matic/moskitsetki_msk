@@ -96,7 +96,7 @@ include 'partials/header.php' ?>
             <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/compressor.png" alt="" class="catalog-image">
             <div class="catalog-description">
               <h3 class="catalog-heading">Замена уплотнителя</h3>
-              <p class="catalog-text">Качественно заменим</p>
+              <p class="catalog-text">Качественная замена</p>
             </div>
             <!-- /.catalog-description -->
           </a>
@@ -112,154 +112,102 @@ include 'partials/header.php' ?>
   <section id="popular-kits">
     <div class="container">
       <div class="section-title">
-        <h2 class="primary-heading">Самые покупаемые</h2>
-        <p class="secondary-heading">Популярные виды сеток и штор</p>
+        <h2 class="primary-heading">Популярные москитные сетки</h2>
       </div>
       <!-- /.section-title -->
-      <div class="slider">
-        <div class="container">
-          <div class="swiper-container swiper-kits">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide kit">
-                <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/dust.jpg" alt="">
-                <div class="kit-wrapper">
-                  <div class="kit-content">
-                    <h3 class="kit-title">Москитная сетка "Антипыль"</h3>
-                    <span class="kit-subtitle">Стоимость от 1199р</span>
-                    <ul class="kit-items">
-                      <li class="kit-item">Задерживают больше пылевых частиц</li>
-                      <li class="kit-item">Почти прозрачна</li>
-                      <li class="kit-item">Защищает от случайного мусора</li>
-                      <li class="kit-item">Два цвета на выбор</li>
-                      <li class="kit-item">Оптимальное цена\качество</li>
-                    </ul>
-                  </div>
-                  <!-- /.kit-content -->
-                  <button onclick="window.open('dust.html', '_self')" class="button button-kit button-center">Подробнее</button>
-                </div>
-                <!-- /.kit-wrapper -->
-              </div>
-              <!-- /.kit -->
-
-              <div class="swiper-slide kit">
-                <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/zebra.jpg" alt="">
-                <div class="kit-wrapper">
-                  <div class="kit-content">
-                    <h3 class="kit-title">Рулонная штора "Зебра" <br> (в коробе)</h3>
-                    <span class="kit-subtitle">Стоимость от 1799р</span>
-                    <ul class="kit-items">
-                      <li class="kit-item">Для регулировки степени проникновения света</li>
-                      <li class="kit-item">Гарантия 1 год</li>
-                      <li class="kit-item">Множество цветов на выбор</li>
-                      <li class="kit-item">Оптимальное цена\качество</li>
-                    </ul>
-                  </div>
-                  <!-- /.kit-content -->
-                  <button onclick="window.open('zebra-box.html', '_self')" class="button button-kit button-center">Подробнее</button>
-                </div>
-                <!-- /.kit-wrapper -->
-              </div>
-              <!-- /.kit -->
-
-              <div class="swiper-slide kit">
-                <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/mosquito.jpg" alt="">
-                <div class="kit-wrapper">
-                  <div class="kit-content">
-                    <h3 class="kit-title">Москитная сетка "Обычная"</h3>
-                    <span class="kit-subtitle">Стоимость от 499р</span>
-                    <ul class="kit-items">
-                      <li class="kit-item">Защищает от насекомых</li>
-                      <li class="kit-item">Унифицирована для всех рамных систем</li>
-                      <li class="kit-item">Два цвета на выбор</li>
-                      <li class="kit-item">Оптимальное цена\качество</li>
-                    </ul>
-                  </div>
-                  <!-- /.kit-content -->
-                  <button onclick="window.open('mosquito.html', '_self')" class="button button-kit button-center">Подробнее</button>
-                </div>
-                <!-- /.kit-wrapper -->
-              </div>
-              <!-- /.kit -->
+      <div class="kits">
+        <div class="kit">
+          <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/mosquito.jpg" alt="">
+          <div class="kit-wrapper">
+            <div class="kit-content">
+              <h3 class="kit-title">Москитная сетка "Обычная"</h3>
+              <span class="kit-subtitle">Стоимость от 499р</span>
             </div>
-            <!-- /.swiper-wrapper -->
+            <!-- /.kit-content -->
+            <button onclick="window.open('mosquito.html', '_self')" class="button button-primary button-center">Подробнее</button>
           </div>
-          <!-- /.swiper-container -->
+          <!-- /.kit-wrapper -->
         </div>
-        <!-- /.container -->
-        <div class="swiper-controls">
-          <div class="swiper-pagination swiper-kits-pagination"></div>
-          <div class="swiper-button-prev swiper-kits-button-prev"></div>
-          <div class="swiper-button-next swiper-kits-button-next"></div>
-        </div>
-        <!-- /.swiper-controls -->
+        <!-- /.kit -->
 
+        <div class="kit">
+          <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/dust.jpg" alt="">
+          <div class="kit-wrapper">
+            <div class="kit-content">
+              <h3 class="kit-title">Москитная сетка "Антипыль"</h3>
+              <span class="kit-subtitle">Стоимость от 1199р</span>
+            </div>
+            <!-- /.kit-content -->
+            <button onclick="window.open('dust.html', '_self')" class="button button-primary button-center">Подробнее</button>
+          </div>
+          <!-- /.kit-wrapper -->
+        </div>
+        <!-- /.kit -->
+
+        <div class="kit">
+          <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/cat.jpg" alt="">
+          <div class="kit-wrapper">
+            <div class="kit-content">
+              <h3 class="kit-title">Москитная сетка "Антикошка"</h3>
+              <span class="kit-subtitle">Стоимость от 1299р</span>
+            </div>
+            <!-- /.kit-content -->
+            <button onclick="window.open('zebra-box.html', '_self')" class="button button-primary button-center">Подробнее</button>
+          </div>
+          <!-- /.kit-wrapper -->
+        </div>
+        <!-- /.kit -->
       </div>
-      <!-- /.slider -->
-    </div>
-    <!-- /.container -->
-  </section>
+      <!-- /.kits -->
 
-  <section id="callback">
-    <div class="container">
       <div class="section-title">
-        <h2 class="primary-heading">У вас возникли вопросы?</h2>
-        <p class="secondary-heading">Оставьте заявку, и мы вам перезвоним!</p>
+        <h2 class="primary-heading">Популярные рулонные шторы</h2>
       </div>
-      <form data-form-type="no-modal" id="callback-index-form" class="form form-callback" action="mail.php" method="POST" enctype="multipart/form-data">
-        <div class="form-callback-wrapper">
-          <input required class="input input-text" type="text" name="user_name" placeholder="Ваше имя">
-          <input required class="input input-text" type="tel" name="user_phone" placeholder="Номер телефона">
-          <button id="callback-index-accept" type="button" class="button button-form">Оставить заявку</button>
+      <!-- /.section-title -->
+      <div class="kits">
+        <div class="kit">
+          <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds.jpg" alt="">
+          <div class="kit-wrapper">
+            <div class="kit-content">
+              <h3 class="kit-title">Рулонные шторы "Обычные" (свободновисящие)</h3>
+              <span class="kit-subtitle">Стоимость от 1199р</span>
+            </div>
+            <!-- /.kit-content -->
+            <button onclick="window.open('dust.html', '_self')" class="button button-primary button-center">Подробнее</button>
+          </div>
+          <!-- /.kit-wrapper -->
         </div>
-        <!-- /.callback-form-wrapper -->
-        <p data-error-label class="form-error-label"></p>
-      </form>
-    </div>
-    <!-- /.container -->
-  </section>
+        <!-- /.kit -->
 
-  <section id="partnership">
-    <div class="container">
-      <div class="section-title">
-        <h2 class="primary-heading">Наши партнеры</h2>
-        <p class="secondary-heading">Мы сотрудничаем с известными брендами</p>
+        <div class="kit">
+          <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/zebra.jpg" alt="">
+          <div class="kit-wrapper">
+            <div class="kit-content">
+              <h3 class="kit-title">Рулонная штора "Зебра" <br> (в коробе)</h3>
+              <span class="kit-subtitle">Стоимость от 1799р</span>
+            </div>
+            <!-- /.kit-content -->
+            <button onclick="window.open('zebra-box.html', '_self')" class="button button-primary button-center">Подробнее</button>
+          </div>
+          <!-- /.kit-wrapper -->
+        </div>
+        <!-- /.kit -->
+
+        <div class="kit">
+          <img class="kit-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/jalousie-horizontal.jpg" alt="">
+          <div class="kit-wrapper">
+            <div class="kit-content">
+              <h3 class="kit-title">Жалюзи "Обычные" (горизонтальные)</h3>
+              <span class="kit-subtitle">Стоимость от 499р</span>
+            </div>
+            <!-- /.kit-content -->
+            <button onclick="window.open('mosquito.html', '_self')" class="button button-primary button-center">Подробнее</button>
+          </div>
+          <!-- /.kit-wrapper -->
+        </div>
+        <!-- /.kit -->
       </div>
-      <div class="partners">
-        <div class="partner-card">
-          <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand1.png" alt="" class="partner-logo">
-        </div>
-        <!-- /.partner-card -->
-        <div class="partner-card">
-          <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand2.png" alt="" class="partner-logo">
-        </div>
-        <!-- /.partner-card -->
-        <div class="partner-card">
-          <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand3.png" alt="" class="partner-logo">
-        </div>
-        <!-- /.partner-card -->
-        <div class="partner-card">
-          <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand4.png" alt="" class="partner-logo">
-        </div>
-        <!-- /.partner-card -->
-        <div class="partner-card">
-          <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand5.png" alt="" class="partner-logo">
-        </div>
-        <!-- /.partner-card -->
-        <div class="partner-card">
-          <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand6.png" alt="" class="partner-logo">
-        </div>
-        <!-- /.partner-card -->
-        <div class="partner-card">
-          <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand7.png" alt="" class="partner-logo">
-        </div>
-        <!-- /.partner-card -->
-        <div class="partner-card">
-          <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/brands/brand8.png" alt="" class="partner-logo">
-        </div>
-        <!-- /.partner-card -->
-      </div>
+      <!-- /.kits -->
     </div>
     <!-- /.container -->
   </section>
@@ -267,13 +215,13 @@ include 'partials/header.php' ?>
   <section id="map">
     <div class="container">
       <div class="section-title">
-        <h2 class="primary-heading">Работаем по ЮЗАО Москвы и Московской области</h2>
+        <h2 class="primary-heading">География нашей работы</h2>
+        <p class="secondary-heading">Работаем по ЮЗАО Москвы и Московской области</p>
       </div>
     </div>
     <!-- /.container -->
-    <img class="map-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/map.jpg" alt="">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb43c71a35f82b72f4fb211ee6d0101918a651b0d54c8fcffdf3354cc4e95772&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=false"></script>
   </section>
-
   <section id="feedback">
     <div class="slider">
       <div class="container">
@@ -347,7 +295,7 @@ include 'partials/header.php' ?>
       </div>
       <!-- /.container -->
 
-      <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-center">Больше отзывов</button>
+      <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-primary button-center">Больше отзывов</button>
     </div>
     <!-- /.slider -->
   </section>

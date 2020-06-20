@@ -1,7 +1,6 @@
 .slider {
   position: relative;
 }
-
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: $text-info;
@@ -21,10 +20,7 @@
 }
 
 .swiper-slide {
-  margin-bottom: 60px;
-  // box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 }
-
 
 .swiper {
   &-controls {
