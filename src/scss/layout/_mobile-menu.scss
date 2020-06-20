@@ -1,70 +1,57 @@
-#mobile-menu-button {
+.hamburger {
+  @include breakpoint($breakpoint-mobile-large) {
+    display: block;
+  }
+
   display: none;
+  outline: none;
+
+  margin-left: auto;
 }
 
 .mobile-menu {
-  &-overlay {
-    position: fixed;
-    z-index: $third-layer;
-    top: 0;
+  position: fixed;
+  z-index: $z-index-second;
+  top: 80px;
+  width: 100%;
 
-    visibility: hidden;
+  padding: 30px 15px;
+
+  background-color: #fdfdfd;
+
+  visibility: hidden;
+
+  &--slide {
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+  }
+
+  &--open {
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &__item {
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    color: #000000;
+  }
+}
+
+.callback-mobile {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  margin-top: 25px;
+
+  &__time {
+    font-size: $font-size-8;
+  }
+
+  &__button {
+    margin-top: 20px;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-
-    transition: all 0.5s ease;
-
-    &-visible {
-      visibility: visible;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-  }
-
-  &-wrapper {
-    position: fixed;
-    z-index: $third-layer;
-
-    top: 0;
-    left: 100%;
-
-    width: 40%;
-    height: 100%;
-
-    padding-top: 50px;
-    padding-left: 25px;
-    margin-left: auto;
-
-    background-color: #ffffff;
-    transition: all 0.5s ease;
-
-    @include breakpoint($phone-l) {
-      width: 80%;
-    }
-  }
-
-  &-nav {
-    margin-bottom: 55px;
-  }
-
-  &-item {
-    margin-bottom: 30px;
-  }
-
-  &-visible {
-    left: 60%;
-    @include breakpoint($phone-l) {
-      left: 20%;
-    }
-  }
-
-  .callback {
-    .worktime {
-      text-align: left;
-    }
-  }
-
-  .button {
-    margin-top: 30px;
   }
 }

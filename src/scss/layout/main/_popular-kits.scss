@@ -10,6 +10,7 @@
 
 .kits {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 
@@ -17,6 +18,11 @@
 }
 
 .kit {
+  @include breakpoint($phone-l) {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
   width: 32%;
 
   text-align: center;
@@ -50,10 +56,6 @@
 .kit-wrapper {
   @include breakpoint($laptop) {
     padding: 25px;
-  }
-
-  @include breakpoint($tablet) {
-    min-height: 450px;
   }
 
   display: flex;

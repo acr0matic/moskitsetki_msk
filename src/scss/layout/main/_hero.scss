@@ -13,12 +13,20 @@
 }
 
 .hero {
+  @include breakpoint($phone-l) {
+    padding: 45px 15px 15px 15px;
+  }
+
   padding: 85px;
 
   &__text {
   }
 
   &__action {
+    @include breakpoint($phone-l) {
+      margin-top: 90px;
+    }
+
     margin-top: 30px;
   }
 }
@@ -28,12 +36,22 @@
   color: $text-invert;
 
   &__title {
+    @include breakpoint($phone-l) {
+      font-size: $font-size-3;
+      line-height: $line-height-1;
+    }
+
     font-size: $font-size-1;
     line-height: $line-height-1 + 25;
     font-weight: $weight-extrabold;
   }
 
   &__subtitle {
+    @include breakpoint($phone-l) {
+      font-size: $font-size-7;
+      line-height: $line-height-0;
+    }
+
     font-size: $font-size-5;
     font-weight: $weight-medium;
 
@@ -42,10 +60,20 @@
 }
 
 .hero-action {
+  @include breakpoint($phone-l) {
+    flex-direction: column;
+  }
+
   display: flex;
   align-items: center;
 
   &__button {
+    @include breakpoint($phone-l) {
+      margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     margin-right: 35px;
   }
 }

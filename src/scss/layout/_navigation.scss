@@ -1,5 +1,9 @@
 .nav {
   &__navbar {
+    @include breakpoint($phone-l) {
+      display: none;
+    }
+    
     display: flex;
     align-items: center;
   }
