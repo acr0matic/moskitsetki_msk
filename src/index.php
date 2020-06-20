@@ -109,7 +109,7 @@ include 'partials/header.php' ?>
     <!-- /.container -->
   </section>
 
-  <section id="popular-kits">
+  <section id="popular">
     <div class="container">
       <div class="section-title">
         <h2 class="primary-heading">Популярные москитные сетки</h2>

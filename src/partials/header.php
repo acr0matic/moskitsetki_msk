@@ -61,10 +61,10 @@
 
       <nav class="nav">
         <ul class="nav__navbar">
-          <li class="nav__item"><a href="index.php" class="nav__link">Главная</a></li>
-          <li class="nav__item"><a href="production.php" class="nav__link">Продукция</a></li>
-          <li class="nav__item"><a href="index.php#popular-kits" class="nav__link">Популярное</a></li>
-          <li class="nav__item"><a href="index.php#feedback" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#popular" class="nav__link">Популярное</a></li>
+          <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#feedback" class="nav__link">Отзывы</a></li>
         </ul>
       </nav>
 
@@ -88,10 +88,10 @@
 
   <div class="mobile-menu mobile-menu--slide" id="mobile-menu">
     <ul class="mobile-menu__navbar">
-      <li class="mobile-menu__item"><a class="mobile-menu__link" href="/index.php">Главная</a></li>
-      <li class="mobile-menu__item"><a class="mobile-menu__link" href="/portfolio/index.php">Наши работы</a></li>
-      <li class="mobile-menu__item"><a class="mobile-menu__link" href="/materials.php">С чем работаем</a></li>
-      <li class="mobile-menu__item"><a class="mobile-menu__link" href="/order.php">Схема заказа</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/">Главная</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog">Каталог</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#popular">Популярное</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#feedback">Отзывы</a></li>
     </ul>
     <div class="callback callback-mobile">
       <a href="tel:89266304556" class="callback__phone">+7 926 630 45 56</a>

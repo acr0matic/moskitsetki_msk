@@ -82,10 +82,10 @@
         <button class="modal__close" id="mobile-menu-close"></button>
         <nav>
           <ul class="mobile-menu-nav">
-            <li class="mobile-menu-item"><a class="mobile-menu-link" href="index.html">Главная</a></li>
-            <li class="mobile-menu-item"><a class="mobile-menu-link" href="production.html">Продукция</a></li>
-            <li class="mobile-menu-item"><a class="nav-link" href="#popular-kits">Популярное</a></li>
-            <li class="mobile-menu-item"><a class="mobile-menu-link " href="#feedback ">Отзывы</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/">Главная</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog">Каталог</a></li>
+            <li class="mobile-menu-item"><a class="nav-link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#popular">Популярное</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link " href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#feedback">Отзывы</a></li>
           </ul>
         </nav>
         <div class="callback">
