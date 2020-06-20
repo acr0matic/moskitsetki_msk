@@ -2,22 +2,12 @@
   margin-bottom: 0;
 }
 
-.itemstest {
-  padding-top: 70px;
-}
-
 .block {
   &-nets,
   &-curtains {
     width: 49%;
 
     @include breakpoint($tablet) {
-      width: 100%;
-    }
-
-    .swiper-controls {
-      position: absolute;
-      bottom: 0;
       width: 100%;
     }
   }
@@ -63,17 +53,24 @@
   &-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0;
   }
 
   &-list {
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  &-list-other {
+    justify-content: space-between;
+  }
+
+  &-price {
+    margin-top: 15px;
   }
 
   &-item {
     width: 100%;
-    max-width: 275px;
+    max-width: 265px;
     height: 360px;
     margin-bottom: 50px;
 
@@ -83,7 +80,7 @@
     }
 
     @include breakpoint($tablet) {
-      width: 48%;
+      width: 47%;
       max-width: none;
       height: 250px;
     }

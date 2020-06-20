@@ -9,7 +9,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php' ?>
 <!-- Основной контент -->
 <main>
   <img class="page-head-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/production-head-bg.jpg" alt="">
-  <section id="#items" class="itemstest">
+  <section id="#items">
     <div class="container">
       <div class="block-list">
         <div class="swiper-container block-nets">
@@ -117,6 +117,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php' ?>
             <!-- /.swiper-slide -->
           </div>
           <!-- /.swiper-wrapper -->
+
           <div class="swiper-controls">
             <div class="swiper-pagination swiper-block-nets-pagination"></div>
             <div data-scroll-nets class="swiper-button-prev swiper-block-nets-button-prev"></div>

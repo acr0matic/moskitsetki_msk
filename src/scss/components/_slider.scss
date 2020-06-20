@@ -1,6 +1,11 @@
 .slider {
   position: relative;
 }
+
+.swiper-wrapper {
+  height: unset;
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: $text-info;
