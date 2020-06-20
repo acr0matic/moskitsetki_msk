@@ -7,10 +7,10 @@
         </a>
         <nav class="menu">
           <ul class="nav__navbar">
-            <li class="nav__item"><a href="index.html" class="nav__link nav__link--footer">Главная</a></li>
-            <li class="nav__item"><a href="production.html" class="nav__link nav__link--footer">Продукция</a></li>
-            <li class="nav__item"><a href="#popular-kits" class="nav__link nav__link--footer">Популярное</a></li>
-            <li class="nav__item"><a href="#feedback" class="nav__link nav__link--footer">Отзывы</a></li>
+            <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/" class="nav__link nav__link--footer">Главная</a></li>
+            <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog" class="nav__link nav__link--footer">Каталог</a></li>
+            <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#popular" class="nav__link nav__link--footer">Популярное</a></li>
+            <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#feedback" class="nav__link nav__link--footer">Отзывы</a></li>
           </ul>
         </nav>
         <div class="callback">
@@ -75,30 +75,6 @@
     <!-- /.modal__overlay -->
   </div>
   <!-- /.micromodal-slide -->
-
-  <div id="mobile-menu" class="mobile-menu">
-    <div class="mobile-menu-overlay">
-      <div class="mobile-menu-wrapper">
-        <button class="modal__close" id="mobile-menu-close"></button>
-        <nav>
-          <ul class="mobile-menu-nav">
-            <li class="mobile-menu-item"><a class="mobile-menu-link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/">Главная</a></li>
-            <li class="mobile-menu-item"><a class="mobile-menu-link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog">Каталог</a></li>
-            <li class="mobile-menu-item"><a class="nav-link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#popular">Популярное</a></li>
-            <li class="mobile-menu-item"><a class="mobile-menu-link " href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#feedback">Отзывы</a></li>
-          </ul>
-        </nav>
-        <div class="callback">
-          <a href="tel:89266304556 " class="phone">+7 926 630 45 56</a>
-          <small class="worktime">Ежедневно с 9 до 22</small>
-        </div>
-        <button data-modal-callback class="button">Заказать звонок</button>
-      </div>
-      <!-- /.mobile-menu-wrapper -->
-    </div>
-    <!-- /.mobile-menu-overlay -->
-  </div>
-  <!-- /.mobile-menu -->
 
   <!-- Скрипты -->
   <!-- build:js -->

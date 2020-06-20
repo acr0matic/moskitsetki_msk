@@ -51,17 +51,15 @@
 .product {
   &-list-other,
   &-list {
+    @include breakpoint($phone-l) {
+      justify-content: space-between;
+    }
+
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    
     padding: 0;
-  }
-
-  &-list {
-    justify-content: space-between;
-  }
-
-  &-list-other {
-    justify-content: space-between;
   }
 
   &-price {

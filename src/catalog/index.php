@@ -295,6 +295,20 @@ include $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php' ?>
               </div>
               <!-- /.product-item -->
 
+              <div class="product-item">
+
+              </div>
+              <!-- /.product-item -->
+
+              <div class="product-item">
+
+              </div>
+              <!-- /.product-item -->
+
+              <div class="product-item">
+
+              </div>
+              <!-- /.product-item -->
             </div>
             <!-- /.product-list-other -->
           </div>
