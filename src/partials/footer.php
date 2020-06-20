@@ -6,16 +6,16 @@
           <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/logo.svg" alt="" class="logo" />
         </a>
         <nav class="menu">
-          <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link footer-nav-link">Главная</a></li>
-            <li class="nav-item"><a href="production.html" class="nav-link footer-nav-link">Продукция</a></li>
-            <li class="nav-item"><a href="#popular-kits" class="nav-link footer-nav-link">Популярное</a></li>
-            <li class="nav-item"><a href="#feedback" class="nav-link footer-nav-link">Отзывы</a></li>
+          <ul class="nav__navbar">
+            <li class="nav__item"><a href="index.html" class="nav__link nav__link--footer">Главная</a></li>
+            <li class="nav__item"><a href="production.html" class="nav__link nav__link--footer">Продукция</a></li>
+            <li class="nav__item"><a href="#popular-kits" class="nav__link nav__link--footer">Популярное</a></li>
+            <li class="nav__item"><a href="#feedback" class="nav__link nav__link--footer">Отзывы</a></li>
           </ul>
         </nav>
         <div class="callback">
-          <a href="tel:89266304556" class="phone">+7 926 630 45 56</a>
-          <small class="worktime">Ежедневно с 9 до 22</small>
+          <a href="tel:89266304556" class="callback__phone">+7 926 630 45 56</a>
+          <span class="callback__time">с 9 до 22</span>
         </div>
         <!-- /.callback -->
       </div>
@@ -25,12 +25,9 @@
         <a class="politics" href="politics.html" target="_blank">Политика конфиденциальности</a>
         <div class="social">
           <span>Мы в соц. сетях:</span>
-          <a href="https://www.instagram.com/moskitsetki_msk/" target="_blank" class="social-link"><img
-              class="social-icon" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/instagram.svg" alt=""></a>
-          <a href="https://vk.com/moskitsetki_msk" class="social-link" target="_blank"><img class="social-icon"
-              src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/vk.svg" alt=""></a>
-          <a href="" class="social-link" target="_blank"><img class="social-icon" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/youtube.svg"
-              alt=""></a>
+          <a href="https://www.instagram.com/moskitsetki_msk/" target="_blank" class="social-link"><img class="social-icon" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/instagram.svg" alt=""></a>
+          <a href="https://vk.com/moskitsetki_msk" class="social-link" target="_blank"><img class="social-icon" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/vk.svg" alt=""></a>
+          <a href="" class="social-link" target="_blank"><img class="social-icon" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/youtube.svg" alt=""></a>
         </div>
       </div>
       <!-- /.wrapper -->
@@ -41,8 +38,7 @@
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        <form data-form-type="modal" id="callbackForm" class="form form-modal" action="mail.php" method="POST"
-          enctype="multipart/form-data">
+        <form data-form-type="modal" id="callbackForm" class="form form-modal" action="mail.php" method="POST" enctype="multipart/form-data">
           <h2 class="modal-title">Заказать обратный звонок</h2>
           <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем
             удобное время и дату</p>
@@ -50,12 +46,10 @@
           <input required class="input input-text input-shadow" type="tel" name="user_phone" placeholder="Ваш телефон">
           <div class="checkbox">
             <input type="checkbox" id="accept" />
-            <label for="accept">Я согласен на обработку моих персональных данных согласно условиям <a class="politics"
-                href="politics.html" target="_blank">Политика конфиденциальности</a></label>
+            <label for="accept">Я согласен на обработку моих персональных данных согласно условиям <a class="politics" href="politics.html" target="_blank">Политика конфиденциальности</a></label>
           </div>
           <!-- /.politics -->
-          <button type="button" disabled id="modal-callback-accept"
-            class="button button-large button-form">Заказать</button>
+          <button type="button" disabled id="modal-callback-accept" class="button button-primary">Заказать</button>
           <p data-error-label class="form-error-label"></p>
         </form>
       </div>
@@ -142,7 +136,7 @@
 
   <!-- Google Analytics -->
   <!-- /Google Analytics -->
-</body>
-<!-- Страница сверстана -->
+  </body>
+  <!-- Страница сверстана -->
 
-</html>
+  </html>

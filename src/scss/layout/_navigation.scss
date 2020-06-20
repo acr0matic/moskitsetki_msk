@@ -10,5 +10,9 @@
 
   &__link {
     color: $text-primary;
+
+    &--footer {
+      color: #a0a0a0;
+    }
   }
 }
