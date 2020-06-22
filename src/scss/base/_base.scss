@@ -42,9 +42,15 @@ li {
 }
 
 section {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 pre {
   white-space: pre-wrap;
+}
+
+mark {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
 }

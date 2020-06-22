@@ -13,12 +13,12 @@ include 'partials/header.php' ?>
       <div class="hero">
         <div class="hero__text hero-text">
           <h1 class="hero-text__title">Москитные сетки <br> и рулонные шторы <br> на заказ</h1>
-          <h2 class="hero-text__subtitle">При заключении договора - замер бесплатный!</h2>
+          <h2 class="hero-text__subtitle">При заключении договора - <mark>замер бесплатный!</mark></h2>
         </div>
         <!-- /.hero-text -->
 
         <div class="hero__action hero-action">
-          <button class="hero-action__button button button-primary">Сделать заказ</button>
+          <button id="make-order-button" class="hero-action__button button button-primary">Сделать заказ</button>
           <button data-anchor-button="#catalog" class="hero-action__button button button-secondary">Подробнее</button>
         </div>
         <!-- /.hero-action -->
@@ -37,7 +37,7 @@ include 'partials/header.php' ?>
       <!-- /.section-title -->
       <div class="catalog-cards">
         <div class="catalog-card">
-          <a class="item-wrapper" href="production.html">
+          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog">
             <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/moskit-setka.jpg" alt="" class="catalog-image">
             <div class="catalog-description">
               <h3 class="catalog-heading">Москитные сетки и москитные двери</h3>
@@ -48,7 +48,7 @@ include 'partials/header.php' ?>
         </div>
 
         <div class="catalog-card">
-          <a id="anchor-change" class="item-wrapper" href="production.html">
+          <a id="anchor-change" class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog">
             <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/curtains.jpg" alt="" class="catalog-image">
             <div class="catalog-description">
               <h3 class="catalog-heading">Рулонные шторы и жалюзи</h3>
@@ -59,7 +59,7 @@ include 'partials/header.php' ?>
         </div>
         <!-- /.catalog-card -->
         <div class="catalog-card">
-          <a class="item-wrapper" href="tinting.html">
+          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/tinting.php">
             <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/tinting.jpg" alt="" class="catalog-image">
             <div class="catalog-description">
               <h3 class="catalog-heading">Тонировка окон</h3>
@@ -70,7 +70,7 @@ include 'partials/header.php' ?>
         </div>
         <!-- /.catalog-card -->
         <div class="catalog-card">
-          <a class="item-wrapper" href="adjustment.html">
+          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/adjustment.php">
             <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/adjustment.jpg" alt="" class="catalog-image">
             <div class="catalog-description">
               <h3 class="catalog-heading">Регулировка окон</h3>
@@ -81,7 +81,7 @@ include 'partials/header.php' ?>
         </div>
         <!-- /.catalog-card -->
         <div class="catalog-card">
-          <a class="item-wrapper" href="lock.html">
+          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/lock.php">
             <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/lock.jpg" alt="" class="catalog-image">
             <div class="catalog-description">
               <h3 class="catalog-heading">Замки от детей</h3>
@@ -92,7 +92,7 @@ include 'partials/header.php' ?>
         </div>
         <!-- /.catalog-card -->
         <div class="catalog-card">
-          <a class="item-wrapper" href="compressor.html">
+          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/compressor.php">
             <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/compressor.png" alt="" class="catalog-image">
             <div class="catalog-description">
               <h3 class="catalog-heading">Замена уплотнителя</h3>
@@ -124,7 +124,7 @@ include 'partials/header.php' ?>
               <span class="kit-subtitle">Стоимость от 499р</span>
             </div>
             <!-- /.kit-content -->
-            <button onclick="window.open('mosquito.html', '_self')" class="button button-primary button-center">Подробнее</button>
+            <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/nets/mosquito.php', '_self')" class="button button-primary button-center">Подробнее</button>
           </div>
           <!-- /.kit-wrapper -->
         </div>
@@ -138,7 +138,7 @@ include 'partials/header.php' ?>
               <span class="kit-subtitle">Стоимость от 1199р</span>
             </div>
             <!-- /.kit-content -->
-            <button onclick="window.open('dust.html', '_self')" class="button button-primary button-center">Подробнее</button>
+            <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/nets/dust.php', '_self')" class="button button-primary button-center">Подробнее</button>
           </div>
           <!-- /.kit-wrapper -->
         </div>
@@ -152,7 +152,7 @@ include 'partials/header.php' ?>
               <span class="kit-subtitle">Стоимость от 1299р</span>
             </div>
             <!-- /.kit-content -->
-            <button onclick="window.open('zebra-box.html', '_self')" class="button button-primary button-center">Подробнее</button>
+            <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/nets/zebra-box.php', '_self')" class="button button-primary button-center">Подробнее</button>
           </div>
           <!-- /.kit-wrapper -->
         </div>
@@ -173,7 +173,7 @@ include 'partials/header.php' ?>
               <span class="kit-subtitle">Стоимость от 1199р</span>
             </div>
             <!-- /.kit-content -->
-            <button onclick="window.open('dust.html', '_self')" class="button button-primary button-center">Подробнее</button>
+            <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/curtains/roller.php', '_self')" class="button button-primary button-center">Подробнее</button>
           </div>
           <!-- /.kit-wrapper -->
         </div>
@@ -187,7 +187,7 @@ include 'partials/header.php' ?>
               <span class="kit-subtitle">Стоимость от 1799р</span>
             </div>
             <!-- /.kit-content -->
-            <button onclick="window.open('zebra-box.html', '_self')" class="button button-primary button-center">Подробнее</button>
+            <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/curtains/zebra-box.php', '_self')" class="button button-primary button-center">Подробнее</button>
           </div>
           <!-- /.kit-wrapper -->
         </div>
@@ -201,7 +201,7 @@ include 'partials/header.php' ?>
               <span class="kit-subtitle">Стоимость от 499р</span>
             </div>
             <!-- /.kit-content -->
-            <button onclick="window.open('mosquito.html', '_self')" class="button button-primary button-center">Подробнее</button>
+            <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/curtains/jalousie-horizontal.php', '_self')" class="button button-primary button-center">Подробнее</button>
           </div>
           <!-- /.kit-wrapper -->
         </div>

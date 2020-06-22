@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   if (document.body.contains(document.querySelector('.swiper-feedback'))) {
     const feedbackSlider = new Swiper('.swiper-feedback', {
-    // Optional parameters
+      // Optional parameters
       loop: true,
       slidesPerView: 1,
       spaceBetween: 30,
@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (document.body.contains(document.querySelector('.swiper-kits'))) {
     const kitsSlider = new Swiper('.swiper-kits', {
-    // Optional parameters
+      // Optional parameters
       loop: true,
       spaceBetween: 30,
 
@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (document.body.contains(document.querySelector('.block-nets'))) {
     const blockNetsSlider = new Swiper('.block-nets', {
-    // Optional parameters
+      // Optional parameters
       spaceBetween: 30,
 
       // If we need pagination
@@ -80,7 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (document.body.contains(document.querySelector('.block-curtains'))) {
     const blockCurtainsSlider = new Swiper('.block-curtains', {
-    // Optional parameters
+      // Optional parameters
       spaceBetween: 30,
 
       // If we need pagination
@@ -141,7 +141,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (document.body.contains(document.querySelector('.block-other'))) {
     const blockOtherSlider = new Swiper('.block-other', {
-    // Optional parameters
+      // Optional parameters
       spaceBetween: 30,
 
       // If we need pagination
@@ -316,3 +316,11 @@ window.addEventListener('DOMContentLoaded', () => {
     };
   }
 });
+
+const makeOrderButton = document.getElementById('make-order-button');
+
+if (makeOrderButton) {
+  makeOrderButton.addEventListener('click', () => {
+    MicroModal.show('modal-callback');
+  });
+}

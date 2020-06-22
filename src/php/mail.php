@@ -17,8 +17,8 @@ $mail->Password = 'appleJack@22'; // Ваш пароль от почты с ко
 $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('best-for-home-24@yandex.ru'); // от кого будет уходить письмо?
-$mail->addAddress('derkacnikolaj12@gmail.com'); // Кому будет уходить письмо
+$mail->setFrom('derkacnikolaj12@gmail.com', 'BEST-FOR-HOME'); // от кого будет уходить письмо?
+$mail->addAddress('main.acr0matic@gmail.com'); // Кому будет уходить письмо
 $mail->addAttachment($_FILES['user_file']['tmp_name'], $_FILES['user_file']['name']); // Optional name
 $mail->isHTML(true); // Set email format to HTML
 

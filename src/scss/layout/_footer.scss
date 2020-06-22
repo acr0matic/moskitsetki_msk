@@ -6,7 +6,7 @@
   .wrapper {
     align-items: center;
 
-    @include breakpoint($phone-m) {
+    @include breakpoint($phone-l) {
       justify-content: center;
       text-align: center;
     }
@@ -18,7 +18,7 @@
   .callback {
     margin-right: 0;
 
-    @include breakpoint($phone-m) {
+    @include breakpoint($phone-l) {
       display: none;
     }
   }

@@ -14,7 +14,9 @@
   align-items: flex-start;
   justify-content: space-between;
 
-  margin-bottom: 60px;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
 }
 
 .kit {

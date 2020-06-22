@@ -2,7 +2,7 @@
   padding-top: 75px;
 
   .container {
-    background-color: #000000;
+    background-color: #9b9b9b;
     background-image: url("../img/hero-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@
       margin-top: 90px;
     }
 
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 
@@ -48,8 +48,14 @@
 
   &__subtitle {
     @include breakpoint($phone-l) {
-      font-size: $font-size-7;
+      font-size: $font-size-6;
       line-height: $line-height-0;
+      text-align: center;
+
+      mark {
+        display: inline-block;
+        margin-top: 10px;
+      }
     }
 
     font-size: $font-size-5;

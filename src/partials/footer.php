@@ -38,7 +38,7 @@
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        <form data-form-type="modal" id="callbackForm" class="form form-modal" action="mail.php" method="POST" enctype="multipart/form-data">
+        <form data-form-type="modal" id="callbackForm" class="form form-modal" action="php/mail.php" method="POST" enctype="multipart/form-data">
           <h2 class="modal-title">Заказать обратный звонок</h2>
           <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем
             удобное время и дату</p>
@@ -89,7 +89,7 @@
   <!-- endbuild -->
 
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript ">
+  <script type="text/javascript">
     (function(m, e, t, r, i, k, a) {
       m[i] = m[i] || function() {
         (m[i].a = m[i].a || []).push(arguments)
@@ -97,9 +97,9 @@
       m[i].l = 1 * new Date();
       k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
     })
-    (window, document, "script ", "https://mc.yandex.ru/metrika/tag.js ", "ym ");
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(61235758, "init ", {
+    ym(65058088, "init", {
       clickmap: true,
       trackLinks: true,
       accurateTrackBounce: true,
@@ -107,8 +107,7 @@
     });
   </script>
   <noscript>
-    <div><img src="https://mc.yandex.ru/watch/61235758 " style="position: absolute;
- left: -9999px; " alt=" " /></div>
+    <div><img src="https://mc.yandex.ru/watch/65058088" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript>
   <!-- /Yandex.Metrika counter -->
 
