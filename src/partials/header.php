@@ -35,10 +35,10 @@
   <meta name="robots" content="index,follow,noodp" />
 
   <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
-  <meta name="theme-color" content="#4285f4" />
+  <meta name="theme-color" content="#ffffff" />
 
   <!-- Для Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#4285f4" />
+  <meta name="msapplication-navbutton-color" content="#ffffff" />
 
   <!-- Верификация яндекс-вебмастер -->
   <meta name="yandex-verification" content="0a346b0658a6c095" />

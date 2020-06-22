@@ -37,27 +37,27 @@
         </div>
         <!-- /.section-title -->
         <div id="lightgallery" class="gallery">
-          <a class="gallery-item gallery-item-large" data-fslightbox href="img/catalog/items/roller-blinds-grand/1.jpg">
+          <a class="gallery-item gallery-item-large" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/1.jpg">
             <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/1.jpg" alt="">
           </a>
           <!-- /.gallery-item -->
 
-          <a class="gallery-item gallery-item-large" data-fslightbox href="img/catalog/items/roller-blinds-grand/2.jpg">
+          <a class="gallery-item gallery-item-large" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/2.jpg">
             <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/2.jpg" alt="">
           </a>
           <!-- /.gallery-item -->
 
-          <a class="gallery-item" data-fslightbox href="img/catalog/items/roller-blinds-grand/3.jpg">
+          <a class="gallery-item" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/3.jpg">
             <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/3.jpg" alt="">
           </a>
           <!-- /.gallery-item -->
 
-          <a class="gallery-item" data-fslightbox href="img/catalog/items/roller-blinds-grand/4.jpg">
+          <a class="gallery-item" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/4.jpg">
             <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/4.jpg" alt="">
           </a>
           <!-- /.gallery-item -->
 
-          <a class="gallery-item" data-fslightbox href="img/catalog/items/roller-blinds-grand/5.jpg">
+          <a class="gallery-item" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/5.jpg">
             <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds-grand/5.jpg" alt="">
           </a>
           <!-- /.gallery-item -->

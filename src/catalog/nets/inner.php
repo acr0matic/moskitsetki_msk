@@ -37,17 +37,17 @@ include $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php' ?>
       </div>
       <!-- /.section-title -->
       <div id="lightgallery" class="gallery">
-        <a class="gallery-item" data-fslightbox href="img/catalog/items/inner/1.jpg">
+        <a class="gallery-item" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/inner/1.jpg">
           <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/inner/1.jpg" alt="">
         </a>
         <!-- /.gallery-item -->
 
-        <a class="gallery-item" data-fslightbox href="img/catalog/items/inner/2.jpg">
+        <a class="gallery-item" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/inner/2.jpg">
           <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/inner/2.jpg" alt="">
         </a>
         <!-- /.gallery-item -->
 
-        <a class="gallery-item" data-fslightbox href="img/catalog/items/inner/3.jpg">
+        <a class="gallery-item" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/inner/3.jpg">
           <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/inner/3.jpg" alt="">
         </a>
         <!-- /.gallery-item -->

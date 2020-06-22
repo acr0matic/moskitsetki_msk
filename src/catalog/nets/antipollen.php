@@ -38,27 +38,27 @@ include $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php' ?>
       </div>
       <!-- /.section-title -->
       <div id="lightgallery" class="gallery">
-        <a class="gallery-item gallery-item-large" data-fslightbox href="img/catalog/items/anti-pollen/1.jpg">
+        <a class="gallery-item gallery-item-large" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/1.jpg">
           <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/1.jpg" alt="">
         </a>
         <!-- /.gallery-item -->
 
-        <a class="gallery-item gallery-item-large" data-fslightbox href="img/catalog/items/anti-pollen/2.jpg">
+        <a class="gallery-item gallery-item-large" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/2.jpg">
           <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/2.jpg" alt="">
         </a>
         <!-- /.gallery-item -->
 
-        <a class="gallery-item" data-fslightbox href="img/catalog/items/anti-pollen/3.jpg">
+        <a class="gallery-item" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/3.jpg">
           <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/3.jpg" alt="">
         </a>
         <!-- /.gallery-item -->
 
-        <a class="gallery-item" data-fslightbox href="img/catalog/items/anti-pollen/4.jpg">
+        <a class="gallery-item" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/4.jpg">
           <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/4.jpg" alt="">
         </a>
         <!-- /.gallery-item -->
 
-        <a class="gallery-item" data-fslightbox href="img/catalog/items/anti-pollen/5.jpg">
+        <a class="gallery-item" data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/5.jpg">
           <img class="gallery-item-image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/anti-pollen/5.jpg" alt="">
         </a>
         <!-- /.gallery-item -->
