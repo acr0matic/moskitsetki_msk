@@ -25,7 +25,6 @@
     background-color: $button-primary;
 
     &:hover {
-
     }
   }
 
@@ -39,6 +38,22 @@
 
   &-form {
     width: 30%;
+  }
+
+  &-temp {
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
+  }
+
+  &-invisible {
+    display: none;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: block;
+
+      margin-top: 15px;
+    }
   }
 
   &-mobile {

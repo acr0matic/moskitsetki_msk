@@ -1,4 +1,3 @@
-
 .calculator {
   display: flex;
   flex-direction: column;
@@ -8,6 +7,23 @@
 
   @include breakpoint($phone-l) {
     padding: 15px 0 0 0;
+  }
+
+  .button {
+    @include breakpoint($phone-l) {
+      width: 95%;
+    }
+  }
+
+  &-title {
+    margin-bottom: 15px;
+  }
+
+  &-inputs {
+    label {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &-parameter-container {
@@ -22,17 +38,6 @@
 
   &-parameter-wrapper {
     width: 100%;
-  }
-
-  .input {
-    &-text {
-      width: unset;
-    }
-
-    @include breakpoint($tablet) {
-      margin-bottom: 22px;
-      width: 100%;
-    }
   }
 
   &-wrapper {
@@ -50,10 +55,6 @@
     }
   }
 
-  &-title {
-    margin-bottom: 10px;
-  }
-
   &-description {
     margin-top: auto;
 
@@ -65,8 +66,9 @@
   &-column {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+
     width: 90%;
-    height: 650px;
     margin-top: 30px;
 
     @include breakpoint($tablet) {
@@ -80,7 +82,7 @@
   }
 
   &-block {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 
     @include breakpoint($phone-l) {
       margin-bottom: 15px;
@@ -122,30 +124,6 @@
     }
   }
 
-  &-button-next,
-  &-button-prev {
-    position: absolute;
-    bottom: -35px;
-
-    @include breakpoint($phone-l) {
-      width: 130px;
-      min-width: unset !important;
-    }
-
-    @include breakpoint($phone-m) {
-      bottom: -35px;
-      width: 120px;
-    }
-  }
-
-  &-button-next {
-    right: 0;
-  }
-
-  &-button-prev {
-    left: 0;
-  }
-
   &-color {
     display: flex;
     flex-wrap: wrap;
@@ -166,21 +144,44 @@
     max-width: 450px;
   }
 
-  &-price {
-    margin-bottom: 30px;
-  }
-
   &-order {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    margin-top: auto;
-    margin-bottom: 30px;
+    width: 100%;
 
-    @include breakpoint($phone-l) {
-      margin-top: 20px;
-      margin-bottom: 100px;
+    margin-top: 30px;
+
+    @include breakpoint($phone-m) {
+      flex-direction: column;
     }
+
+    .button {
+      margin-left: auto;
+
+      @include breakpoint($phone-l) {
+        width: unset;
+      }
+
+      @include breakpoint($phone-m) {
+        width: 95%;
+        margin-top: 15px;
+      }
+    }
+
+    .calculator-title {
+      margin-bottom: 0;
+    }
+
+    &-text {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &-price {
+    margin-left: 10px;
+    font-size: $font-size-4;
   }
 }

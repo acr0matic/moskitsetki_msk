@@ -80,9 +80,11 @@
   <!-- build:js -->
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/libraries/swiper.js"></script>
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/libraries/micromodal.js"></script>
+  <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/libraries/fslightbox.js"></script>
 
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/smoothscroll.js"></script>
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/mobilemenu.js"></script>
+  <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/calculator.js"></script>
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/script.js"></script>
   <!-- endbuild -->
 

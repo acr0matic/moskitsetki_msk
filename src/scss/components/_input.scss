@@ -11,8 +11,6 @@
 
   transition: all 0.3s ease;
 
-
-
   &-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +115,7 @@
 }
 
 .checkbox label::after {
-  content: url("../../img/icons/check.svg");
+  content: url("../img/icons/check.svg");
   top: 3px;
   left: -19px;
 }
@@ -126,13 +124,13 @@
   content: none;
 }
 .checkbox input[type="checkbox"]:checked + label::after {
-  content: url("../../img/icons/check.svg");
+  content: url("../img/icons/check.svg");
 
   .checkbox input[type="checkbox"] + label::after {
     content: none;
   }
   .checkbox input[type="checkbox"]:checked + label::after {
-    content: url("../../img/icons/check.svg");
+    content: url("../img/icons/check.svg");
   }
 }
 
@@ -190,8 +188,8 @@
       display: block;
       cursor: pointer;
       background-size: cover;
-      width: 155px;
-      height: 155px;
+      width: 105px;
+      height: 105px;
       border-radius: 10px;
       margin-top: 3px;
       border: 1px solid #dcdcdc;
@@ -402,114 +400,133 @@ label[for="color-purple"] {
 
 label[for="fasteners-plastic"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/plastic-fasteners.jpg");
   }
 }
 
 label[for="fasteners-metal"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/metal-fasteners.jpg");
   }
 }
 
 label[for="fasteners-plunger"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/plunger-fasteners.jpg");
   }
 }
 
 label[for="handle-plastic"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/handle-plastic.jpg");
   }
 }
 
 label[for="handle-metal"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/handle-metal.jpg");
   }
 }
 
 label[for="corner-plastic"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/corner-plastic.jpg");
   }
 }
 
 label[for="corner-metal"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/corner-metal.jpg");
   }
 }
 
 label[for="mount-screws"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/mount-screws.jpg");
   }
 }
 
 label[for="mount-tape"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/mount-tape.jpg");
   }
 }
 
 label[for="mount-cover"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/mount-cover.jpg");
   }
 }
 
 label[for="compressor-window"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/compressor-window.jpg");
   }
 }
 
 label[for="compressor-door"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/compressor-door.jpg");
   }
 }
 
 label[for="adjustment-window"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/adjustment-window.jpg");
   }
 }
 
 label[for="adjustment-door"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/adjustment-door.jpg");
   }
 }
 
 label[for="limiter-plastic"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/limiter-plastic.jpg");
   }
 }
 
 label[for="limiter-metal"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/limiter-metal.jpg");
   }
 }
 
 label[for="lock-handle"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/lock-handle.jpg");
   }
 }
 
 label[for="lock-bottom"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/lock-bottom.jpg");
   }
 }
 
 label[for="lock-cable"] {
   &::after {
+    background-size: cover;
     background-image: url("../img/lock-cable.jpg");
   }
 }
