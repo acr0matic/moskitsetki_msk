@@ -13,8 +13,8 @@ const paths = {
     ],
     dist: './dist/',
     watch: './src/**/*.{html,php}',
-    css: 'css/style.min.css',
-    js: 'js/script.min.js',
+    css: "<link rel='stylesheet' href='<?php $_SERVER['DOCUMENT_ROOT']?>/css/style.min.css' />",
+    js: "<script src='<?php $_SERVER['DOCUMENT_ROOT']?>/js/script.min.js'></script>",
   },
 
   styles: {

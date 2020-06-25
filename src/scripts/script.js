@@ -262,13 +262,13 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   const callbackForm = document.getElementById('callbackForm');
-  const callbackIndexForm = document.getElementById('callback-index-form');
-  const orderForm = document.getElementById('orderForm');
+  const calculatorFormButton = document.getElementById('calculator-order-button');
 
-  const callbackIndexAccept = document.getElementById('callback-index-accept');
+  calculatorFormButton.addEventListener('click', () => {
+    MicroModal.show('modal-callback');
+  });
 
   if (callbackForm) AJAXform(callbackForm, callbackAccept);
-  if (callbackIndexForm) AJAXform(callbackIndexForm, callbackIndexAccept);
 
   function AJAXform(formID, buttonID, formMethod = 'post') {
     const selectForm = formID;

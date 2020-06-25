@@ -38,7 +38,7 @@
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        <form data-form-type="modal" id="callbackForm" class="form form-modal" action="php/mail.php" method="POST" enctype="multipart/form-data">
+        <form data-form-type="modal" id="callbackForm" class="form form-modal" action="<?php $_SERVER['DOCUMENT_ROOT'] ?>/php/mail.php" method="POST" enctype="multipart/form-data">
           <h2 class="modal-title">Заказать обратный звонок</h2>
           <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем
             удобное время и дату</p>
