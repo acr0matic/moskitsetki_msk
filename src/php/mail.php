@@ -1,31 +1,53 @@
 <?php
 
-require_once 'phpmailer/PHPMailerAutoload.php';
-$mail = new PHPMailer;
-$mail->CharSet = 'utf-8';
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 
+// Имя и телефон пользователя с формы
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+// Формирование содержимого письма
+$title = "Поступила заявка на обратный звонок";
+$body =
+"
+<p>С сайта bestforhome24.ru поступила заявка на обратный звонок. <br> <br>
+    Контактная информация: <br>
+    <b>Имя: </b> $name <br>
+    <b>Телефон: </b><a href='tel: $phone'> $phone </p>
+";
 
-$mail->isSMTP(); // Set mailer to use SMTP
-$mail->Host = 'smtp.yandex.ru'; // Specify main and backup SMTP servers
-$mail->SMTPAuth = true; // Enable SMTP authentication
-$mail->Username = 'best-for-home-24@yandex.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'appleJack@22'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
+// Настройки PHPMailer
+$mail = new PHPMailer\PHPMailer\PHPMailer();
+try {
+    $mail->isSMTP();
+    $mail->CharSet = "UTF-8";
+    $mail->SMTPAuth   = true;
+    //$mail->SMTPDebug = 2;
+    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-$mail->setFrom('best-for-home-24@yandex.ru', 'BEST-FOR-HOME'); // от кого будет уходить письмо?
-$mail->addAddress('derkacnikolaj12@gmail.com'); // Кому будет уходить письмо
-$mail->addAttachment($_FILES['user_file']['tmp_name'], $_FILES['user_file']['name']); // Optional name
-$mail->isHTML(true); // Set email format to HTML
+    // Настройки вашей почты
+    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'best-for-home-24'; // Логин на почте
+    $mail->Password   = 'appleJack@22'; // Пароль на почте
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port       = 465;
+    $mail->setFrom('best-for-home-24@yandex.ru', 'BEST-FOR-HOME'); // от кого будет уходить письмо?
 
-$mail->Subject = 'Запрос на обратный звонок';
-$mail->Body = 'Поступила заявка на обратный звонок. <br>Имя: ' . $name . '<br>Номер телефона: <a href="tel:' . $phone . '">' . $phone . '</a>';
-$mail->AltBody = '';
+    // Получатель письма
+    $mail->addAddress('main.acr0matic@gmail.com');
 
-if (!$mail->send()) {
-    echo 'Error';
+// Отправка сообщения
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body;
+
+// Проверяем отравленность сообщения
+if ($mail->send()) {$result = "success";}
+else {$result = "error";}
+
+} catch (Exception $e) {
+    $result = "error";
+    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }

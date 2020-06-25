@@ -264,9 +264,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const callbackForm = document.getElementById('callbackForm');
   const calculatorFormButton = document.getElementById('calculator-order-button');
 
-  calculatorFormButton.addEventListener('click', () => {
-    MicroModal.show('modal-callback');
-  });
+  if (calculatorFormButton) {
+    calculatorFormButton.addEventListener('click', () => {
+      MicroModal.show('modal-callback');
+    });
+  }
 
   if (callbackForm) AJAXform(callbackForm, callbackAccept);
 
