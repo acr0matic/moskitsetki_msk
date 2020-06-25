@@ -48,17 +48,6 @@ for (const button of curtainsScrollButtons) {
   });
 }
 
-const logoElements = document.querySelectorAll('.logo');
-
-for (const logo of logoElements) {
-  logo.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  });
-}
-
 const calculatorButtons = document.querySelectorAll('.calculator-button-next, .calculator-button-prev');
 
 for (const button of calculatorButtons) {

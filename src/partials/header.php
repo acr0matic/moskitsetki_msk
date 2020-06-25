@@ -57,12 +57,14 @@
   <!-- Шапка -->
   <header id="header">
     <div class="container">
-      <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/logo.svg" alt="" class="logo" />
+      <a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/">
+        <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/logo.svg" alt="" class="logo" />
+      </a>
 
       <nav class="nav">
         <ul class="nav__navbar">
-          <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/" class="nav__link">Главная</a></li>
-          <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/index.php" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/index.php" class="nav__link">Каталог</a></li>
           <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#popular" class="nav__link">Популярное</a></li>
           <li class="nav__item"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/#feedback" class="nav__link">Отзывы</a></li>
         </ul>

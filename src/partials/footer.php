@@ -64,7 +64,7 @@
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
         <div class="accept-modal-wrapper">
-          <img src="img/icons/accept-icon.svg" alt="">
+          <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/accept-icon.svg" alt="">
           <p class="modal-text">Ваша заявка отправлена, <span>спасибо!</span><br> В ближайшее время, мы Вам перезвоним
           </p>
         </div>
