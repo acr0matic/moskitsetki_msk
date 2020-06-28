@@ -2,12 +2,12 @@
   background-color: #f9fcff;
   padding: 80px;
 
-  @include breakpoint($phone-l) {
+  @include breakpoint($breakpoint-mobile-large) {
     padding: 40px 5px;
   }
 
   .input {
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       width: 100%;
       margin: 0;
       margin-bottom: 10px;
@@ -15,11 +15,11 @@
   }
 
   .button {
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       margin-left: auto;
     }
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       margin-left: 0;
       width: 100%;
     }

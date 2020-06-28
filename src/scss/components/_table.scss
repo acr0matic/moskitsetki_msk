@@ -14,7 +14,7 @@ th,
 td {
   padding: 17px;
 
-  @include breakpoint($phone-l) {
+  @include breakpoint($breakpoint-mobile-large) {
     padding: 17px 8px 17px 8px;
   }
 }

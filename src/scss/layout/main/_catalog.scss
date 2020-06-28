@@ -21,28 +21,28 @@
   @include first-child() {
     width: 49%;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       width: 100%;
     }
   }
   @include first(2) {
     width: 49%;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       width: 100%;
     }
   }
 
 
-  @include breakpoint($laptop) {
+  @include breakpoint($breakpoint-laptop) {
     height: 205px;
   }
 
-  @include breakpoint($tablet) {
+  @include breakpoint($breakpoint-tablet) {
     width: 49%;
   }
 
-  @include breakpoint($phone-l) {
+  @include breakpoint($breakpoint-mobile-large) {
     width: 100%;
     margin-bottom: 20px;
   }

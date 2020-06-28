@@ -7,7 +7,7 @@ body {
 }
 
 .nav-link {
-  color: $text-primary;
+  color: $text-black;
 }
 
 .form-error-label {
@@ -25,7 +25,7 @@ body {
 .footer-nav-link,
 time,
 span {
-  color: $text-secondary;
+  color: $text-gray;
 }
 
 .calculator-text {
@@ -37,19 +37,19 @@ span {
 p,
 h3,
 li {
-  font-size: $font-3;
+  font-size: $font-size-6;
 
-  @include breakpoint($laptop) {
-    font-size: $font-3 - 2;
+  @include breakpoint($breakpoint-laptop) {
+    font-size: $font-size-6 - 2;
   }
 }
 
 h2 {
-  font-size: $font-2;
+  font-size: $font-size-4;
   font-weight: 500;
 
-  @include breakpoint($laptop) {
-    font-size: $font-2 - 6;
+  @include breakpoint($breakpoint-laptop) {
+    font-size: $font-size-4 - 6;
   }
 }
 
@@ -57,14 +57,14 @@ h2 {
 .modal-title,
 .block-title,
 h1 {
-  font-size: $font-1;
+  font-size: $font-size-3;
 
-  @include breakpoint($laptop) {
-    font-size: $font-1 - 10;
+  @include breakpoint($breakpoint-laptop) {
+    font-size: $font-size-3 - 10;
   }
 
-  @include breakpoint($phone-m) {
-    font-size: $font-1 - 12;
+  @include breakpoint($breakpoint-mobile-medium) {
+    font-size: $font-size-3 - 12;
   }
 }
 
@@ -93,20 +93,20 @@ h4 {
 
 .product-title {
   font-weight: 400;
-  font-size: $font-3;
+  font-size: $font-size-6;
 
-  @include breakpoint($tablet) {
-    font-size: $font-3 - 2;
+  @include breakpoint($breakpoint-tablet) {
+    font-size: $font-size-6 - 2;
   }
 }
 
 .mobile-menu-link,
 .product-title a {
-  color: $text-primary;
+  color: $text-black;
 }
 
 .mobile-menu-link {
-  font-size: $font-3;
+  font-size: $font-size-6;
 }
 
 .block-title {
@@ -118,11 +118,11 @@ h4 {
 }
 
 .politics {
-  color: $text-important;
+  color: $text-orange;
 }
 
 .feedback-info .name {
-  color: $text-important-lighter;
+  color: $text-yellow;
 }
 
 .catalog-text,
@@ -135,25 +135,25 @@ h4 {
 .callback {
   .phone {
     font-size: 24px;
-    color: $text-primary;
+    color: $text-black;
 
-    @include breakpoint($laptop) {
+    @include breakpoint($breakpoint-laptop) {
       font-size: 20px;
     }
   }
 
   .worktime {
-    color: $text-info;
+    color: $text-gray;
   }
 }
 
 .section-title {
   .primary-heading,
   .sub-heading {
-    font-size: $font-1;
+    font-size: $font-size-3;
 
-    @include breakpoint($phone-l) {
-      font-size: $font-1 - 6;
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-3 - 6;
     }
   }
 
@@ -167,11 +167,11 @@ h4 {
   }
 
   .secondary-heading {
-    font-size: $font-2;
-    color: $text-secondary;
+    font-size: $font-size-4;
+    color: $text-gray;
 
-    @include breakpoint($phone-l) {
-      font-size: $font-2 - 6;
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-4 - 6;
     }
   }
 }

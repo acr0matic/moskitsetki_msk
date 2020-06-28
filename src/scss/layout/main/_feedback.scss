@@ -16,7 +16,7 @@
     height: 230px;
     border-radius: 10px;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       flex-direction: column;
       height: auto;
       padding: 20px 0;
@@ -45,7 +45,7 @@
 .avatar {
   border-radius: 10px;
 
-  @include breakpoint($phone-l) {
+  @include breakpoint($breakpoint-mobile-large) {
     margin-bottom: 15px;
   }
 }

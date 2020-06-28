@@ -13,14 +13,14 @@
 
     transition: opacity 0.15s ease;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       width: 48.5%;
       height: 150px;
       margin-bottom: 15px;
     }
 
     &:last-child {
-      @include breakpoint($phone-l) {
+      @include breakpoint($breakpoint-mobile-large) {
         width: 100%;
       }
     }

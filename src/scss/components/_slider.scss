@@ -8,12 +8,12 @@
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  color: $text-info;
+  color: $text-gray;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  z-index: $first-layer;
+  z-index: $z-index-main;
   outline: none;
   top: 50%;
 }
@@ -36,17 +36,17 @@
   }
 
   &-pagination {
-    z-index: $first-layer;
+    z-index: $z-index-main;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       display: block;
     }
 
     &-bullet-active {
-      background: $text-important-lighter;
+      background: $text-yellow;
     }
 
     span {
@@ -60,7 +60,7 @@
   .swiper-button-next {
     display: none;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       display: block;
     }
   }
@@ -68,7 +68,7 @@
   .swiper-pagination {
     display: none;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       display: block;
     }
   }

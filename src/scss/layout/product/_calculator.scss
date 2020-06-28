@@ -5,12 +5,12 @@
   padding: 50px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 
-  @include breakpoint($phone-l) {
+  @include breakpoint($breakpoint-mobile-large) {
     padding: 15px 0 0 0;
   }
 
   .button {
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       width: 95%;
     }
   }
@@ -31,7 +31,7 @@
     justify-content: space-between;
     width: 100%;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       flex-direction: column;
     }
   }
@@ -43,11 +43,11 @@
   &-wrapper {
     width: 100%;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       justify-content: space-between;
     }
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -58,7 +58,7 @@
   &-description {
     margin-top: auto;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       margin-top: 20px;
     }
   }
@@ -71,12 +71,12 @@
     width: 90%;
     margin-top: 30px;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       width: 100%;
       padding: 0;
     }
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       width: 100%;
     }
   }
@@ -84,7 +84,7 @@
   &-block {
     margin-bottom: 20px;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       margin-bottom: 15px;
     }
   }
@@ -92,7 +92,7 @@
   &-fasteners {
     display: flex;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       flex-wrap: wrap;
     }
   }
@@ -117,7 +117,7 @@
   &-lock-type {
     display: flex;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       flex-wrap: wrap;
       justify-content: space-between;
       width: 100%;
@@ -153,18 +153,18 @@
 
     margin-top: 30px;
 
-    @include breakpoint($phone-m) {
+    @include breakpoint($breakpoint-mobile-medium) {
       flex-direction: column;
     }
 
     .button {
       margin-left: auto;
 
-      @include breakpoint($phone-l) {
+      @include breakpoint($breakpoint-mobile-large) {
         width: unset;
       }
 
-      @include breakpoint($phone-m) {
+      @include breakpoint($breakpoint-mobile-medium) {
         width: 95%;
         margin-top: 15px;
       }

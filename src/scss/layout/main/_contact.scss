@@ -4,7 +4,7 @@
   .wrap {
     flex-wrap: wrap;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       justify-content: center;
     }
   }
@@ -15,7 +15,7 @@
 
   .button {
     width: 48%;
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       width: 100%;
     }
   }
@@ -24,7 +24,7 @@
     .input {
       width: 48%;
 
-      @include breakpoint($phone-l) {
+      @include breakpoint($breakpoint-mobile-large) {
         width: 100%;
       }
     }

@@ -9,7 +9,7 @@
       justify-content: center;
       width: 100%;
 
-      @include breakpoint($tablet) {
+      @include breakpoint($breakpoint-tablet) {
         flex-direction: column;
       }
     }
@@ -33,7 +33,7 @@
     margin: auto;
     padding: 60px;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       padding: 30px;
     }
 
@@ -47,7 +47,7 @@
     .input-text {
       width: 49%;
 
-      @include breakpoint($phone-l) {
+      @include breakpoint($breakpoint-mobile-large) {
         width: 100%;
         margin-bottom: 10px;
       }
@@ -64,7 +64,7 @@
 
       margin-top: 50px;
 
-      @include breakpoint($phone-l) {
+      @include breakpoint($breakpoint-mobile-large) {
         flex-direction: column;
       }
     }
@@ -72,7 +72,7 @@
     .calculator-order-text {
       margin-right: 35px;
 
-      @include breakpoint($phone-l) {
+      @include breakpoint($breakpoint-mobile-large) {
         display: flex;
         justify-content: center;
         margin: 0;
@@ -80,7 +80,7 @@
     }
 
     .calculator-price {
-      @include breakpoint($phone-l) {
+      @include breakpoint($breakpoint-mobile-large) {
         @include first-child {
           margin-left: 10px;
         }
@@ -104,7 +104,7 @@
     border-radius: 10px;
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       padding: 20px;
     }
 

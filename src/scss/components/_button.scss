@@ -57,7 +57,7 @@
   }
 
   &-mobile {
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       display: block;
     }
 

@@ -6,7 +6,7 @@
   .wrapper {
     align-items: center;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       justify-content: center;
       text-align: center;
     }
@@ -18,7 +18,7 @@
   .callback {
     margin-right: 0;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       display: none;
     }
   }
@@ -26,7 +26,7 @@
     justify-content: flex-start;
     margin-top: 45px;
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -36,7 +36,7 @@
   .politics {
     margin-left: 40px;
 
-    @include breakpoint($phone-m) {
+    @include breakpoint($breakpoint-mobile-medium) {
       margin-top: 20px;
       margin-left: 0;
     }
@@ -45,13 +45,13 @@
   .social {
     margin-left: auto;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($breakpoint-tablet) {
       span {
         display: none;
       }
     }
 
-    @include breakpoint($phone-l) {
+    @include breakpoint($breakpoint-mobile-large) {
       margin-left: 0;
     }
   }
