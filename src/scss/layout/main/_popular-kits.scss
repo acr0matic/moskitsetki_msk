@@ -1,81 +1,69 @@
-#popular-kits {
-  .section-title {
-    margin-bottom: 30px;
-  }
-
-  .primary-heading {
-    text-align: left;
-  }
-}
-
-.kits {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-
+.popular {
   &:not(:last-child) {
     margin-bottom: 60px;
   }
-}
 
-.kit {
-  @include breakpoint($breakpoint-mobile-large) {
-    width: 100%;
+  &__title {
     margin-bottom: 25px;
   }
 
-  width: 32%;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-  text-align: center;
+  &__item {
+    @include breakpoint($breakpoint-mobile-large) {
+      width: 100%;
+      margin-bottom: 25px;
+    }
 
-  box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.04);
-  border-radius: 10px;
-
-  button {
-    margin-top: auto;
+    width: 32%;
   }
 }
 
-.kit-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
+.popular-item {
+  box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
 
-.kit-title {
-  margin-bottom: 10px;
-  font-weight: $weight-medium;
-}
+  &__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
 
-.kit-subtitle {
-  display: block;
-  margin-bottom: 45px;
-}
+  &__wrapper {
+    @include breakpoint($breakpoint-laptop) {
+      padding: 25px;
+    }
 
-.kit-wrapper {
-  @include breakpoint($breakpoint-laptop) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding: 25px;
   }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  &__title {
+    margin-bottom: 10px;
+    font-weight: $weight-medium;
+  }
 
-  padding: 25px;
-}
+  &__subtitle {
+    display: block;
+    margin-bottom: 20px;
+  }
 
-.kit-items {
-  text-align: left;
-}
+  &__description {
+    margin-bottom: 20px;
+  }
 
-.kit-item {
-  &::before {
-    content: "+";
-    margin-right: 5px;
-    font-weight: 500;
-    color: $text-orange;
+  &__button {
+    width: 100%;
+    margin-top: 20px;
   }
 }

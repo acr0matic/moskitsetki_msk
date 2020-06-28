@@ -6,8 +6,9 @@ body {
   font-family: Rubik, sans-serif;
 }
 
-.nav-link {
-  color: $text-black;
+p {
+  font-size: $font-size-7;
+  line-height: $line-height-0;
 }
 
 .form-error-label {
@@ -37,8 +38,6 @@ span {
 p,
 h3,
 li {
-  font-size: $font-size-6;
-
   @include breakpoint($breakpoint-laptop) {
     font-size: $font-size-6 - 2;
   }
