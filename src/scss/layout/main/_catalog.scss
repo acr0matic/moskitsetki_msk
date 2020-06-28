@@ -1,73 +1,80 @@
-.catalog-cards {
+.catalog {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 
   margin-top: 20px;
+
+  &__card {
+    @include breakpoint($breakpoint-laptop) {
+      height: 205px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 49%;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @include first(2) {
+      @include breakpoint($breakpoint-mobile-large) {
+        width: 100%;
+      }
+
+      width: 49%;
+      height: 325px;
+    }
+
+    width: 23.5%;
+    height: 245px;
+
+    margin-bottom: 25px;
+  }
 }
 
 .catalog-card {
   position: relative;
 
-  width: 23.5%;
-  height: 285px;
-
-  margin-bottom: 25px;
-
   overflow: hidden;
   border-radius: 10px;
 
-  @include first-child() {
-    width: 49%;
+  transition: all 0.15s ease;
 
-    @include breakpoint($breakpoint-mobile-large) {
-      width: 100%;
-    }
-  }
-  @include first(2) {
-    width: 49%;
+  &:hover {
+    opacity: 0.8;
 
-    @include breakpoint($breakpoint-mobile-large) {
-      width: 100%;
+    .catalog-card__image {
+      transform: scale(1.025);
     }
   }
 
-
-  @include breakpoint($breakpoint-laptop) {
-    height: 205px;
-  }
-
-  @include breakpoint($breakpoint-tablet) {
-    width: 49%;
-  }
-
-  @include breakpoint($breakpoint-mobile-large) {
+  &__image {
     width: 100%;
-    margin-bottom: 20px;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.15s ease;
   }
-}
 
-.catalog-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  &__description {
+    position: absolute;
+    bottom: 0;
 
-.catalog-description {
-  position: absolute;
-  bottom: 0;
+    width: 100%;
+    padding: 10px 30px 10px 30px;
+    background: rgba($color: #000000, $alpha: 0.5);
+  }
 
-  width: 100%;
-  padding: 10px 30px 10px 30px;
-  background: rgba($color: #000000, $alpha: 0.5);
-}
+  &__heading {
+    color: $text-white;
+    font-weight: $weight-medium;
+  }
 
-.catalog-heading {
-  color: #ffffff;
-  font-weight: $weight-medium;
-}
-
-.catalog-text {
-  color: #ffffff;
+  &__text {
+    color: $text-white;
+  }
 }

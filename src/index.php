@@ -35,76 +35,81 @@ include 'partials/header.php' ?>
         <p class="secondary-heading">Что мы можем вам предложить?</p>
       </div>
       <!-- /.section-title -->
-      <div class="catalog-cards">
-        <div class="catalog-card">
+
+      <div class="catalog">
+        <div class="catalog__card catalog-card">
           <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/moskit-setka.jpg" alt="" class="catalog-image">
-            <div class="catalog-description">
-              <h3 class="catalog-heading">Москитные сетки и москитные двери</h3>
-              <p class="catalog-text">Множество вариаций и любой размер</p>
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/moskit-setka.jpg" alt="" class="catalog-card__image">
+            <div class="catalog-card__description">
+              <h3 class="catalog-card__heading">Москитные сетки и москитные двери</h3>
+              <p class="catalog-card__text">Множество вариаций и любой размер</p>
             </div>
-            <!-- /.catalog-description -->
+            <!-- /.catalog-card__description -->
           </a>
         </div>
+        <!-- /.catalog-card -->
 
-        <div class="catalog-card">
+        <div class="catalog__card catalog-card">
           <a id="anchor-change" class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/curtains.jpg" alt="" class="catalog-image">
-            <div class="catalog-description">
-              <h3 class="catalog-heading">Рулонные шторы и жалюзи</h3>
-              <p class="catalog-text">Тысячи тканей и цветов на выбор</p>
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/curtains.jpg" alt="" class="catalog-card__image">
+            <div class="catalog-card__description">
+              <h3 class="catalog-card__heading">Рулонные шторы и жалюзи</h3>
+              <p class="catalog-card__text">Тысячи тканей и цветов на выбор</p>
             </div>
-            <!-- /.catalog-description -->
-          </a>
-        </div>
-        <!-- /.catalog-card -->
-        <div class="catalog-card">
-          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/tinting.php">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/tinting.jpg" alt="" class="catalog-image">
-            <div class="catalog-description">
-              <h3 class="catalog-heading">Тонировка окон</h3>
-              <p class="catalog-text">Затемнение ваших окон</p>
-            </div>
-            <!-- /.catalog-description -->
-          </a>
-        </div>
-        <!-- /.catalog-card -->
-        <div class="catalog-card">
-          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/adjustment.php">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/adjustment.jpg" alt="" class="catalog-image">
-            <div class="catalog-description">
-              <h3 class="catalog-heading">Регулировка окон</h3>
-              <p class="catalog-text">Отрегулируем любые окна</p>
-            </div>
-            <!-- /.catalog-description -->
-          </a>
-        </div>
-        <!-- /.catalog-card -->
-        <div class="catalog-card">
-          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/lock.php">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/lock.jpg" alt="" class="catalog-image">
-            <div class="catalog-description">
-              <h3 class="catalog-heading">Замки от детей</h3>
-              <p class="catalog-text">Защитим ваших детей</p>
-            </div>
-            <!-- /.catalog-description -->
-          </a>
-        </div>
-        <!-- /.catalog-card -->
-        <div class="catalog-card">
-          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/compressor.php">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/compressor.png" alt="" class="catalog-image">
-            <div class="catalog-description">
-              <h3 class="catalog-heading">Замена уплотнителя</h3>
-              <p class="catalog-text">Качественная замена</p>
-            </div>
-            <!-- /.catalog-description -->
+            <!-- /.catalog-card__description -->
           </a>
         </div>
         <!-- /.catalog-card -->
 
+        <div class="catalog__card catalog-card">
+          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/tinting.php">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/tinting.jpg" alt="" class="catalog-card__image">
+            <div class="catalog-card__description">
+              <h3 class="catalog-card__heading">Тонировка окон</h3>
+              <p class="catalog-card__text">Затемнение ваших окон</p>
+            </div>
+            <!-- /.catalog-card__description -->
+          </a>
+        </div>
+        <!-- /.catalog-card -->
+
+        <div class="catalog__card catalog-card">
+          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/adjustment.php">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/adjustment.jpg" alt="" class="catalog-card__image">
+            <div class="catalog-card__description">
+              <h3 class="catalog-card__heading">Регулировка окон</h3>
+              <p class="catalog-card__text">Отрегулируем любые окна</p>
+            </div>
+            <!-- /.catalog-card__description -->
+          </a>
+        </div>
+        <!-- /.catalog-card -->
+
+        <div class="catalog__card catalog-card">
+          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/lock.php">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/lock.jpg" alt="" class="catalog-card__image">
+            <div class="catalog-card__description">
+              <h3 class="catalog-card__heading">Замки от детей</h3>
+              <p class="catalog-card__text">Защитим ваших детей</p>
+            </div>
+            <!-- /.catalog-card__description -->
+          </a>
+        </div>
+        <!-- /.catalog-card -->
+
+        <div class="catalog__card catalog-card">
+          <a class="item-wrapper" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/compressor.php">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/compressor.png" alt="" class="catalog-card__image">
+            <div class="catalog-card__description">
+              <h3 class="catalog-card__heading">Замена уплотнителя</h3>
+              <p class="catalog-card__text">Качественная замена</p>
+            </div>
+            <!-- /.catalog-card__description -->
+          </a>
+        </div>
+        <!-- /.catalog-card -->
       </div>
-      <!-- /.catalog-cards -->
+      <!-- /.catalog -->
     </div>
     <!-- /.container -->
   </section>
