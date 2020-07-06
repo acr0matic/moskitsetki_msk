@@ -50,7 +50,7 @@
           </div>
           <!-- /.politics -->
           <button type="button" disabled id="modal-callback-accept" class="button button-primary">Заказать</button>
-          <p data-error-label class="form-error-label"></p>
+          <p data-error-label class="form-error"></p>
         </form>
       </div>
       <!-- /.modal__container -->

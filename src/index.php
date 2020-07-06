@@ -111,7 +111,7 @@ include 'partials/header.php' ?>
   <section id="popular">
     <div class="container">
       <div class="popular">
-        <h2 class="popular__title">Популярные москитные сетки</h2>
+        <h2 class="popular__title">Заказывают чаще всего</h2>
         <div class="popular__wrapper">
           <div class="popular__item popular-item">
             <img class="popular-item__image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/mosquito.jpg" alt="">
@@ -122,92 +122,37 @@ include 'partials/header.php' ?>
                 <p class="popular-item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил бросил ты подзаголовок напоивший, сбить реторический семь пунктуация. Океана!</p>
               </div>
               <!-- /.popular-item__content -->
-              <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/nets/mosquito.php', '_self')" class="popular-item__button button button-primary button-center">Подробнее</button>
+              <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/nets/mosquito.php', '_self')" class="popular-item__button button button-primary button-center">Подробнее</button>
             </div>
             <!-- /.popular-item__wrapper -->
           </div>
           <!-- /.popular__item -->
 
-          <div class="popular__item popular-item">
-            <img class="popular-item__image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/dust.jpg" alt="">
-            <div class="popular-item__wrapper">
-              <div class="popular-item__content">
-                <h3 class="popular-item__title">Москитная сетка "Антипыль"</h3>
-                <span class="popular-item__subtitle">Стоимость от 1199р</span>
-                <p class="popular-item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил бросил ты подзаголовок напоивший, сбить реторический семь пунктуация. Океана!</p>
-              </div>
-              <!-- /.popular-item__content -->
-              <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/nets/dust.php', '_self')" class="popular-item__button button button-primary button-center">Подробнее</button>
-            </div>
-            <!-- /.popular-item__wrapper -->
-          </div>
-          <!-- /.popular__item -->
-
-          <div class="popular__item popular-item">
-            <img class="popular-item__image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/cat.jpg" alt="">
-            <div class="popular-item__wrapper">
-              <div class="popular-item__content">
-                <h3 class="popular-item__title">Москитная сетка "Антикошка"</h3>
-                <span class="popular-item__subtitle">Стоимость от 1299р</span>
-                <p class="popular-item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил бросил ты подзаголовок напоивший, сбить реторический семь пунктуация. Океана!</p>
-              </div>
-              <!-- /.popular-item__content -->
-              <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/nets/zebra-box.php', '_self')" class="popular-item__button button button-primary button-center">Подробнее</button>
-            </div>
-            <!-- /.popular-item__wrapper -->
-          </div>
-          <!-- /.popular__item -->
-        </div>
-        <!-- /.popular__wrapper -->
-      </div>
-      <!-- /.popular -->
-
-      <div class="popular">
-        <h2 class="popular__title">Популярные рулонные шторы</h2>
-        <div class="popular__wrapper">
           <div class="popular__item popular-item">
             <img class="popular-item__image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/roller-blinds.jpg" alt="">
             <div class="popular-item__wrapper">
               <div class="popular-item__content">
-                <h3 class="popular-item__title">Рулонные шторы "Обычные" (свободновисящие)</h3>
-                <span class="popular-item__subtitle">Стоимость от 1199р</span>
+                <h3 class="popular-item__title">Рулонная штора "Обычная"</h3>
+                <span class="popular-item__subtitle">Стоимость от 699р</span>
                 <p class="popular-item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил бросил ты подзаголовок напоивший, сбить реторический семь пунктуация. Океана!</p>
-
               </div>
               <!-- /.popular-item__content -->
-              <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/curtains/roller.php', '_self')" class="popular-item__button button button-primary button-center">Подробнее</button>
+              <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/curtains/roller', '_self')" class="popular-item__button button button-primary button-center">Подробнее</button>
             </div>
             <!-- /.popular-item__wrapper -->
           </div>
           <!-- /.popular__item -->
 
           <div class="popular__item popular-item">
-            <img class="popular-item__image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/jalousie-horizontal.jpg" alt="">
+            <img class="popular-item__image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/lock.jpg" alt="">
             <div class="popular-item__wrapper">
               <div class="popular-item__content">
-                <h3 class="popular-item__title">Жалюзи "Обычные" (горизонтальные)</h3>
-                <span class="popular-item__subtitle">Стоимость от 1399р</span>
+                <h3 class="popular-item__title">Замки от детей</h3>
+                <span class="popular-item__subtitle">Стоимость от 999р</span>
                 <p class="popular-item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил бросил ты подзаголовок напоивший, сбить реторический семь пунктуация. Океана!</p>
-
               </div>
               <!-- /.popular-item__content -->
-              <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/curtains/jalousie-horizontal.php', '_self')" class="popular-item__button button button-primary button-center">Подробнее</button>
-            </div>
-            <!-- /.popular-item__wrapper -->
-          </div>
-          <!-- /.popular__item -->
-
-          <div class="popular__item popular-item">
-            <img class="popular-item__image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/items/zebra.jpg" alt="">
-            <div class="popular-item__wrapper">
-              <div class="popular-item__content">
-                <h3 class="popular-item__title">Рулонная штора "Зебра" <br> (в коробе)</h3>
-                <span class="popular-item__subtitle">Стоимость от 1799р</span>
-                <p class="popular-item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил бросил ты подзаголовок напоивший, сбить реторический семь пунктуация. Океана!</p>
-
-              </div>
-              <!-- /.popular-item__content -->
-              <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>catalog/curtains/zebra-box.php', '_self')" class="popular-item__button button button-primary button-center">Подробнее</button>
+              <button onclick="window.open('<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/lock', '_self')" class="popular-item__button button button-primary button-center">Подробнее</button>
             </div>
             <!-- /.popular-item__wrapper -->
           </div>

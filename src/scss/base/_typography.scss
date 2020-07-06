@@ -6,171 +6,30 @@ body {
   font-family: Rubik, sans-serif;
 }
 
+a {
+  color: $text-black;
+  font-weight: $weight-regular;
+}
+
 p {
   font-size: $font-size-7;
   line-height: $line-height-0;
 }
 
-.form-error-label {
-  color: #ee7171;
-  text-align: center;
-}
-
-.politics-text {
-  line-height: 30px;
-  margin-bottom: 30px;
-}
-
-.calculator-heading,
-.calculator-text,
-.footer-nav-link,
-time,
-span {
-  color: $text-gray;
-}
-
-.calculator-text {
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.feedback-info .name,
-p,
-h3,
-li {
-  @include breakpoint($breakpoint-laptop) {
-    font-size: $font-size-6 - 2;
-  }
+h1 {
+  font-size: $font-size-2;
 }
 
 h2 {
-  font-size: $font-size-4;
-  font-weight: 500;
-
-  @include breakpoint($breakpoint-laptop) {
-    font-size: $font-size-4 - 6;
-  }
-}
-
-.calculator-price,
-.modal-title,
-.block-title,
-h1 {
   font-size: $font-size-3;
-
-  @include breakpoint($breakpoint-laptop) {
-    font-size: $font-size-3 - 10;
-  }
-
-  @include breakpoint($breakpoint-mobile-medium) {
-    font-size: $font-size-3 - 12;
-  }
+  font-weight: $weight-regular;
 }
 
-.title {
-  text-transform: uppercase;
-}
-
-
-
-h3,
-.modal-text,
-.product-description,
-.kit-item,
-.feedback-description {
-  line-height: 30px;
-}
-
-h4 {
-  line-height: 24px;
-}
-
-.calculator-title {
-  font-size: 21px;
-  font-weight: 500;
-}
-
-.product-title {
-  font-weight: 400;
+h3 {
   font-size: $font-size-6;
-
-  @include breakpoint($breakpoint-tablet) {
-    font-size: $font-size-6 - 2;
-  }
+  font-weight: $weight-regular;
 }
 
-.mobile-menu-link,
-.product-title a {
-  color: $text-black;
-}
-
-.mobile-menu-link {
-  font-size: $font-size-6;
-}
-
-.block-title {
-  font-weight: 400;
-}
-
-.button {
-  font-weight: 700;
-}
-
-.politics {
-  color: $text-orange;
-}
-
-.feedback-info .name {
-  color: $text-yellow;
-}
-
-.catalog-text,
-.catalog-heading {
-  text-overflow: ellipsis;
-  white-space: nowrap; /* Запрещаем перенос строк */
-  overflow: hidden;
-}
-
-.callback {
-  .phone {
-    font-size: 24px;
-    color: $text-black;
-
-    @include breakpoint($breakpoint-laptop) {
-      font-size: 20px;
-    }
-  }
-
-  .worktime {
-    color: $text-gray;
-  }
-}
-
-.section-title {
-  .primary-heading,
-  .sub-heading {
-    font-size: $font-size-3;
-
-    @include breakpoint($breakpoint-mobile-large) {
-      font-size: $font-size-3 - 6;
-    }
-  }
-
-  .primary-heading,
-  .secondary-heading {
-    text-align: center;
-  }
-
-  .sub-heading {
-    font-weight: 400;
-  }
-
-  .secondary-heading {
-    font-size: $font-size-4;
-    color: $text-gray;
-
-    @include breakpoint($breakpoint-mobile-large) {
-      font-size: $font-size-4 - 6;
-    }
-  }
+span {
+  color: $text-gray;
 }
