@@ -4,7 +4,7 @@
 
 /* ----------------- ОБЩЕЕ */
 // Максимальная ширина контейнера
-$container-max-width: 1180px;
+$container-max-width: 1140px;
 
 /* ----------------- ЦВЕТА */
 // Основной цвет
@@ -14,15 +14,17 @@ $palette-gray-light: #fdfdfd;
 $palette-gray: #f9fcff;
 
 // Цветовая палитра кнопок
-$button-primary: #eccd1d;
+$button-primary: #ecd031;
 $button-secondary: transparent;
 $button-primary-hover: #f8e36e;
 $button-secondary-hover: #eccd1d;
 $button-disabled: #fbec92;
 
 // Цветовая палитра инпутов
-$input-text: #a0a0a0;
-$input-active: #eccd1d;
+$input-background: #fafafa;
+$input-focus: #ffffff;
+$input-border: #eeeeee;
+$input-active: #fbe35c;
 $input-error: #ff9999;
 
 // Цветовая палитра текста
@@ -72,5 +74,5 @@ $font-size-8: 14px;
 $font-size-9: 12px;
 
 // Межстрочные расстояния
-$line-height-0: 32px;
-$line-height-1: 36px;
+$line-height-0: 28px;
+$line-height-1: 32px;

@@ -1,0 +1,30 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__photo {
+    $margin: 40px;
+
+    width: calc(100% / 4 - #{$margin});
+    height: 240px;
+
+    margin-bottom: $margin + 10px;
+
+    overflow: hidden;
+    border-radius: 5px;
+
+    &:hover {
+      .portfolio__image {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__image {
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.15s ease;
+  }
+}

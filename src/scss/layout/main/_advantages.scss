@@ -1,0 +1,29 @@
+.advantage-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &__card {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.advantage-card {
+
+  &__image {
+    border-radius: 5px;
+  }
+
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: $weight-medium;
+    font-size: $font-size-8;
+  }
+
+  &__description {
+    font-size: $font-size-8;
+  }
+}

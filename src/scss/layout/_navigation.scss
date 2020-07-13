@@ -10,10 +10,21 @@
 
   &__item {
     margin: 0 15px;
+
+    &:hover {
+      .nav__link {
+        color: $text-gray;
+
+        &--footer {
+          color: $text-dark;
+        }
+      }
+    }
   }
 
   &__link {
     color: $text-black;
+    transition: color 0.1s ease;
 
     &--footer {
       color: #a0a0a0;

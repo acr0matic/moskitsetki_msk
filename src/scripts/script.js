@@ -159,7 +159,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const callbackButtons = document.querySelectorAll('[data-modal-callback]');
   const callbackAccept = document.getElementById('modal-callback-accept');
-  const politicsAccept = document.getElementById('accept');
+  const politicsAccept = document.getElementById('policy__modal');
 
   politicsAccept.addEventListener('change', (event) => {
     if (event.target.checked) { callbackAccept.removeAttribute('disabled', 'disabled'); } else callbackAccept.setAttribute('disabled', 'disabled');

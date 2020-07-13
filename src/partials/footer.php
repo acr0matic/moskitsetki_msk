@@ -21,8 +21,16 @@
       </div>
       <!-- /.wrapper -->
       <div class="wrapper">
-        <span class="company-info">© 2020. «Bestforhome24.ru». Все права защищены</span>
-        <a class="politics" href="politics.html" target="_blank">Политика конфиденциальности</a>
+        <div class="company">
+          <span class="company__info">© 2020. «Bestforhome24.ru». Все права защищены</span>
+        </div>
+        <!-- /.company -->
+
+        <div class="policy">
+          <a class="policy__link" href="politics.html" target="_blank">Политика конфиденциальности</a>
+        </div>
+        <!-- /.policy -->
+
         <div class="social">
           <span>Мы в соц. сетях:</span>
           <a href="https://www.instagram.com/moskitsetki_msk/" target="_blank" class="social-link"><img class="social-icon" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/instagram.svg" alt=""></a>
@@ -42,13 +50,16 @@
           <h2 class="modal-title">Заказать обратный звонок</h2>
           <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем
             удобное время и дату</p>
-          <input required class="input input-text input-shadow" type="text" name="user_name" placeholder="Ваше имя">
-          <input required class="input input-text input-shadow" type="tel" name="user_phone" placeholder="Ваш телефон">
-          <div class="checkbox">
-            <input type="checkbox" id="accept" />
-            <label for="accept">Я согласен на обработку моих персональных данных согласно условиям <a class="politics" href="politics.html" target="_blank">Политика конфиденциальности</a></label>
+          <input class="input input-text input-shadow" type="text" name="user_name" placeholder="Ваше имя">
+          <input class="input input-text input-shadow" type="tel" name="user_phone" placeholder="Ваш телефон">
+          <div class="form__policy">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="policy__modal" />
+              <label class="checkbox__content policy" for="policy__modal">Я согласен на обработку моих персональных данных согласно условиям <a class="policy__link" href="politics.html" target="_blank">политики конфиденциальности</a></label>
+            </div>
+            <!-- /.checkbox -->
           </div>
-          <!-- /.politics -->
+          <!-- /.form__policy -->
           <button type="button" disabled id="modal-callback-accept" class="button button-primary">Заказать</button>
           <p data-error-label class="form-error"></p>
         </form>

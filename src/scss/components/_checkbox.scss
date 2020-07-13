@@ -1,0 +1,57 @@
+.checkbox {
+  display: flex;
+
+  &__input {
+    visibility: hidden;
+
+    margin-right: 10px;
+
+    + .checkbox__content {
+      &::after {
+        content: url("../img/icons/check.svg");
+        opacity: 0;
+
+        transition: opacity 0.1s ease;
+      }
+    }
+
+    &:checked + .checkbox__content {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding-left: 10px;
+
+    cursor: pointer;
+
+    // Общие стили для чекбокса
+    &::before,
+    &::after {
+      position: absolute;
+    }
+
+    // Стили квадратика
+    &::before {
+      content: "";
+      top: 3px;
+      left: -20px;
+
+      width: 16px;
+      height: 16px;
+
+      border-radius: 2px;
+      border: 1px solid #dcdcdc;
+    }
+
+    // Стили галочки
+    &::after {
+      content: url("../img/icons/check.svg");
+      top: 0;
+      left: -19px;
+    }
+  }
+}

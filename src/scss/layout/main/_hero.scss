@@ -7,8 +7,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 }
 
@@ -51,12 +51,9 @@
       font-size: $font-size-6;
       line-height: $line-height-0;
       text-align: center;
-
-      mark {
-        display: inline-block;
-        margin-top: 10px;
-      }
     }
+
+    color: $text-yellow;
 
     font-size: $font-size-5;
     font-weight: $weight-medium;
