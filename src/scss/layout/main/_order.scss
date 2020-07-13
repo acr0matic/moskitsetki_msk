@@ -1,0 +1,44 @@
+.order-list {
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    max-height: 200px;
+
+    border-radius: 5px;
+    object-fit: cover;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    @include breakpoint($breakpoint-mobile-large) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-5;
+    font-weight: $weight-regular;
+
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    color: $text-gray;
+  }
+}

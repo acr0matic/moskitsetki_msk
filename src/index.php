@@ -181,6 +181,21 @@ include 'partials/header.php' ?>
           <!-- /.production-item -->
 
           <div class="production-item production-item--small">
+            <div class="production-item__picture">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/compressor.jpg" alt="" class="production-item__image production-item__image--small">
+            </div>
+            <!-- /.production-item__picture -->
+
+            <div class="production-item__description">
+              <div class="production-item__heading">
+                <h3 class="production-item__title">Замена уплотнителя</h3>
+                <span class="production-item__price">от 1999р</span>
+              </div>
+              <!-- /.production-item__heading -->
+
+              <p class="production-item__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали?</p>
+            </div>
+            <!-- /.production-item__description -->
           </div>
           <!-- /.production-item -->
         </div>
@@ -304,50 +319,74 @@ include 'partials/header.php' ?>
     <!-- /.container -->
   </section>
 
-  <section id="advantages">
+  <section id="order">
     <div class="container">
       <div class="section-title">
-        <h2 class="section-title__heading">Преимущества индивидуального заказа</h2>
+        <h2 class="section-title__heading">Схема заказа</h2>
       </div>
       <!-- /.section-title -->
 
-      <div class="row">
-        <div class="column">
-          <div class="advantage-wrapper">
-            <div class="advantage-wrapper__card advantage-card">
-              <img class="advantage-card__image border-br-tl" src="img/advantages/1.jpg" alt="Преимущество">
-              <h3 class="advantage-card__title">Делая индивидуальный заказ, Вы получаете именно то, что хотели</h3>
-              <p class="advantage-card__description">В этих предметах интерьера Вы можете воплотить свой индивидуальный стиль, ‒ изделия гармонично впишутся в помещение.</p>
-            </div>
-            <!-- /.advantage-card -->
+      <p class="paragraph">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Составитель однажды грустный правилами безорфографичный там переписали оксмокс заголовок меня текстами, реторический несколько предложения гор проектах путь, языком ipsum о?</p>
 
-            <div class="advantage-wrapper__card advantage-card">
-              <img class="advantage-card__image border-br-tl" src="img/advantages/2.jpg" alt="Преимущество">
-              <h3 class="advantage-card__title">Вы сами подбираете нужные Вам материалы и цвета</h3>
-              <p class="advantage-card__description">Продукция не пылится на складах в ожидании покупателя, ведь условия хранения готовых изделий не всегда идеальны.</p>
-            </div>
-            <!-- /.advantage-card -->
-
-            <div class="advantage-wrapper__card advantage-card">
-              <img class="advantage-card__image border-br-tl" src="img/advantages/4.jpg" alt="Преимущество">
-              <h3 class="advantage-card__title">Подбирая самостоятельно исходные материалы и прочую комплектацию</h3>
-              <p class="advantage-card__description">Вы можете быть уверенны в том, что это именно то, чего вы хотели. А так же в качестве и долговечности своей покупки.</p>
-            </div>
-            <!-- /.advantage-card -->
+      <ul class="order-list">
+        <li class="order-list__item">
+          <img class="column order-list__image" src="img/pages/main/checkout.jpg" alt="">
+          <div class="column order-list__content">
+            <h3 class="order-list__title">Вы заполняете анкету на сайте или звоните нашему менеджеру</h3>
+            <p class="paragraph order-list__description">Желательно, чтобы вы сообщили приблизительные
+              размеры заказываемой мебели и параметры помещения, в котором ее необходимо разместить.</p>
           </div>
-          <!-- /.advantage-wrapper -->
-        </div>
-        <!-- /.column -->
+          <!-- /.order-list__content -->
+        </li>
+        <!-- /.order-list__item -->
 
-        <div class="column">
-          <div class="picture-block">
-            <img class="picture-block__image" src="img/photo.jpg" alt="">
+        <li class="order-list__item">
+          <img class="column order-list__image" src="img/pages/main/measuring.jpg" alt="">
+          <div class="column order-list__content">
+            <h3 class="order-list__title">К Вам выезжает наш замерщик с образцами</h3>
+            <p class="paragraph order-list__description">Мастер-консультант поможет с выбором цветового
+              решения, даст рекомендации по конструкции Вашей мебели и произведет точный замер места
+              установки</p>
           </div>
-          <!-- /.advantage-card -->
-        </div>
-        <!-- /.column -->
-      </div>
-      <!-- /.row -->
+          <!-- /.order-list__content -->
+        </li>
+        <!-- /.order-list__item -->
+
+        <li class="order-list__item">
+          <img class="column order-list__image" src="img/pages/main/contract.jpg" alt="">
+          <div class="column order-list__content">
+            <h3 class="order-list__title">Мы заключаем с Вами договор</h3>
+            <p class="paragraph order-list__description">Уточняем детали проекта, вносим в него изменения,
+              если это необходимо и заключаем договор. В нем прописаны условия поставки и примерный день
+              установки мебели.</p>
+          </div>
+          <!-- /.order-list__content -->
+        </li>
+        <!-- /.order-list__item -->
+
+        <li class="order-list__item">
+          <img class="column order-list__image" src="img/pages/main/crafting.jpg" alt="">
+          <div class="column order-list__content">
+            <h3 class="order-list__title">Начинаем изготовление вашего заказа</h3>
+            <p class="paragraph order-list__description">Стандартное время изготовления мебели в нашей фирме
+              — от 7 до 14 рабочих дней, в зависимости от сложности изделия и загруженности производства.</p>
+          </div>
+          <!-- /.order-list__content -->
+        </li>
+        <!-- /.order-list__item -->
+
+        <li class="order-list__item">
+          <img class="column order-list__image" src="img/pages/main/delivery.jpg" alt="">
+          <div class="column order-list__content">
+            <h3 class="order-list__title">Доставка, установка и гарантия</h3>
+            <p class="paragraph order-list__description">Доставка и монтаж мебели включаются в сумму заказа.
+              Цену доставки за пределы города и в другие города, уточняйте у менеджеров нашего салона.</p>
+          </div>
+          <!-- /.order-list__content -->
+        </li>
+        <!-- /.order-list__item -->
+      </ul>
+      <!-- /.order-scheme__list -->
     </div>
     <!-- /.container -->
   </section>
