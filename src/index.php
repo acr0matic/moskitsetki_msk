@@ -332,9 +332,8 @@ include 'partials/header.php' ?>
         <li class="order-list__item">
           <img class="column order-list__image" src="img/pages/main/checkout.jpg" alt="">
           <div class="column order-list__content">
-            <h3 class="order-list__title">Вы заполняете анкету на сайте или звоните нашему менеджеру</h3>
-            <p class="paragraph order-list__description">Желательно, чтобы вы сообщили приблизительные
-              размеры заказываемой мебели и параметры помещения, в котором ее необходимо разместить.</p>
+            <h3 class="order-list__title">Вы выбираете изделие или услугу</h3>
+            <p class="paragraph order-list__description">На сайте предоставлены калькуляторы по различным услугам. Вы можете заказать услугу или изделие через них или же позвонить нашему менеджеру</p>
           </div>
           <!-- /.order-list__content -->
         </li>
@@ -343,10 +342,8 @@ include 'partials/header.php' ?>
         <li class="order-list__item">
           <img class="column order-list__image" src="img/pages/main/measuring.jpg" alt="">
           <div class="column order-list__content">
-            <h3 class="order-list__title">К Вам выезжает наш замерщик с образцами</h3>
-            <p class="paragraph order-list__description">Мастер-консультант поможет с выбором цветового
-              решения, даст рекомендации по конструкции Вашей мебели и произведет точный замер места
-              установки</p>
+            <h3 class="order-list__title">К Вам выезжает наш специалист на замер</h3>
+            <p class="paragraph order-list__description">Мастер-консультант поможет с выбором цветового решения, даст рекомендации по конструкциям изделий и произведет точный замер места установки</p>
           </div>
           <!-- /.order-list__content -->
         </li>
@@ -356,9 +353,7 @@ include 'partials/header.php' ?>
           <img class="column order-list__image" src="img/pages/main/contract.jpg" alt="">
           <div class="column order-list__content">
             <h3 class="order-list__title">Мы заключаем с Вами договор</h3>
-            <p class="paragraph order-list__description">Уточняем детали проекта, вносим в него изменения,
-              если это необходимо и заключаем договор. В нем прописаны условия поставки и примерный день
-              установки мебели.</p>
+            <p class="paragraph order-list__description">Уточняем детали проекта, вносим в него изменения, если это необходимо и заключаем договор. В нем прописаны условия исполнения заказа, а так же рабочие сроки.</p>
           </div>
           <!-- /.order-list__content -->
         </li>
@@ -368,8 +363,7 @@ include 'partials/header.php' ?>
           <img class="column order-list__image" src="img/pages/main/crafting.jpg" alt="">
           <div class="column order-list__content">
             <h3 class="order-list__title">Начинаем изготовление вашего заказа</h3>
-            <p class="paragraph order-list__description">Стандартное время изготовления мебели в нашей фирме
-              — от 7 до 14 рабочих дней, в зависимости от сложности изделия и загруженности производства.</p>
+            <p class="paragraph order-list__description">Стандартное время изготовления мебели в нашей компании — до 3 рабочих дней, в зависимости от сложности изделия и загруженности производства.</p>
           </div>
           <!-- /.order-list__content -->
         </li>
@@ -379,8 +373,7 @@ include 'partials/header.php' ?>
           <img class="column order-list__image" src="img/pages/main/delivery.jpg" alt="">
           <div class="column order-list__content">
             <h3 class="order-list__title">Доставка, установка и гарантия</h3>
-            <p class="paragraph order-list__description">Доставка и монтаж мебели включаются в сумму заказа.
-              Цену доставки за пределы города и в другие города, уточняйте у менеджеров нашего салона.</p>
+            <p class="paragraph order-list__description">Доставка и монтаж изделия не включаются в сумму заказа. Цену доставки за пределы города и в другие города, уточняйте у менеджеров нашего салона.</p>
           </div>
           <!-- /.order-list__content -->
         </li>
