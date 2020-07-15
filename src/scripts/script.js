@@ -1,60 +1,29 @@
 window.addEventListener('DOMContentLoaded', () => {
-  if (document.body.contains(document.querySelector('.swiper-feedback'))) {
-    const feedbackSlider = new Swiper('.swiper-feedback', {
+  if (document.body.contains(document.querySelector('.slider-feedback'))) {
+    const feedbackSlider = new Swiper('.slider-feedback', {
       // Optional parameters
       loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+
+      spaceBetween: 50,
       slidesPerView: 1,
-      spaceBetween: 30,
 
       // If we need pagination
       pagination: {
-        el: '.swiper-feedback-pagination',
+        el: '.slider-feedback-pagination',
       },
 
       // Navigation arrows
       navigation: {
-        nextEl: '.swiper-feedback-button-next',
-        prevEl: '.swiper-feedback-button-prev',
-      },
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
+        nextEl: '.slider-feedback-next',
+        prevEl: '.slider-feedback-prev',
       },
 
       breakpoints: {
         1180: {
           slidesPerView: 2,
-        },
-      },
-    });
-  }
-
-  if (document.body.contains(document.querySelector('.swiper-kits'))) {
-    const kitsSlider = new Swiper('.swiper-kits', {
-      // Optional parameters
-      loop: true,
-      spaceBetween: 30,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-kits-pagination',
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-kits-button-next',
-        prevEl: '.swiper-kits-button-prev',
-      },
-
-      breakpoints: {
-        540: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-          allowSlidePrev: false,
-          allowSlideNext: false,
         },
       },
     });

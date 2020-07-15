@@ -392,80 +392,86 @@ include 'partials/header.php' ?>
   </section>
 
   <section id="feedback">
-    <div class="slider">
-      <div class="container">
-        <div class="swiper-container swiper-feedback">
-          <div class="section-title">
-            <h2 class="section-title__heading">Отзывы наших клиентов</h2>
-          </div>
-          <!-- section-title -->
+    <div class="container">
+      <div class="swiper-container slider-feedback">
+        <div class="section-title">
+          <h2 class="section-title__heading">Отзывы наших клиентов</h2>
+          <span class="section-title__info">Более 100 положительных отзывов</span>
+        </div>
+        <!-- /.section-title -->
 
-          <div class="swiper-wrapper">
-            <div class="swiper-slide feedback-card">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/avatar.jpg" alt="" class="avatar">
-              <div class="feedback-text">
-                <p class="feedback-description">Ставили буквально месяц назад и сказать, что я довльна - ничего не
+        <p class="paragraph">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Составитель однажды грустный правилами безорфографичный там переписали оксмокс заголовок меня текстами, реторический несколько предложения гор проектах путь, языком ipsum о?</p>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="feedback">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/avatar.jpg" alt="" class="feedback__photo">
+              <div class="feedback__text">
+                <p class="feedback__description paragraph">Ставили буквально месяц назад и сказать, что я довльна - ничего не
                   сказать! Ни одной летающей души в квартире, а также стало меньше пыли. Рекомендую!</p>
-                <div class="feedback-info">
-                  <span class="name">Анна Н.</span>
+                <div class="feedback__info">
+                  <span class="feedback__name">Анна Н.</span>
                   <a href="" class="social-link"><img class="social-icon" src="img/icons/vk.svg" alt=""></a>
-                  <time>19.04.2019</time>
+                  <time class="feedback__time">19.04.2019</time>
                 </div>
                 <!-- /.feedback-info -->
               </div>
               <!-- /.feedback-text -->
             </div>
-            <!-- /.swiper-slide -->
+            <!-- /.feedback -->
+          </div>
+          <!-- /.swiper-slide -->
 
-            <div class="swiper-slide feedback-card">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/avatar.jpg" alt="" class="avatar">
-              <div class="feedback-text">
-                <p class="feedback-description">Благодарю Вас за установку сеточки на балконе! Душа моя спокойна по
-                  поводу моего котика, надеюсь прослужит долго! Спасибо, вам, Михаил, и вашему коллеге за
-                  оперативность!</p>
-                <div class="feedback-info">
+          <div class="swiper-slide">
+            <div class="feedback">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/avatar.jpg" alt="" class="feedback__photo">
+              <div class="feedback__text">
+                <p class="feedback__description paragraph">Благодарю Вас за установку сеточки на балконе! Душа моя спокойна поповоду моего котика, надеюсь прослужит долго! Спасибо, вам, Михаил, и вашему коллеге за оперативность!</p>
+                <div class="feedback__info">
                   <span class="name">Алена Б.</span>
                   <a href="https://www.instagram.com/belozoralena/" target="_blank" class="social-link"><img class="social-icon" src="img/icons/instagram.svg" alt=""></a>
-                  <time>05.04.2020</time>
+                  <time class="feedback__time">05.04.2020</time>
                 </div>
                 <!-- /.feedback-info -->
               </div>
               <!-- /.feedback-text -->
             </div>
-            <!-- /.swiper-slide -->
+            <!-- /.feedback -->
+          </div>
+          <!-- /.swiper-slide -->
 
-            <div class="swiper-slide feedback-card">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/avatar.jpg" alt="" class="avatar">
-              <div class="feedback-text">
-                <p class="feedback-description">Добрый день! Заказывали у вас сетки в Видное. Спасибо большое, все
-                  быстро и качественно. Теперь живем с открытыми окнами - это такой кайф :)</p>
-                <div class="feedback-info">
-                  <span class="name">Александра И.</span>
+          <div class="swiper-slide">
+            <div class="feedback">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/avatar.jpg" alt="" class="feedback__photo">
+              <div class="feedback__text">
+                <p class="feedback__description paragraph">Добрый день! Заказывали у вас сетки в Видное. Спасибо большое, все быстро и качественно. Теперь живем с открытыми окнами - это такой кайф :)</p>
+                <div class="feedback__info">
+                  <span class="feedback__name">Александра И.</span>
                   <a href="https://www.instagram.com/izuminka.msk/" class="social-link"><img class="social-icon" src="img/icons/instagram.svg" alt=""></a>
-                  <time>21.06.2019</time>
+                  <time class="feedback__time">21.06.2019</time>
                 </div>
                 <!-- /.feedback-info -->
               </div>
               <!-- /.feedback-text -->
             </div>
-            <!-- /.swiper-slide -->
+            <!-- /.feedback -->
           </div>
-          <!-- swiper-wrapper -->
-
-          <div class="swiper-controls">
-            <div class="swiper-pagination swiper-feedback-pagination"></div>
-            <div class="swiper-button-prev swiper-feedback-button-prev"></div>
-            <div class="swiper-button-next swiper-feedback-button-next"></div>
-          </div>
-          <!-- /.swiper-controls -->
+          <!-- /.swiper-slide -->
         </div>
-        <!-- /.swiper-container -->
-      </div>
-      <!-- /.container -->
+        <!-- swiper-wrapper -->
 
-      <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-primary button-center">Больше отзывов</button>
+        <div class="swiper-controls">
+          <div class="swiper-pagination slider-feedback-pagination"></div>
+          <div class="swiper-button-prev slider-feedback-prev"></div>
+          <div class="swiper-button-next slider-feedback-next"></div>
+        </div>
+        <!-- /.swiper-controls -->
+      </div>
+      <!-- /.swiper-container -->
     </div>
-    <!-- /.slider -->
+    <!-- /.container -->
+
+    <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-primary button-center">Больше отзывов</button>
   </section>
 </main>
 

@@ -1,51 +1,46 @@
 #feedback {
   .button {
-    margin-top: 60px;
     margin-bottom: 30px;
   }
 
   .swiper-controls {
-    margin-top: 40px;
+    margin: 50px 0;
   }
 }
 
 .feedback {
-  &-card {
-    display: flex;
-    align-items: center;
-    height: 230px;
-    border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
 
-    @include breakpoint($breakpoint-mobile-large) {
-      flex-direction: column;
-      height: auto;
-      padding: 20px 0;
-    }
+  padding: 15px;
+
+  box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.03);
+
+  &__photo {
+    width: 175px;
+    height: 175px;
   }
 
-  &-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 90%;
+  &__text {
     padding: 0 25px;
   }
 
-  &-info {
+  &__description {
+    height: 115px;
+  }
+
+  &__info {
     display: flex;
     align-items: center;
 
-    time {
-      margin-left: auto;
-    }
+    margin-top: auto;
+  }
+
+  &__name {
+  }
+
+  &__time {
+    margin-left: auto;
   }
 }
 
-.avatar {
-  border-radius: 10px;
-
-  @include breakpoint($breakpoint-mobile-large) {
-    margin-bottom: 15px;
-  }
-}
