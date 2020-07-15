@@ -1,75 +1,35 @@
-.slider {
-  position: relative;
-}
-
-.swiper-wrapper {
-  height: unset;
-}
-
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: $text-gray;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  z-index: $z-index-main;
-  outline: none;
-  top: 50%;
-}
-.swiper-button-prev {
-  left: 20%;
-}
-.swiper-button-next {
-  right: 20%;
-}
-
-.swiper-slide {
-}
-
 .swiper {
   &-controls {
+    position: relative;
+
     display: flex;
     align-items: center;
-    position: relative;
+
     height: 45px;
   }
 
   &-pagination {
+    position: relative;
     z-index: $z-index-main;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    margin-left: auto;
+    margin-right: auto;
 
     @include breakpoint($breakpoint-tablet) {
       display: block;
+    }
+
+    &-bullet {
+      margin: 0 5px;
     }
 
     &-bullet-active {
       background: $text-yellow;
-    }
-
-    span {
-      margin: 0 5px;
-    }
-  }
-}
-
-#popular-kits {
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-
-    @include breakpoint($breakpoint-tablet) {
-      display: block;
-    }
-  }
-
-  .swiper-pagination {
-    display: none;
-
-    @include breakpoint($breakpoint-tablet) {
-      display: block;
     }
   }
 }

@@ -9,11 +9,8 @@
 
   transition: all 0.3s ease;
 
-  &-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+  &:hover {
+    background: $input-focus;
   }
 
   &-text {
@@ -27,60 +24,10 @@
     }
   }
 
-  &-info {
-    display: block;
-    margin-left: 20px;
-    margin-bottom: 4px;
-  }
-
-  &-label {
-    @include breakpoint($breakpoint-tablet) {
-      width: 100%;
-    }
-  }
-
-  &-color-info {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  &-error {
+  &--error {
     background-color: #ffeded;
   }
 }
-
-.form-callback {
-  .input-text {
-    width: 30%;
-    margin-right: 30px;
-
-    @include breakpoint($breakpoint-tablet) {
-      width: 100%;
-    }
-  }
-}
-
-.form-contact {
-  .input {
-    &-text {
-      margin-bottom: 30px;
-      padding: 20px;
-
-      @include breakpoint($breakpoint-mobile-large) {
-        margin-bottom: 15px;
-      }
-    }
-  }
-}
-
-.form-modal {
-  .input {
-    &-text {
-      margin-bottom: 10px;
-    }
-  }
-}
-
 
 .radio {
   display: none;

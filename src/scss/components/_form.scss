@@ -31,7 +31,7 @@
     }
   }
 
-  &-error {
+  &__error {
     display: none;
     color: $text-pink;
 
@@ -136,5 +136,10 @@
   &-modal {
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+.form-modal {
+  &__title {
   }
 }

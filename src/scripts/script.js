@@ -188,15 +188,15 @@ window.addEventListener('DOMContentLoaded', () => {
     errorLabel = form.querySelector('[data-error-label]');
 
     formNameInput.addEventListener('click', () => {
-      if (formNameInput.classList.contains('input-error')) {
-        formNameInput.classList.remove('input-error');
+      if (formNameInput.classList.contains('input--error')) {
+        formNameInput.classList.remove('input--error');
         errorLabel.style.display = 'none';
       }
     });
 
     formPhoneInput.addEventListener('click', () => {
-      if (formPhoneInput.classList.contains('input-error')) {
-        formPhoneInput.classList.remove('input-error');
+      if (formPhoneInput.classList.contains('input--error')) {
+        formPhoneInput.classList.remove('input--error');
         errorLabel.style.display = 'none';
       }
     });

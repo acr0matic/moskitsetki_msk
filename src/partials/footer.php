@@ -46,12 +46,12 @@
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        <form data-form-type="modal" id="callbackForm" class="form form-modal" action="<?php $_SERVER['DOCUMENT_ROOT'] ?>/php/mail.php" method="POST" enctype="multipart/form-data">
-          <h2 class="modal-title">Заказать обратный звонок</h2>
-          <p class="modal-text">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем
+        <form class="form form-modal" data-form-type="modal" id="callbackForm" action="<?php $_SERVER['DOCUMENT_ROOT'] ?>/php/mail.php" method="POST" enctype="multipart/form-data">
+          <h2 class="modal__title form-modal__title">Заказать обратный звонок</h2>
+          <p class="form__description">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем
             удобное время и дату</p>
-          <input class="input input-text input-shadow" type="text" name="user_name" placeholder="Ваше имя">
-          <input class="input input-text input-shadow" type="tel" name="user_phone" placeholder="Ваш телефон">
+          <input class="form__input input input-text" type="text" name="user_name" placeholder="Ваше имя">
+          <input class="form__input input input-text" type="tel" name="user_phone" placeholder="Ваш телефон">
           <div class="form__policy">
             <div class="checkbox">
               <input class="checkbox__input" type="checkbox" id="policy__modal" />
@@ -61,7 +61,7 @@
           </div>
           <!-- /.form__policy -->
           <button type="button" disabled id="modal-callback-accept" class="button button-primary">Заказать</button>
-          <p data-error-label class="form-error"></p>
+          <p data-error-label class="form__error"></p>
         </form>
       </div>
       <!-- /.modal__container -->
