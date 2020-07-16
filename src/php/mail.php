@@ -38,7 +38,7 @@ try {
   $mail->setFrom('best-for-home-24@yandex.ru', 'BEST-FOR-HOME'); // от кого будет уходить письмо?
 
   // Получатель письма
-  $mail->addAddress('derkacnikolaj12@gmail.com');
+  $mail->addAddress('main.acr0matic@gmail.com');
 
   // Отправка сообщения
   $mail->isHTML(true);

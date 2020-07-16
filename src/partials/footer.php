@@ -46,12 +46,12 @@
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        <form class="form form-modal" data-form-type="modal" id="callbackForm" action="<?php $_SERVER['DOCUMENT_ROOT'] ?>/php/mail.php" method="POST" enctype="multipart/form-data">
+        <form data-form-type="modal" class="form form-modal" id="callbackForm" action="<?php $_SERVER['DOCUMENT_ROOT'] ?>/php/mail.php" method="POST" enctype="multipart/form-data">
           <h2 class="modal__title form-modal__title">Заказать обратный звонок</h2>
           <p class="form__description">Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем
             удобное время и дату</p>
-          <input class="form__input input input-text" type="text" name="user_name" placeholder="Ваше имя">
-          <input class="form__input input input-text" type="tel" name="user_phone" placeholder="Ваш телефон">
+          <input data-form="name" class="form__input input input-text" type="text" name="user_name" placeholder="Ваше имя">
+          <input data-form="phone" class="form__input input input-text" type="tel" name="user_phone" placeholder="Ваш телефон">
           <div class="form__policy">
             <div class="checkbox">
               <input class="checkbox__input" type="checkbox" id="policy__modal" />
@@ -60,8 +60,8 @@
             <!-- /.checkbox -->
           </div>
           <!-- /.form__policy -->
-          <button type="button" disabled id="modal-callback-accept" class="button button-primary">Заказать</button>
-          <p data-error-label class="form__error"></p>
+          <button disabled type="button" class="button button-primary">Заказать</button>
+          <p data-form="error" class="form__error"></p>
         </form>
       </div>
       <!-- /.modal__container -->
@@ -71,13 +71,12 @@
   <!-- /.micromodal-slide -->
 
   <div class="micromodal-slide" id="modal-accept" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__overlay" tabindex="-1">
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
         <div class="accept-modal-wrapper">
           <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/icons/accept-icon.svg" alt="">
-          <p class="modal-text">Ваша заявка отправлена, <span>спасибо!</span><br> В ближайшее время, мы Вам перезвоним
-          </p>
+          <p class="modal-text">Ваша заявка отправлена, <span>спасибо!</span><br> В ближайшее время, мы Вам перезвоним</p>
         </div>
         <!-- /.accept-modal-wrapper -->
       </div>
@@ -92,8 +91,10 @@
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/libraries/swiper.js"></script>
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/libraries/micromodal.js"></script>
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/libraries/fslightbox.js"></script>
+  <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/libraries/imask.js"></script>
 
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/smoothscroll.js"></script>
+  <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/forms.js"></script>
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/mobilemenu.js"></script>
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/calculator.js"></script>
   <script src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/scripts/script.js"></script>
