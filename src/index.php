@@ -18,7 +18,7 @@ include 'partials/header.php' ?>
         <!-- /.hero-text -->
 
         <div class="hero__action hero-action">
-          <button id="make-order-button" class="hero-action__button button button-primary">Сделать заказ</button>
+          <button data-micromodal-trigger="modal-callback" class="hero-action__button button button-primary">Сделать заказ</button>
           <button data-anchor-button="#catalog" class="hero-action__button button button-secondary">Подробнее</button>
         </div>
         <!-- /.hero-action -->

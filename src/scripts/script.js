@@ -1,4 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
+  MicroModal.init({
+    awaitCloseAnimation: true,
+  });
+
   if (document.body.contains(document.querySelector('.slider-feedback'))) {
     const feedbackSlider = new Swiper('.slider-feedback', {
       // Optional parameters
@@ -134,11 +138,6 @@ window.addEventListener('DOMContentLoaded', () => {
     if (event.target.checked) { callbackAccept.removeAttribute('disabled', 'disabled'); } else callbackAccept.setAttribute('disabled', 'disabled');
   });
 
-  for (const button of callbackButtons) {
-    button.addEventListener('click', () => {
-      MicroModal.show('modal-callback'); // [1]
-    });
-  }
 
   function setCursorPosition(pos, elem) {
     elem.focus();
@@ -287,11 +286,3 @@ window.addEventListener('DOMContentLoaded', () => {
     };
   }
 });
-
-const makeOrderButton = document.getElementById('make-order-button');
-
-if (makeOrderButton) {
-  makeOrderButton.addEventListener('click', () => {
-    MicroModal.show('modal-callback');
-  });
-}
