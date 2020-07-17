@@ -48,7 +48,6 @@ function CheckForm(formElement) {
     CheckError(phone);
   });
 
-
   return Validation(name, errorLabel, 'name') && Validation(phone, errorLabel, 'phone');
 }
 

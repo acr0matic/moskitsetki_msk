@@ -1,12 +1,15 @@
 /* global MicroModal */
+/* global Swiper */
 
 window.addEventListener('DOMContentLoaded', () => {
   MicroModal.init({
     awaitCloseAnimation: true,
   });
 
-  if (document.body.contains(document.querySelector('.slider-feedback'))) {
-    const feedbackSlider = new Swiper('.slider-feedback', {
+  const feedbackSlider = document.querySelector('.slider-feedback');
+
+  if (feedbackSlider) {
+    const slider = new Swiper(feedbackSlider, {
       // Optional parameters
       loop: true,
       autoplay: {
@@ -33,10 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
         },
       },
     });
+
+    slider.init();
   }
-
-  const callbackAccept = document.getElementById('modal-callback-accept');
-  const politicsAccept = document.getElementById('policy__modal');
-
-
 });
