@@ -223,21 +223,21 @@ include 'partials/header.php' ?>
         <!-- /.column -->
 
         <div class="column">
-          <form class="form form-primary" action="<?php $_SERVER['DOCUMENT_ROOT'] ?>/php/mail.php" method="POST" enctype="multipart/form-data">
+          <form id="blockCallback" class="form form-primary" action="<?php $_SERVER['DOCUMENT_ROOT'] ?>/php/mail.php" method="POST" enctype="multipart/form-data">
             <h3 class="form__title">Не увидели свой район или город?</h3>
             <p class="form__description">Оставьте заявку, и наш менеджер перезвонит вам в ближайшее время и уточнит где конкретно мы работаем!</p>
-            <input class="form__input input input-text" type="text" name="user_name" placeholder="Ваше имя">
-            <input class="form__input input input-text" type="tel" name="user_phone" placeholder="Ваш телефон">
+            <input data-form="name" class="form__input input input-text" type="text" name="user_name" placeholder="Ваше имя">
+            <input data-form="phone" class="form__input input input-text" type="tel" name="user_phone" placeholder="Ваш телефон">
             <div class="form__policy">
               <div class="checkbox">
-                <input class="checkbox__input" type="checkbox" id="policy" />
+                <input data-form="policy" class="checkbox__input" type="checkbox" id="policy" />
                 <label class="checkbox__content policy" for="policy">Я согласен на обработку моих персональных данных согласно условиям <a class="policy__link" href="politics.html" target="_blank">политики конфиденциальности</a></label>
               </div>
               <!-- /.checkbox -->
             </div>
             <!-- /.form__policy -->
             <button type="button" disabled id="modal-callback-accept" class="form__button button button-primary">Заказать</button>
-            <p data-error-label class="form__error"></p>
+            <p data-form="error" class="form__error"></p>
           </form>
 
         </div>

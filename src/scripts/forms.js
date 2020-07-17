@@ -56,7 +56,7 @@ function AJAXform(formElement, formMethod = 'post') {
   const acceptButton = formElement.querySelector('[type="button"]');
   const formAction = form.getAttribute('action');
   const formInputs = form.querySelectorAll('input');
-  const formPolicy = form.querySelector('#policy__modal');
+  const formPolicy = form.querySelector('[data-form=policy]');
 
   function XMLhttp() {
     const httpRequest = new XMLHttpRequest();
@@ -103,6 +103,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   phoneInputs.forEach((input) => IMask(input, maskOptions));
 
-  const callbackForm = document.getElementById('callbackForm');
-  AJAXform(callbackForm);
+  const modalCallback = document.getElementById('modalCallback');
+  const blockCallback = document.getElementById('blockCallback');
+
+  AJAXform(modalCallback);
+  AJAXform(blockCallback);
 });
