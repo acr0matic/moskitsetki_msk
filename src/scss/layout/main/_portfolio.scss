@@ -4,14 +4,14 @@
   justify-content: space-between;
 
   &__photo {
-    $margin: 40px;
+    $margin: 25px;
 
-    width: calc(100% / 4 - #{$margin});
+    width: calc(100% / 2 - #{$margin});
     height: 240px;
 
     overflow: hidden;
     border-radius: 5px;
-
+    
     &:hover {
       .portfolio__image {
         transform: scale(1.05);
@@ -19,7 +19,7 @@
     }
 
     @include first(4) {
-      margin-bottom: $margin + 10px;
+      margin-bottom: $margin + 20px;
     }
   }
 

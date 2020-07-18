@@ -1,14 +1,5 @@
 #feedback {
-  .button {
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .swiper-controls {
-    width: 50%;
-    margin: 50px auto;
-  }
+  margin-bottom: 65px;
 }
 
 .feedback {
@@ -16,6 +7,7 @@
   align-items: flex-start;
 
   padding: 15px;
+  margin-bottom: 50px;
 
   box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.03);
 

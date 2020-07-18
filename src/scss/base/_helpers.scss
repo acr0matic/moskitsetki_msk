@@ -23,6 +23,10 @@
   flex-direction: column;
 
   width: calc(100% / 2 - 25px);
+
+  &--center {
+    margin: 0 auto;
+  }
 }
 
 .paragraph {

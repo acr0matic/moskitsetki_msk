@@ -257,64 +257,123 @@ include 'partials/header.php' ?>
 
       <p class="paragraph">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Составитель однажды грустный правилами безорфографичный там переписали оксмокс заголовок меня текстами, реторический несколько предложения гор проектах путь, языком ipsum о?</p>
 
-      <div class="portfolio">
-        <div class="portfolio__photo">
-          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/1.jpg">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/1.jpg" alt="" class="portfolio__image">
-          </a>
-        </div>
-        <!-- /.portfolio__photo -->
+      <div class="swiper-container slider-portfolio">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="portfolio">
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/1.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/1.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
 
-        <div class="portfolio__photo">
-          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/2.jpg">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/2.jpg" alt="" class="portfolio__image">
-          </a>
-        </div>
-        <!-- /.portfolio__photo -->
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/2.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/2.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
 
-        <div class="portfolio__photo">
-          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/3.jpg">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/3.jpg" alt="" class="portfolio__image">
-          </a>
-        </div>
-        <!-- /.portfolio__photo -->
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/3.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/3.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
 
-        <div class="portfolio__photo">
-          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/4.jpg">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/4.jpg" alt="" class="portfolio__image">
-          </a>
-        </div>
-        <!-- /.portfolio__photo -->
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/4.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/4.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
+            </div>
+            <!-- /.portfolio -->
+          </div>
+          <!-- /.swiper-slide -->
 
-        <div class="portfolio__photo">
-          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/5.jpg">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/5.jpg" alt="" class="portfolio__image">
-          </a>
-        </div>
-        <!-- /.portfolio__photo -->
+          <div class="swiper-slide">
+            <div class="portfolio">
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/5.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/5.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
 
-        <div class="portfolio__photo">
-          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/6.jpg">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/6.jpg" alt="" class="portfolio__image">
-          </a>
-        </div>
-        <!-- /.portfolio__photo -->
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/6.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/6.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
 
-        <div class="portfolio__photo">
-          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/7.jpg">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/7.jpg" alt="" class="portfolio__image">
-          </a>
-        </div>
-        <!-- /.portfolio__photo -->
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/7.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/7.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
 
-        <div class="portfolio__photo">
-          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/8.jpg">
-            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/8.jpg" alt="" class="portfolio__image">
-          </a>
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/8.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/8.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
+            </div>
+            <!-- /.portfolio -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="portfolio">
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/9.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/9.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
+
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/10.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/10.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
+
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/11.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/11.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
+
+              <div class="portfolio__photo">
+                <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/12.jpg">
+                  <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/portfolio/12.jpg" alt="" class="portfolio__image">
+                </a>
+              </div>
+              <!-- /.portfolio__photo -->
+            </div>
+            <!-- /.portfolio -->
+          </div>
+          <!-- /.swiper-slide -->
         </div>
-        <!-- /.portfolio__photo -->
+        <!-- swiper-wrapper -->
+
+        <div class="column column--center">
+          <div class="swiper-controls">
+            <div class="swiper-pagination slider-portfolio-pagination"></div>
+            <div class="swiper-button-prev slider-portfolio-prev"></div>
+            <div class="swiper-button-next slider-portfolio-next"></div>
+          </div>
+          <!-- /.swiper-controls -->
+        </div>
+        <!-- /.column -->
       </div>
-      <!-- /.portfolio -->
+      <!-- /.swiper-container -->
     </div>
     <!-- /.container -->
   </section>
@@ -386,15 +445,15 @@ include 'partials/header.php' ?>
 
   <section id="feedback">
     <div class="container">
+      <div class="section-title">
+        <h2 class="section-title__heading">Отзывы наших клиентов</h2>
+        <span class="section-title__info">Более 100 положительных отзывов</span>
+      </div>
+      <!-- /.section-title -->
+
+      <p class="paragraph">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Составитель однажды грустный правилами безорфографичный там переписали оксмокс заголовок меня текстами, реторический несколько предложения гор проектах путь, языком ipsum о?</p>
+
       <div class="swiper-container slider-feedback">
-        <div class="section-title">
-          <h2 class="section-title__heading">Отзывы наших клиентов</h2>
-          <span class="section-title__info">Более 100 положительных отзывов</span>
-        </div>
-        <!-- /.section-title -->
-
-        <p class="paragraph">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Составитель однажды грустный правилами безорфографичный там переписали оксмокс заголовок меня текстами, реторический несколько предложения гор проектах путь, языком ipsum о?</p>
-
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="feedback">
@@ -452,19 +511,27 @@ include 'partials/header.php' ?>
           <!-- /.swiper-slide -->
         </div>
         <!-- swiper-wrapper -->
-
-        <div class="swiper-controls">
-          <div class="swiper-pagination slider-feedback-pagination"></div>
-          <div class="swiper-button-prev slider-feedback-prev"></div>
-          <div class="swiper-button-next slider-feedback-next"></div>
+        <div class="row">
+          <div class="column">
+            <div class="swiper-controls">
+              <div class="swiper-pagination slider-feedback-pagination"></div>
+              <div class="swiper-button-prev slider-feedback-prev"></div>
+              <div class="swiper-button-next slider-feedback-next"></div>
+            </div>
+            <!-- /.swiper-controls -->
+          </div>
+          <!-- /.column -->
+          <div class="column">
+            <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-primary button-center">Больше отзывов</button>
+          </div>
+          <!-- /.column -->
         </div>
-        <!-- /.swiper-controls -->
+        <!-- /.row -->
       </div>
       <!-- /.swiper-container -->
     </div>
     <!-- /.container -->
 
-    <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-primary button-center">Больше отзывов</button>
   </section>
 </main>
 
