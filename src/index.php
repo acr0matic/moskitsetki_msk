@@ -37,7 +37,7 @@ include 'partials/header.php' ?>
       <!-- /.section-title -->
 
       <div class="production">
-        <p class="paragraph production__descrtiption">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Его взгляд переписали моей назад продолжил до страну, журчит составитель инициал вдали снова рыбными. Обеспечивает журчит моей что однажды оксмокс?</p>
+        <p class="paragraph production__descrtiption">Наша компания изготавливает москитные сетки и рулонные шторы уже больше 10 лет. Каждая сетка или штора делается строго индивидуально под Ваши окна. В нашем каталоге тысячи цветов и вариаций рисунков для штор, а также, все возможные виды антимоскитного полотна для любой формы москитной сетки.</p>
         <div class="production__wrapper">
           <div class="column production-item">
             <div class="production-item__picture">
@@ -52,7 +52,7 @@ include 'partials/header.php' ?>
               </div>
               <!-- /.production-item__heading -->
 
-              <p class="production-item__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Необходимыми дал сих пояс его переулка? Пунктуация взобравшись которое предупреждал эта жизни пор!</p>
+              <p class="production-item__text">Москитная сетка – это разновидность сетчатой завесы, которая по периметру облегает кровать или спальную зону, чтобы обеспечить барьер для защиты от укусов комаров, мух и других вредных насекомых и, следовательно, от болезней, которые они могут нести.</p>
             </div>
             <!-- /.production__description -->
           </div>
@@ -71,7 +71,7 @@ include 'partials/header.php' ?>
               </div>
               <!-- /.production-item__heading -->
 
-              <p class="production-item__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Необходимыми дал сих пояс его переулка? Пунктуация взобравшись которое предупреждал эта жизни пор!</p>
+              <p class="production-item__text">Рулонные шторы или экраны – это один из самых практичных и простых способов оформления окна. Как понятно из названия, рулонные шторы представляют собой гладкое полотно ткани, которое сворачивается в рулон с помощью специального механизма.</p>
             </div>
             <!-- /.production__description -->
           </div>
@@ -80,7 +80,7 @@ include 'partials/header.php' ?>
         <!-- /.production__wrapper -->
 
         <h2 class="production__title">Другие услуги</h2>
-        <p class="paragraph production__descrtiption">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукописи знаках запятых которое что большой, переписали, от всех повстречался, родного дорогу если океана пояс свой.</p>
+        <p class="paragraph production__descrtiption">Наша компания также оказывает спектр различных услуг связанных с обслуживанием или ремонта окон, а также установкой аксессуаров на балконы и окна. Цены на все услуги индивидуальны и обговариваются либо по телефону либо после выезда специалиста.</p>
 
         <div class="production__wrapper">
           <div class="production-item production-item--small">
@@ -96,7 +96,7 @@ include 'partials/header.php' ?>
               </div>
               <!-- /.production-item__heading -->
 
-              <p class="production-item__text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты.</p>
+              <p class="production-item__text">Ограничитель регулирует открывание створки в поворотно-откидных положениях.</p>
             </div>
             <!-- /.production-item__description -->
           </div>
@@ -114,11 +114,9 @@ include 'partials/header.php' ?>
                 <span class="production-item__price">от 499р</span>
               </div>
               <!-- /.production-item__heading -->
-
-              <p class="production-item__text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
+              <p class="production-item__text">Легкость закрытия, устранение поддувания и исправление заедающих створок.</p>
             </div>
             <!-- /.production-item__description -->
-            <a class="stretched-link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/adjustment.php"></a>
           </div>
           <!-- /.production-item -->
 
@@ -135,10 +133,9 @@ include 'partials/header.php' ?>
               </div>
               <!-- /.production-item__heading -->
 
-              <p class="production-item__text">Далеко-далеко за словесными, горами в стране гласных живут рыбные тексты.</p>
+              <p class="production-item__text">Малыш не сможет распахнуть створку без ключа, что исключает его выпадение из окна.</p>
             </div>
             <!-- /.production-item__description -->
-            <a class="stretched-link" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/catalog/services/lock.php"></a>
           </div>
           <!-- /.production-item -->
 
@@ -155,7 +152,7 @@ include 'partials/header.php' ?>
               </div>
               <!-- /.production-item__heading -->
 
-              <p class="production-item__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные.</p>
+              <p class="production-item__text">Тонировка препятствует попаданию в квартиру яркого света, особенно, если окна выходят на солнечную сторону.</p>
             </div>
             <!-- /.production-item__description -->
           </div>
@@ -174,7 +171,7 @@ include 'partials/header.php' ?>
               </div>
               <!-- /.production-item__heading -->
 
-              <p class="production-item__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали?</p>
+              <p class="production-item__text">Решите проблему конденсата или плесени на подоконниках или откосах, шума с улицы или проникновение пыли.</p>
             </div>
             <!-- /.production-item__description -->
           </div>
@@ -182,18 +179,18 @@ include 'partials/header.php' ?>
 
           <div class="production-item production-item--small">
             <div class="production-item__picture">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/compressor.jpg" alt="" class="production-item__image production-item__image--small">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/handles.jpg" alt="" class="production-item__image production-item__image--small">
             </div>
             <!-- /.production-item__picture -->
 
             <div class="production-item__description">
               <div class="production-item__heading">
-                <h3 class="production-item__title">Замена уплотнителя</h3>
-                <span class="production-item__price">от 1999р</span>
+                <h3 class="production-item__title">Замена ручек</h3>
+                <span class="production-item__price">от 699р</span>
               </div>
               <!-- /.production-item__heading -->
 
-              <p class="production-item__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали?</p>
+              <p class="production-item__text">Замена старых или сломанных оконных и дверных ручек на новые. Цветные, из дерева или металлические.</p>
             </div>
             <!-- /.production-item__description -->
           </div>
@@ -463,7 +460,6 @@ include 'partials/header.php' ?>
                   сказать! Ни одной летающей души в квартире, а также стало меньше пыли. Рекомендую!</p>
                 <div class="feedback__info">
                   <span class="feedback__name">Анна Н.</span>
-                  <a href="" class="social-link"><img class="social-icon" src="img/icons/vk.svg" alt=""></a>
                   <time class="feedback__time">19.04.2019</time>
                 </div>
                 <!-- /.feedback-info -->
@@ -481,7 +477,6 @@ include 'partials/header.php' ?>
                 <p class="feedback__description paragraph">Благодарю Вас за установку сеточки на балконе! Душа моя спокойна поповоду моего котика, надеюсь прослужит долго! Спасибо, вам, Михаил, и вашему коллеге за оперативность!</p>
                 <div class="feedback__info">
                   <span class="name">Алена Б.</span>
-                  <a href="https://www.instagram.com/belozoralena/" target="_blank" class="social-link"><img class="social-icon" src="img/icons/instagram.svg" alt=""></a>
                   <time class="feedback__time">05.04.2020</time>
                 </div>
                 <!-- /.feedback-info -->
@@ -499,7 +494,6 @@ include 'partials/header.php' ?>
                 <p class="feedback__description paragraph">Добрый день! Заказывали у вас сетки в Видное. Спасибо большое, все быстро и качественно. Теперь живем с открытыми окнами - это такой кайф :)</p>
                 <div class="feedback__info">
                   <span class="feedback__name">Александра И.</span>
-                  <a href="https://www.instagram.com/izuminka.msk/" class="social-link"><img class="social-icon" src="img/icons/instagram.svg" alt=""></a>
                   <time class="feedback__time">21.06.2019</time>
                 </div>
                 <!-- /.feedback-info -->
@@ -513,6 +507,13 @@ include 'partials/header.php' ?>
         <!-- swiper-wrapper -->
         <div class="row">
           <div class="column">
+            <div class="row">
+              <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-primary button-center">Больше отзывов</button>
+            </div>
+          </div>
+          <!-- /.column -->
+
+          <div class="column">
             <div class="swiper-controls">
               <div class="swiper-pagination slider-feedback-pagination"></div>
               <div class="swiper-button-prev slider-feedback-prev"></div>
@@ -521,17 +522,12 @@ include 'partials/header.php' ?>
             <!-- /.swiper-controls -->
           </div>
           <!-- /.column -->
-          <div class="column">
-            <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-primary button-center">Больше отзывов</button>
-          </div>
-          <!-- /.column -->
         </div>
         <!-- /.row -->
       </div>
       <!-- /.swiper-container -->
     </div>
     <!-- /.container -->
-
   </section>
 </main>
 
