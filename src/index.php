@@ -36,7 +36,7 @@ include 'partials/header.php' ?>
       </div>
       <!-- /.section-title -->
 
-      <p class="paragraph">Наша компания изготавливает москитные сетки и рулонные шторы уже больше 10 лет. Каждая сетка или штора делается строго индивидуально под Ваши окна. В нашем каталоге тысячи цветов и вариаций рисунков для штор, а также, все возможные виды антимоскитного полотна для любой формы москитной сетки.</p>
+      <p class="paragraph paragraph--hidden">Наша компания изготавливает москитные сетки и рулонные шторы уже больше 10 лет. Каждая сетка или штора делается строго индивидуально под Ваши окна. В нашем каталоге тысячи цветов и вариаций рисунков для штор, а также, все возможные виды антимоскитного полотна для любой формы москитной сетки.</p>
 
       <div class="production">
         <div class="production__wrapper">
@@ -81,12 +81,12 @@ include 'partials/header.php' ?>
         <!-- /.production__wrapper -->
 
         <h2 class="production__title">Другие услуги</h2>
-        <p class="paragraph production__descrtiption">Наша компания также оказывает спектр различных услуг связанных с обслуживанием или ремонта окон, а также установкой аксессуаров на балконы и окна. Цены на все услуги индивидуальны и обговариваются либо по телефону либо после выезда специалиста.</p>
+        <p class="paragraph production__description">Наша компания также оказывает спектр различных услуг связанных с обслуживанием или ремонтом окон, а также установкой аксессуаров на балконы и окна. Цены на все услуги индивидуальны и обговариваются либо по телефону либо после выезда специалиста.</p>
 
         <div class="production__wrapper">
           <div class="production-item production-item--small">
-            <div class="production-item__picture">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/limiter.jpg" alt="" class="production-item__image production-item__image--small">
+            <div class="production-item__picture production-item__picture--small">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/limiter.jpg" alt="" class="production-item__image">
             </div>
             <!-- /.production-item__picture -->
 
@@ -104,8 +104,8 @@ include 'partials/header.php' ?>
           <!-- /.production-item -->
 
           <div class="production-item production-item--small">
-            <div class="production-item__picture">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/adjustment.jpg" alt="" class="production-item__image production-item__image--small">
+            <div class="production-item__picture production-item__picture--small">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/adjustment.jpg" alt="" class="production-item__image">
             </div>
             <!-- /.production-item__picture -->
 
@@ -122,8 +122,8 @@ include 'partials/header.php' ?>
           <!-- /.production-item -->
 
           <div class="production-item production-item--small">
-            <div class="production-item__picture">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/lock.jpg" alt="" class="production-item__image production-item__image--small">
+            <div class="production-item__picture production-item__picture--small">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/lock.jpg" alt="" class="production-item__image">
             </div>
             <!-- /.production-item__picture -->
 
@@ -141,8 +141,8 @@ include 'partials/header.php' ?>
           <!-- /.production-item -->
 
           <div class="production-item production-item--small">
-            <div class="production-item__picture">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/tinting.jpg" alt="" class="production-item__image production-item__image--small">
+            <div class="production-item__picture production-item__picture--small">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/tinting.jpg" alt="" class="production-item__image">
             </div>
             <!-- /.production-item__picture -->
 
@@ -160,8 +160,8 @@ include 'partials/header.php' ?>
           <!-- /.production-item -->
 
           <div class="production-item production-item--small">
-            <div class="production-item__picture">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/compressor.jpg" alt="" class="production-item__image production-item__image--small">
+            <div class="production-item__picture production-item__picture--small">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/compressor.jpg" alt="" class="production-item__image">
             </div>
             <!-- /.production-item__picture -->
 
@@ -179,8 +179,8 @@ include 'partials/header.php' ?>
           <!-- /.production-item -->
 
           <div class="production-item production-item--small">
-            <div class="production-item__picture">
-              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/handles.jpg" alt="" class="production-item__image production-item__image--small">
+            <div class="production-item__picture production-item__picture--small">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/services/handles.jpg" alt="" class="production-item__image">
             </div>
             <!-- /.production-item__picture -->
 
@@ -214,7 +214,7 @@ include 'partials/header.php' ?>
       <div class="row">
         <div class="column">
           <div class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb43c71a35f82b72f4fb211ee6d0101918a651b0d54c8fcffdf3354cc4e95772&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=true"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb43c71a35f82b72f4fb211ee6d0101918a651b0d54c8fcffdf3354cc4e95772&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=false"></script>
           </div>
           <!-- /.map -->
         </div>
@@ -506,10 +506,10 @@ include 'partials/header.php' ?>
           <!-- /.swiper-slide -->
         </div>
         <!-- swiper-wrapper -->
-        <div class="row">
+        <div class="row row--reverse">
           <div class="column">
             <div class="row">
-              <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-primary button-center">Больше отзывов</button>
+              <button onclick="window.open('https://vk.com/moskitsetki_msk?z=album-179924034_263108745',  '_blank')" class="button button-primary">Больше отзывов</button>
             </div>
           </div>
           <!-- /.column -->

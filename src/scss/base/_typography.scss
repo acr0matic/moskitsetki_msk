@@ -26,6 +26,14 @@ h1 {
 h2 {
   font-size: $font-size-3;
   font-weight: $weight-regular;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    font-size: $font-size-3 - 4px;
+  }
+
+  @include breakpoint($breakpoint-mobile-medium) {
+    font-size: $font-size-4 - 2px;
+  }
 }
 
 h3 {

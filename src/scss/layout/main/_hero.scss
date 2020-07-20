@@ -14,7 +14,9 @@
 
 .hero {
   @include breakpoint($breakpoint-mobile-large) {
-    padding: 45px 15px 15px 15px;
+    padding: 45px 0 25px 0;
+
+    text-align: center;
   }
 
   padding: 85px;

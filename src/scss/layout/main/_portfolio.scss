@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    margin-bottom: 25px;
+  }
+
   &__photo {
     $margin: 25px;
 
@@ -11,7 +15,12 @@
 
     overflow: hidden;
     border-radius: 5px;
-    
+
+    @include breakpoint($breakpoint-mobile-large) {
+      width: 47.5%;
+      height: 170px;
+    }
+
     &:hover {
       .portfolio__image {
         transform: scale(1.05);
@@ -20,7 +29,12 @@
 
     @include first(4) {
       margin-bottom: $margin + 20px;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        margin-bottom: $margin - 7px;
+      }
     }
+
   }
 
   &__image {

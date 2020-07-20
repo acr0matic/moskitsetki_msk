@@ -4,12 +4,16 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    &:not(:last-child) {
-      margin-bottom: 40px;
-    }
-
     @include breakpoint($breakpoint-mobile-large) {
       flex-direction: column;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        margin-bottom: 10px;
+      }
     }
   }
 

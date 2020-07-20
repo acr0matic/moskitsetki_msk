@@ -9,13 +9,23 @@
   margin-right: auto;
 
   @include breakpoint($breakpoint-laptop) {
-    width: 95%;
+    padding: 0 5px;
   }
 }
 
 .row {
   display: flex;
   justify-content: space-between;
+
+  @include breakpoint($breakpoint-laptop) {
+    flex-direction: column;
+  }
+
+  &--reverse {
+    @include breakpoint($breakpoint-laptop) {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .column {
@@ -24,6 +34,11 @@
 
   width: calc(100% / 2 - 25px);
 
+  @include breakpoint($breakpoint-mobile-large) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
   &--center {
     margin: 0 auto;
   }
@@ -31,6 +46,12 @@
 
 .paragraph {
   margin-bottom: 30px;
+
+  &--hidden {
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
+  }
 }
 
 .stretched-link {
@@ -73,6 +94,10 @@
 .company {
   margin-right: 40px;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    margin: 0 auto 15px auto;
+  }
+
   &__info {
 
   }
@@ -100,6 +125,10 @@
   justify-content: space-between;
 
   margin-bottom: 30px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    flex-direction: column;
+  }
 }
 
 .product-heading {

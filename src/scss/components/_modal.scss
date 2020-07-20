@@ -17,12 +17,19 @@
 
   &__container {
     position: relative;
+
+    width: 100%;
     max-width: 600px;
 
     padding: 50px;
 
     background-color: #ffffff;
     border-radius: 10px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      width: 95%;
+      padding: 60px 35px;
+    }
   }
 
   &__close {
