@@ -1,0 +1,22 @@
+.photo-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__picture {
+    width: calc(100% / 4 - 20px);
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__image {
+    height: 250px;
+  }
+}

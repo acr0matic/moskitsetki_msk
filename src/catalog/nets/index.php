@@ -11,21 +11,22 @@ include $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php' ?>
   <section id="promo">
     <div class="container">
       <div class="promo">
-        <img class="promo__image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/production-head-bg.jpg" alt="">
+        <div class="promo__wrapper">
+          <h1 class="promo__title">Москитные сетки</h1>
+          <nav class="promo__nav promo-nav">
+            <ul class="promo-nav__navbar">
+              <li class="promo-nav__item"><a class="promo-nav__link" href="#description">Зачем нужны?</a></li>
+              <li class="promo-nav__item"><a class="promo-nav__link" href="">Виды сеток</a></li>
+              <li class="promo-nav__item"><a class="promo-nav__link" href="">Виды полотна</a></li>
+              <li class="promo-nav__item"><a class="promo-nav__link" href="">Калькулятор</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /.promo__wrapper -->
+
+        <img class="promo__image" src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/nets/promo.jpg" alt="">
       </div>
       <!-- /.promo -->
-      <div class="promo__wrapper">
-        <h1 class="promo__title">Москитные сетки</h1>
-        <nav class="promo__nav promo-nav">
-          <ul class="promo-nav__navbar">
-            <li class="promo-nav__item"><a class="promo-nav__link" href="#description">Зачем нужны?</a></li>
-            <li class="promo-nav__item"><a class="promo-nav__link" href="">Виды сеток</a></li>
-            <li class="promo-nav__item"><a class="promo-nav__link" href="">Виды полотна</a></li>
-            <li class="promo-nav__item"><a class="promo-nav__link" href="">Калькулятор</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- /.promo__wrapper -->
     </div>
     <!-- /.container -->
   </section>
@@ -39,6 +40,37 @@ include $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php' ?>
       <!-- /.section-title -->
 
       <p class="paragraph">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс, знаках журчит переулка вершину меня маленькая ему над послушавшись напоивший пустился вопрос родного жизни рыбными решила продолжил ipsum диких.</p>
+
+      <div class="photo-block">
+        <div class="photo-block__picture">
+          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/nets/portfolio/1.jpg">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/nets/portfolio/1.jpg" alt="" class="photo-block__image">
+          </a>
+        </div>
+        <!-- /.photo-block__picture -->
+
+        <div class="photo-block__picture">
+          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/nets/portfolio/2.jpg">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/nets/portfolio/2.jpg" alt="" class="photo-block__image">
+          </a>
+        </div>
+        <!-- /.photo-block__picture -->
+
+        <div class="photo-block__picture">
+          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/nets/portfolio/3.jpg">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/nets/portfolio/3.jpg" alt="" class="photo-block__image">
+          </a>
+        </div>
+        <!-- /.photo-block__picture -->
+
+        <div class="photo-block__picture">
+          <a data-fslightbox href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/nets/portfolio/4.jpg">
+            <img src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/img/catalog/nets/portfolio/4.jpg" alt="" class="photo-block__image">
+          </a>
+        </div>
+        <!-- /.photo-block__picture -->
+      </div>
+      <!-- /.photo-block -->
     </div>
     <!-- /.container -->
   </section>

@@ -1,6 +1,9 @@
 .promo {
   &__image {
     border-radius: 10px;
+
+    max-height: 350px;
+    object-fit: cover;
   }
 
   &__wrapper {
@@ -8,11 +11,12 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 25px;
+    margin-top: 45px;
+    margin-bottom: 25px;
   }
 
   &__title {
-    font-weight: $weight-medium;
+    font-weight: $weight-regular;
   }
 }
 
