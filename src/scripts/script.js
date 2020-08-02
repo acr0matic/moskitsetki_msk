@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const feedbackSlider = document.querySelector('.slider-feedback');
   const portfolioSlider = document.querySelector('.slider-portfolio');
+  const framesSlider = document.querySelector('.slider-frames');
 
   if (feedbackSlider) {
     const slider = new Swiper(feedbackSlider, {
@@ -66,6 +67,30 @@ window.addEventListener('DOMContentLoaded', () => {
         1180: {
           slidesPerView: 2,
         },
+      },
+    });
+
+    slider.init();
+  }
+
+  if (framesSlider) {
+    const slider = new Swiper(framesSlider, {
+      spaceBetween: 50,
+      slidesPerView: 1,
+
+      breakpoints: {
+        1180: {
+          slidesPerView: 2,
+        },
+      },
+
+      navigation: {
+        nextEl: '.slider-frames-next',
+        prevEl: '.slider-frames-prev',
+      },
+
+      scrollbar: {
+        el: '.slider-frames-scrollbar',
       },
     });
 

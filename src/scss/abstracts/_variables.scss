@@ -76,3 +76,9 @@ $font-size-9: 12px;
 // Межстрочные расстояния
 $line-height-0: 28px;
 $line-height-1: 32px;
+
+// Цвета для слайдеров
+$slider-scrollbar-color: #b8b8b8;
+$slider-button-color: rgba($color: #ecd031, $alpha: 0.3);
+$slider-button-color-hover: #ecd031;
+$slider-button-color-disabled: rgba($color: #b8b8b8, $alpha: 0.3);

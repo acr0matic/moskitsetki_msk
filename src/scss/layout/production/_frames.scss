@@ -1,0 +1,59 @@
+.frame {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__picture {
+    width: 48%;
+  }
+
+  &__image {
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+  }
+
+  &__title {
+    font-size: $font-size-4;
+  }
+
+  &__cost {
+    display: block;
+    margin: 10px 0;
+  }
+
+  &__description {
+  }
+
+  &__action {
+    margin-top: auto;
+  }
+}
+
+.frame-action {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    min-width: unset;
+  }
+
+  &__info {
+    font-weight: $weight-regular;
+
+    width: 100%;
+  }
+
+  &__icon {
+    display: block;
+    width: 50%;
+
+    margin: 0 auto;
+  }
+}

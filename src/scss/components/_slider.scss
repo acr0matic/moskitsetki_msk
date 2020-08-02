@@ -1,9 +1,51 @@
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  color: $text-gray;
-}
-
 .swiper {
+  &-container {
+    &:hover {
+      .swiper-button-next,
+      .swiper-button-prev {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &-button {
+    &-prev,
+    &-next {
+      width: 50px;
+      height: 50px;
+
+      background-color: $slider-button-color;
+      opacity: 0;
+
+      visibility: hidden;
+      border-radius: 5px;
+
+      transition: all 0.15s ease;
+
+      &:hover {
+        background-color: $slider-button-color-hover;
+      }
+
+      &::after {
+        color: $text-white;
+        font-size: 30px;
+      }
+    }
+
+    &-prev {
+      left: 0;
+    }
+
+    &-next {
+      right: 0;
+    }
+
+    &-disabled {
+      background-color: $slider-button-color-disabled;
+    }
+  }
+
   &-controls {
     position: relative;
 

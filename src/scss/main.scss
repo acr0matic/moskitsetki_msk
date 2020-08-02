@@ -21,7 +21,17 @@
   'base/typography',
   'base/helpers';
 
-// 4. Подключение стилей разметки
+// 4. Подключение стилей компонентов
+@import
+  'components/button',
+  'components/form',
+  'components/input',
+  'components/slider',
+  'components/table',
+  'components/checkbox',
+  'components/modal';
+
+// 5. Подключение стилей разметки
 @import
   'layout/header',
   'layout/navigation',
@@ -38,20 +48,10 @@
   'layout/main/order',
   'layout/main/portfolio',
 
-  'layout/production/items',
+  'layout/production/sliders',
+  'layout/production/promo',
+  'layout/production/frames',
 
   'layout/product/calculator',
   'layout/product/product-description',
   'layout/product/gallery';
-
-
-// 5. Подключение стилей компонентов
-@import
-  'components/button',
-  'components/form',
-  'components/input',
-  'components/slider',
-  'components/table',
-  'components/checkbox',
-  'components/modal';
-

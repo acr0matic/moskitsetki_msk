@@ -1,0 +1,30 @@
+.slider-frames {
+  padding-bottom: 40px;
+
+  .swiper {
+    &-scrollbar {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    &-scrollbar-drag {
+      background-color: $slider-scrollbar-color;
+    }
+
+    &-button {
+      &-prev,
+      &-next {
+        top: 42%;
+      }
+
+      &-prev {
+
+      }
+
+      &-next {
+
+      }
+    }
+  }
+}
